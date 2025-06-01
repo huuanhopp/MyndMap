@@ -35,4 +35,17 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
-android
+
+# Native directories
+android/
+ios/
+
+# Build directories
+build/
+android/app/build/
+ios/build/
+
+# Native config files
+android/local.properties
+android/app/google-services.json
+ios/GoogleService-Info.plist
