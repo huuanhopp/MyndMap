@@ -19,6 +19,7 @@ import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
   firebaseSignOut,
+  onAuthStateChanged,
   app,
   isExpoGo
 } from '../firebase/init';
@@ -74,7 +75,7 @@ export const AuthProvider = ({ children, onLanguageChange }) => {
       } else {
         // React Native Firebase with modular API
         const authInstance = getAuth();
-        unsubscribe = authInstance.onAuthStateChanged(handleAuthStateChange);
+        unsubscribe = onAuthStateChanged(authInstance, handleAuthStateChange);
       }
     } catch (e) {
       console.error('Error setting up auth state listener:', e);
@@ -97,10 +98,10 @@ export const AuthProvider = ({ children, onLanguageChange }) => {
         try {
           // Get additional user data from Firestore using modular API
           const firestoreInstance = getFirestore();
-          const userRef = firestoreInstance.collection('users').doc(user.uid);
-          const docSnapshot = await userRef.get();
+          const userRef = doc(firestoreInstance, 'users', user.uid);
+          const docSnapshot = await getDoc(userRef);
           
-          if (docSnapshot.exists) {
+          if (docSnapshot.exists()) {
             const userDocData = {
               id: docSnapshot.id,
               ...docSnapshot.data()
@@ -117,7 +118,7 @@ export const AuthProvider = ({ children, onLanguageChange }) => {
             try {
               // Store the last login timestamp using modular API
               console.log('Updating last login timestamp');
-              await userRef.update({
+              await updateDoc(userRef, {
                 lastLoggedIn: serverTimestamp()
               });
               
@@ -125,7 +126,7 @@ export const AuthProvider = ({ children, onLanguageChange }) => {
               const storedToken = await AsyncStorage.getItem('expoPushToken');
               if (storedToken) {
                 console.log('Updating stored push token');
-                await userRef.update({
+                await updateDoc(userRef, {
                   expoPushToken: storedToken
                 });
                 // Clear from AsyncStorage now that it's saved to the user profile
@@ -149,7 +150,7 @@ export const AuthProvider = ({ children, onLanguageChange }) => {
               };
               
               // Use modular API
-              await userRef.set(userData);
+              await setDoc(userRef, userData);
               setUserData({ id: user.uid, ...userData });
             } catch (createError) {
               console.error('Error creating user document:', createError);
@@ -216,8 +217,8 @@ export const AuthProvider = ({ children, onLanguageChange }) => {
       
       // Create user document in Firestore using modular API
       const firestoreInstance = getFirestore();
-      const userRef = firestoreInstance.collection('users').doc(user.uid);
-      await userRef.set({
+      const userRef = doc(firestoreInstance, 'users', user.uid);
+      await setDoc(userRef, {
         email: user.email,
         ...userData
       });
@@ -250,6 +251,11 @@ export const AuthProvider = ({ children, onLanguageChange }) => {
   const login = async (email, password) => {
     setAuthError(null);
     try {
+      console.log('AuthContext: Starting login process');
+      console.log('AuthContext: Email:', email);
+      console.log('AuthContext: Password length:', password?.length);
+      console.log('AuthContext: isExpoGo:', isExpoGo);
+      
       let user;
       
       if (isExpoGo) {
@@ -259,9 +265,14 @@ export const AuthProvider = ({ children, onLanguageChange }) => {
         return { uid: 'mock-uid', email, displayName: email.split('@')[0], completedOnboarding: true };
       } else {
         // React Native Firebase with modular API
+        console.log('AuthContext: Using React Native Firebase');
         const authInstance = getAuth();
+        console.log('AuthContext: Auth instance obtained:', !!authInstance);
+        
+        console.log('AuthContext: Calling signInWithEmailAndPassword...');
         const userCredential = await signInWithEmailAndPassword(authInstance, email, password);
         user = userCredential.user;
+        console.log('AuthContext: signInWithEmailAndPassword successful, user:', user.uid);
       }
       
       setCurrentUser(user);
@@ -271,10 +282,10 @@ export const AuthProvider = ({ children, onLanguageChange }) => {
       try {
         // Get user data using modular API
         const firestoreInstance = getFirestore();
-        const userRef = firestoreInstance.collection('users').doc(user.uid);
-        const docSnapshot = await userRef.get();
+        const userRef = doc(firestoreInstance, 'users', user.uid);
+        const docSnapshot = await getDoc(userRef);
         
-        if (docSnapshot.exists) {
+        if (docSnapshot.exists()) {
           const userDocData = {
             id: docSnapshot.id,
             ...docSnapshot.data()
@@ -297,7 +308,7 @@ export const AuthProvider = ({ children, onLanguageChange }) => {
           }
           
           // Update last login time using modular API
-          await userRef.update({
+          await updateDoc(userRef, {
             lastLoggedIn: serverTimestamp()
           });
         } else {
@@ -312,7 +323,7 @@ export const AuthProvider = ({ children, onLanguageChange }) => {
               completedOnboarding: false
             };
             
-            await userRef.set(userData);
+            await setDoc(userRef, userData);
             setUserData({ 
               id: user.uid, 
               ...userData,
@@ -415,12 +426,12 @@ export const AuthProvider = ({ children, onLanguageChange }) => {
       
       // Check if this is a new user or existing user using modular API
       const firestoreInstance = getFirestore();
-      const userRef = firestoreInstance.collection('users').doc(user.uid);
-      const docSnapshot = await userRef.get();
-      let isNewUser = !docSnapshot.exists;
+      const userRef = doc(firestoreInstance, 'users', user.uid);
+      const docSnapshot = await getDoc(userRef);
+      let isNewUser = !docSnapshot.exists();
       let hasCompletedOnboarding = false;
       
-      if (docSnapshot.exists) {
+      if (docSnapshot.exists()) {
         const userDocData = {
           id: docSnapshot.id,
           ...docSnapshot.data()
@@ -430,7 +441,7 @@ export const AuthProvider = ({ children, onLanguageChange }) => {
         hasCompletedOnboarding = userDocData.completedOnboarding === true;
         
         // Use modular API - FIXED: using lastLoggedIn instead of lastLogin
-        await userRef.update({
+        await updateDoc(userRef, {
           lastLoggedIn: serverTimestamp()
         });
         
@@ -446,7 +457,7 @@ export const AuthProvider = ({ children, onLanguageChange }) => {
           user.email?.split('@')[0] || 'Apple User';
         
         // Create a new user document using modular API - FIXED: using lastLoggedIn instead of lastLogin
-        await userRef.set({
+        await setDoc(userRef, {
           email: user.email,
           displayName: displayName,
           createdAt: serverTimestamp(),
@@ -580,15 +591,15 @@ export const AuthProvider = ({ children, onLanguageChange }) => {
         try {
           // Update user data in Firestore using modular API
           const firestoreInstance = getFirestore();
-          const userRef = firestoreInstance.collection('users').doc(currentUser.uid);
-          await userRef.update({
+          const userRef = doc(firestoreInstance, 'users', currentUser.uid);
+          await updateDoc(userRef, {
             ...data,
             updatedAt: serverTimestamp()
           });
           
           // Fetch updated user data using modular API
-          const updatedDocSnap = await userRef.get();
-          const updatedUserData = updatedDocSnap.exists ? {
+          const updatedDocSnap = await getDoc(userRef);
+          const updatedUserData = updatedDocSnap.exists() ? {
             id: updatedDocSnap.id,
             ...updatedDocSnap.data()
           } : null;

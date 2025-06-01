@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useCallback, useState, useMemo } from 'react';
-import { 
-  View, 
-  ImageBackground, 
-  TouchableOpacity, 
-  Text, 
-  ActivityIndicator, 
-  Animated, 
-  Alert, 
+import {
+  View,
+  ImageBackground,
+  TouchableOpacity,
+  Text,
+  ActivityIndicator,
+  Animated,
+  Alert,
   Easing,
   AppState,
   Platform
@@ -56,6 +56,7 @@ import OverdueNotification from '../components/OverdueNotification';
 import TaskReminderModal from '../components/TaskReminderModal';
 import QuestCompletedModal from '../components/QuestCompletedModal';
 import EditTaskModal from './EditTaskModal.js';
+import {collection, deleteDoc, query, serverTimestamp, updateDoc, where} from "firebase/firestore";
 
 const HomeScreen = () => {
   // Navigation and context hooks - always call these first
@@ -63,7 +64,7 @@ const HomeScreen = () => {
   const { user } = useUser();
   const { t } = useTranslation();
   const isFocused = useIsFocused();
-  
+
   // State initialization - ensure these are always called in the same order
   const [wallpaperSetting, setWallpaperSetting] = useState({
     type: 'preset',
@@ -74,7 +75,7 @@ const HomeScreen = () => {
   const [subtaskModalVisible, setSubtaskModalVisible] = useState(false);
   const [selectedTaskForSubtasks, setSelectedTaskForSubtasks] = useState(null);
   const [activeTimerTask, setActiveTimerTask] = useState(null);
-  
+
   // Refs should be initialized early
   const appStateRef = useRef(AppState.currentState);
   const animRefs = useRef({
@@ -85,16 +86,16 @@ const HomeScreen = () => {
     helpButtonScale: new Animated.Value(1),
     taskListFade: new Animated.Value(1)
   }).current;
-  
+
   // Destructure for easier access
-  const { 
-    headerFadeAnim, contentFadeAnim, buttonsFadeAnim, 
-    footerFadeAnim, helpButtonScale, taskListFade 
+  const {
+    headerFadeAnim, contentFadeAnim, buttonsFadeAnim,
+    footerFadeAnim, helpButtonScale, taskListFade
   } = animRefs;
-  
+
   // Always call custom hooks in the same order
   const { xpGainAnimations, triggerXPGain } = useXPSystem();
-  
+
   // Get all state and handlers from the custom hook
   const {
     isLoading, setIsLoading,
@@ -123,15 +124,15 @@ const HomeScreen = () => {
     unsubscribeListeners,
     showOverdueNotification, setShowOverdueNotification
   } = useHomeScreenState();
-  
+
   // IMPORTANT: Define all callback functions before using them in other hooks
-  
+
   // Calculate task priority score - define before it's used in findHighestPriorityTask
   const calculateTaskPriorityScore = useCallback((task) => {
     if (!task) return 0;
-    
+
     let score = 0;
-    
+
     // Base score from priority level
     switch(task.priority) {
       case 'high':
@@ -146,19 +147,19 @@ const HomeScreen = () => {
       default:
         score += 10;
     }
-    
+
     // Shorter intervals get higher priority
     if (task.interval) {
       const intervalMins = parseInt(task.interval);
       score += (60 - intervalMins); // Max 60 points for shortest interval
     }
-    
+
     // Tasks with deadlines get higher priority
     if (task.dueDate) {
       const now = new Date();
       const dueDate = new Date(task.dueDate);
       const daysUntilDue = Math.max(0, Math.floor((dueDate - now) / (1000 * 60 * 60 * 24)));
-      
+
       if (daysUntilDue === 0) {
         score += 100; // Due today
       } else if (daysUntilDue <= 2) {
@@ -167,15 +168,15 @@ const HomeScreen = () => {
         score += 50; // Due this week
       }
     }
-    
+
     // Tasks with subtasks get higher priority
     if (task.subtasks && task.subtasks.length > 0) {
       score += task.subtasks.length * 5; // 5 points per subtask
     }
-    
+
     return score;
   }, []);
-  
+
   // Find highest priority task - define before it's used in other functions
   const findHighestPriorityTask = useCallback(() => {
     if (!reminders || reminders.length === 0) {
@@ -186,20 +187,20 @@ const HomeScreen = () => {
       }
       return;
     }
-    
+
     // Calculate priority scores for all tasks
     const tasksWithScores = reminders.map(task => ({
       ...task,
       priorityScore: calculateTaskPriorityScore(task)
     }));
-    
+
     // Sort by priority score (descending)
     tasksWithScores.sort((a, b) => b.priorityScore - a.priorityScore);
-    
+
     // Set the highest priority task
     const highestPriority = tasksWithScores[0];
     setHighestPriorityTask(highestPriority);
-    
+
     // Only set as active timer task if no timer is already running
     // and no reminder modal is currently shown - this prevents automatic
     // progression to next task when one completes
@@ -209,7 +210,7 @@ const HomeScreen = () => {
         try {
           const taskRef = doc(db, "reminders", highestPriority.id);
           const taskDoc = await getDoc(taskRef);
-          
+
           if (taskDoc.exists()) {
             // Ensure timerState has isCompleted property before setting as active
             const updatedTask = {
@@ -234,28 +235,28 @@ const HomeScreen = () => {
           console.error('Error verifying task existence:', error);
         }
       };
-      
+
       verifyTaskExists();
     }
   }, [
-    reminders, 
-    activeTimerTask, 
-    taskReminderModalVisible, 
-    calculateTaskPriorityScore, 
-    setHighestPriorityTask, 
-    setActiveTimerTask, 
-    setReminders, 
+    reminders,
+    activeTimerTask,
+    taskReminderModalVisible,
+    calculateTaskPriorityScore,
+    setHighestPriorityTask,
+    setActiveTimerTask,
+    setReminders,
     setFutureReminders
   ]);
-  
+
   // Handle task completion - define before it's used in other hooks
   const handleTaskComplete = useCallback(async (task) => {
     if (!task || !task.id) return;
-    
+
     try {
       // Mark the task as completed in local state first for immediate feedback
       setReminders(prev => prev.filter(t => t.id !== task.id));
-      
+
       // If this is the active timer task, update its state but keep it visible briefly
       if (activeTimerTask && activeTimerTask.id === task.id) {
         // Create a completed state for the timer
@@ -269,16 +270,16 @@ const HomeScreen = () => {
             completedAt: new Date().toISOString()
           }
         };
-        
+
         // Update the timer with completed state
         setActiveTimerTask(completedTimerTask);
-        
+
         // Set a timeout to remove the timer after a delay (for visual continuity)
         setTimeout(() => {
           setActiveTimerTask(null);
         }, 1500); // 1.5 seconds delay
       }
-      
+
       // Update in Firestore
       const taskRef = doc(db, "reminders", task.id);
       await updateDoc(taskRef, {
@@ -288,7 +289,7 @@ const HomeScreen = () => {
         'timerState.isCompleted': true,
         'timerState.completedAt': serverTimestamp()
       });
-      
+
       // Update AsyncStorage cache with a non-blocking approach
       AsyncStorage.getItem('cachedTasks')
         .then(cachedTasks => {
@@ -301,7 +302,7 @@ const HomeScreen = () => {
         .catch(cacheError => {
           console.error('Error updating task cache:', cacheError);
         });
-      
+
       // Trigger XP gain if available
       if (typeof triggerXPGain === 'function') {
         // Calculate XP based on task priority and reschedule count
@@ -310,35 +311,35 @@ const HomeScreen = () => {
         const rescheduleCount = task.rescheduleCount || 0;
         const xpPenalty = Math.min(rescheduleCount, baseXP - 1);
         const xpGain = Math.max(1, (baseXP * priorityBonus) - xpPenalty);
-        
+
         triggerXPGain(xpGain);
       }
-      
+
       // After a brief delay, find a new highest priority task
       setTimeout(() => {
         findHighestPriorityTask();
       }, 500);
-      
+
     } catch (error) {
       console.error('Error completing task:', error);
       Alert.alert('Error', 'Failed to complete task. Please try again.');
     }
   }, [
-    activeTimerTask, 
-    setActiveTimerTask, 
-    setReminders, 
-    triggerXPGain, 
+    activeTimerTask,
+    setActiveTimerTask,
+    setReminders,
+    triggerXPGain,
     findHighestPriorityTask
   ]);
-  
+
   // Handle timer complete - define before it's used
   const handleTimerComplete = useCallback(async (task, isInForeground = true) => {
     console.log(`[HOME] Timer completed for task ${task?.id}, in foreground: ${isInForeground}`);
-    
+
     try {
       // First, let the NotificationManager handle the timer completion
       await NotificationManager.handleTimerComplete(task, isInForeground);
-      
+
       // Create an updated task object with completed timer state
       const updatedTask = {
         ...task,
@@ -350,16 +351,16 @@ const HomeScreen = () => {
           completedInForeground: isInForeground
         }
       };
-      
+
       // Update the active timer task with completed state for UI
       setActiveTimerTask(updatedTask);
-      
+
       // If app is in foreground, show the reminder modal immediately
       if (isInForeground) {
         console.log(`[HOME] App in foreground, displaying modal for task ${task?.id}`);
         setCurrentReminderTask(updatedTask);
         setTaskReminderModalVisible(true);
-        
+
         // Mark that we've displayed the modal
         // This is intentionally done AFTER setting the modal to visible
         await NotificationManager.markModalDisplayed(task.id, true);
@@ -369,7 +370,7 @@ const HomeScreen = () => {
       }
     } catch (error) {
       console.error('[HOME] Error handling timer completion:', error);
-      
+
       // Fallback: Try to show the modal anyway
       try {
         console.log('[HOME] Using fallback to show timer completion modal');
@@ -381,17 +382,17 @@ const HomeScreen = () => {
     }
   }, [setActiveTimerTask, setCurrentReminderTask, setTaskReminderModalVisible]);
 
-  // Add this to your HomeScreen.js - this is a specialized function 
+  // Add this to your HomeScreen.js - this is a specialized function
 // for checking expired timers on app initialization
 const checkForExpiredTimersOnLoad = useCallback(async () => {
   if (!user || !setCurrentReminderTask || !setTaskReminderModalVisible) return false;
-  
+
   console.log('[HOME] Checking for expired timers on app load...');
-  
+
   try {
     // Wait a moment to ensure app is fully loaded
     await new Promise(resolve => setTimeout(resolve, 1000));
-    
+
     // Query for tasks with completed timers that need user action
     const expiredQuery = query(
       collection(db, "reminders"),
@@ -402,63 +403,63 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
       where("timerState.isCompleted", "==", true),
       where("timerState.modalShown", "in", [false, null])
     );
-    
+
     // Execute the query
     const expiredSnapshot = await getDocs(expiredQuery);
-    
+
     if (!expiredSnapshot.empty) {
       console.log(`[HOME] Found ${expiredSnapshot.docs.length} expired timer tasks on load`);
-      
+
       // Get the first expired task
       const expiredDoc = expiredSnapshot.docs[0];
       const expiredTask = createInitializedReminder(expiredDoc);
-      
+
       // Check if this task has been recently processed
       const isRecentlyProcessed = await NotificationManager.wasNotificationRecentlySent(expiredTask.id);
-      
+
       if (isRecentlyProcessed) {
         console.log('[HOME] Task was recently processed, skipping:', expiredTask.id);
         return false;
       }
-      
+
       // Mark notification as sent to prevent duplicates
       await NotificationManager.markNotificationAsSent(expiredTask.id, 'app-load-check');
-      
+
       // Mark this task as having shown a modal
       const taskRef = doc(db, "reminders", expiredTask.id);
       await updateDoc(taskRef, {
         'timerState.modalShown': true,
         'timerState.lastUpdated': serverTimestamp()
       });
-      
+
       // Force a short delay to ensure UI is ready
       await new Promise(resolve => setTimeout(resolve, 300));
-      
+
       // Show reminder modal for this task
       console.log('[HOME] Showing modal for expired task:', expiredTask.id);
       setCurrentReminderTask(expiredTask);
       setTaskReminderModalVisible(true);
-      
+
       return true;
     }
-    
+
     return false;
   } catch (error) {
     console.error('[HOME] Error checking for expired timer tasks on load:', error);
     return false;
   }
 }, [user, setCurrentReminderTask, setTaskReminderModalVisible, createInitializedReminder]);
-  
+
   // Handle edit task - define before using
   const handleEdit = useCallback(async (updatedTask) => {
     if (!updatedTask?.id) {
       console.error('Cannot edit: invalid task object');
       return;
     }
-    
+
     try {
       setLoading(true);
-      
+
       // Update in Firestore
       const taskRef = doc(db, "reminders", updatedTask.id);
       await updateDoc(taskRef, {
@@ -470,34 +471,34 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
         scheduledFor: updatedTask.scheduledFor,
         updatedAt: serverTimestamp()
       });
-      
+
       // Create a copy with a timestamp to force re-render
-      const updatedTaskWithTimestamp = { 
-        ...updatedTask, 
+      const updatedTaskWithTimestamp = {
+        ...updatedTask,
         _lastUpdated: Date.now() // Use a timestamp to force state updates
       };
-      
+
       // Update in local state with the modified object
       setReminders(prev => {
         if (!prev) return [];
-        return prev.map(task => 
+        return prev.map(task =>
           task.id === updatedTask.id ? updatedTaskWithTimestamp : task
         );
       });
-      
+
       setFutureReminders(prev => {
         if (!prev) return [];
-        return prev.map(task => 
+        return prev.map(task =>
           task.id === updatedTask.id ? updatedTaskWithTimestamp : task
         );
       });
-      
+
       // If this is the active timer task, update it too but preserve the timerState
       if (activeTimerTask && activeTimerTask.id === updatedTask.id) {
         // If the task is active and interval changed, restart timer completely
         const oldInterval = activeTimerTask.timerState?.duration || activeTimerTask.interval;
         const newInterval = updatedTask.interval;
-        
+
         if (oldInterval !== newInterval) {
           // Create a fresh timer state
           const updatedTimerTask = {
@@ -509,7 +510,7 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
               isCompleted: false // Make sure this is included
             }
           };
-          
+
           // Update Firestore with new timer state
           await updateDoc(taskRef, {
             timerState: {
@@ -519,7 +520,7 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
               isCompleted: false // Make sure this is included
             }
           });
-          
+
           // Update active timer task with new state
           setActiveTimerTask(updatedTimerTask);
         } else {
@@ -533,19 +534,19 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
           });
         }
       }
-      
+
       // Explicitly update the task in case it's the highest priority
       if (highestPriorityTask && highestPriorityTask.id === updatedTask.id) {
         setHighestPriorityTask(updatedTaskWithTimestamp);
       }
-      
+
       // Close the modal
       setModalVisible(false);
       setSelectedTask(null);
-      
+
       // Recalculate highest priority task
       setTimeout(() => findHighestPriorityTask(), 100);
-      
+
       setLoading(false);
     } catch (error) {
       console.error('Error editing task:', error);
@@ -553,35 +554,35 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
       setLoading(false);
     }
   }, [
-    activeTimerTask, 
-    highestPriorityTask, 
-    setActiveTimerTask, 
-    setHighestPriorityTask, 
-    setModalVisible, 
-    setReminders, 
-    setFutureReminders, 
-    setSelectedTask, 
-    setLoading, 
+    activeTimerTask,
+    highestPriorityTask,
+    setActiveTimerTask,
+    setHighestPriorityTask,
+    setModalVisible,
+    setReminders,
+    setFutureReminders,
+    setSelectedTask,
+    setLoading,
     findHighestPriorityTask
   ]);
-  
+
   // Delete task - define before using
   const handleDeleteTask = useCallback(async (task) => {
     if (!task || !task.id) return;
-    
+
     try {
       // Mark as deleting for animation
       setDeletingTaskId(task.id);
-      
+
       // If this is the active timer task, remove it immediately
       if (activeTimerTask && activeTimerTask.id === task.id) {
         setActiveTimerTask(null);
       }
-      
+
       // Update local state first for immediate feedback
       setReminders(prev => {
         const updatedReminders = prev.filter(t => t.id !== task.id);
-        
+
         // If we're deleting the last task, force a UI update to show empty state
         if (updatedReminders.length === 0) {
           // Use a short timeout to ensure state update completes first
@@ -591,19 +592,19 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
             setTimeout(() => taskListFade.setValue(1), 50);
           }, 10);
         }
-        
+
         return updatedReminders;
       });
-      
+
       // Also update future reminders if showing those
       setFutureReminders(prev => {
         const updatedFutureReminders = prev.filter(t => t.id !== task.id);
         return updatedFutureReminders;
       });
-      
+
       // Delete from Firestore
       await deleteDoc(doc(db, "reminders", task.id));
-      
+
       // Update AsyncStorage cache
       const cachedTasks = await AsyncStorage.getItem('cachedTasks');
       if (cachedTasks) {
@@ -611,16 +612,16 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
         const updated = parsed.filter(t => t.id !== task.id);
         await AsyncStorage.setItem('cachedTasks', JSON.stringify(updated));
       }
-      
+
       // Clear deleting state
       setDeletingTaskId(null);
-      
+
       // After delete, make sure to reset highest priority task if needed
       if (highestPriorityTask && highestPriorityTask.id === task.id) {
         setHighestPriorityTask(null);
         setTimeout(() => findHighestPriorityTask(), 100);
       }
-      
+
     } catch (error) {
       console.error('Error deleting task:', error);
       // Revert the local state change if deletion failed
@@ -628,21 +629,21 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
       setDeletingTaskId(null);
     }
   }, [
-    activeTimerTask, 
-    setActiveTimerTask, 
-    setDeletingTaskId, 
-    setReminders, 
-    setFutureReminders, 
+    activeTimerTask,
+    setActiveTimerTask,
+    setDeletingTaskId,
+    setReminders,
+    setFutureReminders,
     taskListFade,
     highestPriorityTask,
     setHighestPriorityTask,
     findHighestPriorityTask
   ]);
-  
+
   // Handle timer status update - define before using
   const handleTimerStatusUpdate = useCallback((taskId, statusUpdate) => {
     if (!taskId) return;
-    
+
     // Handle different status updates
     switch (statusUpdate.action) {
       case 'complete':
@@ -658,32 +659,32 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
               isCompleted: true
             }
           }));
-          
+
           // Remove after delay
           setTimeout(() => {
             setActiveTimerTask(null);
           }, 1500);
         }
         break;
-        
+
       case 'delete':
         // For deletion, remove immediately
         if (activeTimerTask && activeTimerTask.id === taskId) {
           setActiveTimerTask(null);
         }
         break;
-        
+
       case 'reschedule':
         // For reschedule, the timer is already updated in handleTaskReschedule
         // No need to do anything here
         break;
-        
+
       default:
         // For dismiss or other actions
         break;
     }
   }, [activeTimerTask, setActiveTimerTask]);
-  
+
   // Check for completed tasks
   const checkForCompletedTasks = useCallback(async () => {
     // Add a delay to avoid showing modal during transition from splash screen
@@ -691,24 +692,24 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
       try {
         // Use the NotificationManager to check all active tasks
         const completedTasks = await NotificationManager.checkAllActiveTasks();
-        
+
         if (completedTasks && completedTasks.length > 0) {
           console.log('Found completed tasks:', completedTasks.length);
-          
+
           // Get the first completed task to display in modal
           const task = completedTasks[0];
-          
+
           // Check if we should show the modal for this task
           const shouldShow = await NotificationManager.shouldShowTaskCompletionModal(task.id);
-          
+
           if (shouldShow) {
             // Show reminder modal for the completed task
             setCurrentReminderTask(task);
             setTaskReminderModalVisible(true);
-            
+
             // Mark that the modal has been displayed
             await NotificationManager.markModalDisplayed(task.id, true);
-            
+
             // If this task is the active timer task, update its state
             if (activeTimerTask && activeTimerTask.id === task.id) {
               setActiveTimerTask({
@@ -727,40 +728,40 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
       }
     }, 500); // 500ms delay to ensure transition has completed
   }, [
-    setCurrentReminderTask, 
-    setTaskReminderModalVisible, 
-    activeTimerTask, 
+    setCurrentReminderTask,
+    setTaskReminderModalVisible,
+    activeTimerTask,
     setActiveTimerTask
   ]);
-  
+
   // Start timer for task - define before using
   const startTimerForTask = useCallback(async (task) => {
     if (!task || !task.id) return;
-    
+
     try {
       // Check if the task still exists in Firestore before starting the timer
       const taskRef = db.collection("reminders").doc(task.id);
       const taskDoc = await taskRef.get();
-      
+
       if (!taskDoc.exists) {
         console.log('Cannot start timer: Task no longer exists in Firestore');
-        
+
         // Remove the task from local state to keep things in sync
         setReminders(prev => prev.filter(t => t.id !== task.id));
         setFutureReminders(prev => prev.filter(t => t.id !== task.id));
-        
+
         // If this was the highest priority task, recalculate
         if (highestPriorityTask?.id === task.id) {
           setHighestPriorityTask(null);
           setTimeout(() => findHighestPriorityTask(), 100);
         }
-        
+
         return;
       }
-      
+
       // Get the most recent interval value
       const interval = task.interval || 5; // default to 5 minutes if no interval is set
-      
+
       // Set as active timer task
       setActiveTimerTask({
         ...task,
@@ -771,7 +772,7 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
           isCompleted: false // Make sure this is included
         }
       });
-      
+
       // Update in Firestore
       await taskRef.update({
         timerState: {
@@ -783,13 +784,13 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
       });
     } catch (error) {
       console.error('Error starting timer:', error);
-      
+
       // Check if this is a "document not found" error
       if (error.code === 'not-found' || error.message?.includes('No document to update')) {
         // Remove the task from local state
         setReminders(prev => prev.filter(t => t.id !== task.id));
         setFutureReminders(prev => prev.filter(t => t.id !== task.id));
-        
+
         // If this was the highest priority task, recalculate
         if (highestPriorityTask?.id === task.id) {
           setHighestPriorityTask(null);
@@ -801,24 +802,24 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
       }
     }
   }, [
-    highestPriorityTask, 
-    setActiveTimerTask, 
-    setReminders, 
-    setFutureReminders, 
-    setHighestPriorityTask, 
+    highestPriorityTask,
+    setActiveTimerTask,
+    setReminders,
+    setFutureReminders,
+    setHighestPriorityTask,
     findHighestPriorityTask
   ]);
-  
+
   // Handle adding subtasks
   const handleAddSubtask = useCallback((task) => {
     setSelectedTaskForSubtasks(task);
     setSubtaskModalVisible(true);
   }, []);
-  
+
   // Save subtasks
   const handleSaveSubtasks = useCallback(async (subtasks) => {
     if (!selectedTaskForSubtasks) return;
-    
+
     try {
       // Ensure subtasks are properly structured
       const processedSubtasks = subtasks.map(subtask => ({
@@ -827,36 +828,36 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
         completed: subtask.completed || false,
         microtasks: subtask.microtasks || []
       }));
-      
+
       // Update in Firestore with proper structure
       await db.collection("reminders").doc(selectedTaskForSubtasks.id).update({
         subtasks: processedSubtasks,
         hasSubtasks: processedSubtasks.length > 0
       });
-  
+
       // Update local state to ensure UI updates immediately
-      const updateTask = (task) => 
-        task.id === selectedTaskForSubtasks.id 
-          ? { 
-              ...task, 
-              subtasks: processedSubtasks, 
+      const updateTask = (task) =>
+        task.id === selectedTaskForSubtasks.id
+          ? {
+              ...task,
+              subtasks: processedSubtasks,
               hasSubtasks: processedSubtasks.length > 0,
               _lastUpdated: Date.now() // Force re-render
-            } 
+            }
           : task;
-          
+
       // Update reminders
       setReminders(prev => {
         if (!prev) return [];
         return prev.map(updateTask);
       });
-      
+
       // Also update future reminders if needed
       setFutureReminders(prev => {
         if (!prev) return [];
         return prev.map(updateTask);
       });
-      
+
       // If this is the active timer task, update it too
       if (activeTimerTask && activeTimerTask.id === selectedTaskForSubtasks.id) {
         setActiveTimerTask({
@@ -866,7 +867,7 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
           _lastUpdated: Date.now()
         });
       }
-      
+
       // If this is the highest priority task, update it too
       if (highestPriorityTask && highestPriorityTask.id === selectedTaskForSubtasks.id) {
         setHighestPriorityTask({
@@ -876,9 +877,9 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
           _lastUpdated: Date.now()
         });
       }
-      
+
       console.log('Subtasks saved successfully:', processedSubtasks.length);
-      
+
       // Recalculate highest priority task after subtasks change
       findHighestPriorityTask();
     } catch (error) {
@@ -886,16 +887,16 @@ const checkForExpiredTimersOnLoad = useCallback(async () => {
       Alert.alert('Error', 'Failed to save subtasks');
     }
   }, [
-    selectedTaskForSubtasks, 
-    activeTimerTask, 
-    highestPriorityTask, 
-    setReminders, 
-    setFutureReminders, 
-    setActiveTimerTask, 
-    setHighestPriorityTask, 
+    selectedTaskForSubtasks,
+    activeTimerTask,
+    highestPriorityTask,
+    setReminders,
+    setFutureReminders,
+    setActiveTimerTask,
+    setHighestPriorityTask,
     findHighestPriorityTask
   ]);
-  
+
   // Handle task reschedule
 // Modify your handleTaskReschedule function to handle null results
 const handleTaskReschedule = useCallback(async (task) => {
@@ -903,25 +904,25 @@ const handleTaskReschedule = useCallback(async (task) => {
     console.error('Cannot reschedule: invalid task object');
     return;
   }
-  
+
   try {
     // Get the current reschedule count
     const taskRef = db.collection("reminders").doc(task.id);
     const taskDoc = await taskRef.get();
     const currentTask = taskDoc.exists ? taskDoc.data() : task;
     const rescheduleCount = (currentTask.rescheduleCount || 0) + 1;
-    
+
     // Use NotificationManager for rescheduling
     const result = await NotificationManager.rescheduleTask({
       ...task,
       rescheduleCount,
       intervals: [task.timerState?.duration || task.interval || 5]
     });
-    
+
     // Generate fallback values if result is null
     const notificationId = result?.notificationId || `task_${task.id}`;
     const nextReminderTime = result?.nextReminderTime || new Date(Date.now() + (task.interval || 5) * 60 * 1000).toISOString();
-    
+
     // Update the task with new reschedule info
     await taskRef.update({
       rescheduleCount,
@@ -933,13 +934,13 @@ const handleTaskReschedule = useCallback(async (task) => {
       'timerState.isCompleted': false,
       completed: false
     });
-    
+
     // Update local state
     setReminders(prev => {
       const filteredReminders = prev.filter(t => t.id !== task.id);
-      
-      const updatedTask = { 
-        ...task, 
+
+      const updatedTask = {
+        ...task,
         rescheduleCount,
         notificationId: notificationId,
         nextReminderTime: nextReminderTime,
@@ -951,27 +952,27 @@ const handleTaskReschedule = useCallback(async (task) => {
         },
         completed: false
       };
-    
+
       setActiveTimerTask(updatedTask);
       return [updatedTask, ...filteredReminders];
     });
-    
+
     setTaskReminderModalVisible(false);
-    
+
   } catch (error) {
     console.error('Error rescheduling task:', error);
     Alert.alert('Error', 'Failed to reschedule task. Please try again.');
     setTaskReminderModalVisible(false);
   }
 }, [setReminders, setTaskReminderModalVisible, setActiveTimerTask]);
-  
+
   // Handle task click
   const handleTaskClick = useCallback((task) => {
     // Show the edit modal when a task is clicked
     setSelectedTask(task);
     setModalVisible(true);
   }, [setSelectedTask, setModalVisible]);
-  
+
   // Start entry animation
   const startEntryAnimation = useCallback(() => {
     Animated.sequence([
@@ -1013,17 +1014,17 @@ const handleTaskReschedule = useCallback(async (task) => {
       ]),
     ]).start();
   }, [headerFadeAnim, contentFadeAnim, buttonsFadeAnim, footerFadeAnim]);
-  
+
   // Initialize all custom hooks - after all callback definitions
   // This ensures that all callback references used by these hooks are already defined
-  
+
   // Initialize the task handlers
   const {
     handleTaskSaved,
     handleSaveTaskNote,
     updateTaskPriority
   } = useTaskHandlers(
-    user, 
+    user,
     setReminders,
     setFutureReminders,
     setShowFutureTasks,
@@ -1036,7 +1037,7 @@ const handleTaskReschedule = useCallback(async (task) => {
     setDeletingTaskId,
     triggerXPGain
   );
-  
+
   // Initialize useInitialization hook
   const {
     checkIfNewUser,
@@ -1060,7 +1061,7 @@ const handleTaskReschedule = useCallback(async (task) => {
     setTaskReminderModalVisible,
     setActiveTimerTask
   );
-  
+
   // Initialize notification subscriptions
   const {
     startTaskTimer,
@@ -1075,26 +1076,26 @@ const handleTaskReschedule = useCallback(async (task) => {
     user,
     handleTaskComplete
   );
-  
+
   // Initialize animation handlers
   const {
     toggleFutureTasks,
     animateHelpButton,
     fadeOut
   } = useAnimationHandlers(
-    fadeAnim, 
-    setShowFutureTasks, 
-    helpButtonAnim, 
+    fadeAnim,
+    setShowFutureTasks,
+    helpButtonAnim,
     isNewUser,
     taskListFade // Pass the taskListFade animation value
   );
-  
+
   // Handle input change placeholder - define before useModalHandlers
   const handleInputChange = useCallback((text) => {
     // This will be overridden by useTaskAddition, but needs to exist before useModalHandlers
     console.log('Input changed:', text);
   }, []);
-  
+
   // Initialize modal handlers
   const {
     openTaskInputModal,
@@ -1114,7 +1115,7 @@ const handleTaskReschedule = useCallback(async (task) => {
     setModalVisible,
     setSelectedTask,
   });
-  
+
   // Initialize task addition
   const {
     newTaskText,
@@ -1135,7 +1136,7 @@ const handleTaskReschedule = useCallback(async (task) => {
     MAX_SUBTASKS,
     handleAddTaskFromModal
   } = useTaskAddition(user, setReminders, setFutureReminders);
-  
+
   // Use overdue tasks hook
   const {
     overdueTasks: overdueTasksList,
@@ -1144,7 +1145,7 @@ const handleTaskReschedule = useCallback(async (task) => {
     handleCarryOver: handleCarryOverTasks,
     handleDelete: handleDeleteOverdueTasks,
   } = useOverdueTasks(user);
-  
+
   // Platform-specific styles memoization
   const platformSpecificStyles = useMemo(() => {
     return Platform.select({
@@ -1169,7 +1170,7 @@ const handleTaskReschedule = useCallback(async (task) => {
       }
     });
   }, []);
-  
+
   // Header section memoization
   const HeaderSection = useMemo(() => (
     <View style={styles.headerContainer}>
@@ -1206,7 +1207,7 @@ useEffect(() => {
     const newWallpaper = navigation.getState().routes.find(r => r.name === 'Home').params.updatedWallpaper;
     setWallpaperSetting(newWallpaper);
     setWallpaperSource(getWallpaperSource(newWallpaper));
-    
+
     // Clear the params to prevent re-processing
     navigation.setParams({ updatedWallpaper: undefined });
   }
@@ -1218,7 +1219,7 @@ useEffect(() => {
     if (user) {
       try {
         const userDoc = await db.collection('users').doc(user.uid).get();
-        
+
         if (userDoc.exists && userDoc.data().wallpaperSetting) {
           const setting = userDoc.data().wallpaperSetting;
           setWallpaperSetting(setting);
@@ -1234,17 +1235,17 @@ useEffect(() => {
     fetchWallpaperSetting();
   }
 }, [isFocused, user]);
-  
+
 
   // Check for expired timers when app is focused
   useEffect(() => {
     if (isFocused && user && checkForAllTimerTasksRequiringAttention) {
       console.log('App focused, checking for expired timer tasks');
-      
+
       const checkExpiredTimers = async () => {
         try {
           const foundExpiredTask = await checkForAllTimerTasksRequiringAttention();
-          
+
           if (foundExpiredTask) {
             console.log('Found and displayed expired timer task on app focus');
           } else {
@@ -1254,7 +1255,7 @@ useEffect(() => {
           console.error('Error checking for expired timer tasks on focus:', error);
         }
       };
-      
+
       checkExpiredTimers();
     }
   }, [isFocused, user, checkForAllTimerTasksRequiringAttention]);
@@ -1266,19 +1267,19 @@ useEffect(() => {
       if (NotificationManager.recordAppStateChange) {
         NotificationManager.recordAppStateChange(nextAppState);
       }
-      
+
       if (
         appStateRef.current.match(/inactive|background/) &&
         nextAppState === 'active'
       ) {
         console.log('App has come to the foreground!');
-        
+
         // Check for expired timer tasks
         if (user && checkForAllTimerTasksRequiringAttention) {
           checkForAllTimerTasksRequiringAttention()
             .then(hasExpiredTasks => {
-              console.log(hasExpiredTasks ? 
-                'Found expired timer tasks' : 
+              console.log(hasExpiredTasks ?
+                'Found expired timer tasks' :
                 'No expired timer tasks found');
             })
             .catch(error => {
@@ -1286,11 +1287,11 @@ useEffect(() => {
             });
         }
       }
-      
+
       appStateRef.current = nextAppState;
       setAppStateVisible(nextAppState);
     });
-  
+
     return () => {
       if (subscription && typeof subscription.remove === 'function') {
         subscription.remove();
@@ -1303,16 +1304,16 @@ useEffect(() => {
     const unsubscribe = navigation.addListener('focus', async () => {
       // Check if we have route params for a rescheduled task
       const params = navigation.getState().routes.find(r => r.name === 'Home')?.params;
-      
+
       if (params?.rescheduleTaskId) {
         // Find the task in reminders
         try {
           const taskRef = doc(db, "reminders", params.rescheduleTaskId);
           const taskDoc = await getDoc(taskRef);
-          
+
           if (taskDoc.exists()) {
             const task = { id: taskDoc.id, ...taskDoc.data() };
-            
+
             // Only set as active if it has an active timer
             if (task.timerState?.isActive) {
               setActiveTimerTask(task);
@@ -1324,7 +1325,7 @@ useEffect(() => {
         }
       }
     });
-  
+
     return unsubscribe;
   }, [navigation, setActiveTimerTask]);
 
@@ -1337,16 +1338,16 @@ useEffect(() => {
         setIsLoading(false);
         return;
       }
-    
+
       try {
         await checkIfNewUser();
         await fetchUserName();
         const unsubscribe = fetchReminders();
-        
+
         if (mounted) {
           // Check for any expired timers that require attention
           await checkForAllTimerTasksRequiringAttention();
-          
+
           if (unsubscribeListeners.current && typeof unsubscribeListeners.current.push === 'function') {
             unsubscribeListeners.current.push(unsubscribe);
           }
@@ -1376,14 +1377,14 @@ useEffect(() => {
       }
     };
   }, [
-    user, 
-    checkIfNewUser, 
-    fetchUserName, 
-    fetchReminders, 
-    checkForAllTimerTasksRequiringAttention, 
-    unsubscribeListeners, 
-    setIsLoading, 
-    setIsInitializing, 
+    user,
+    checkIfNewUser,
+    fetchUserName,
+    fetchReminders,
+    checkForAllTimerTasksRequiringAttention,
+    unsubscribeListeners,
+    setIsLoading,
+    setIsInitializing,
     startEntryAnimation
   ]);
 
@@ -1395,16 +1396,16 @@ useEffect(() => {
   // Initialize notification system
   useEffect(() => {
     let responseSubscription = null;
-    
+
     const setupNotifications = async () => {
       try {
         console.log('Setting up notifications...');
-        
+
         // Initialize NotificationManager
         if (NotificationManager.initializeNotifications) {
           await NotificationManager.initializeNotifications();
         }
-        
+
         // Set up notification response listener
         if (NotificationManager.addNotificationResponseReceivedListener) {
           responseSubscription = NotificationManager.addNotificationResponseReceivedListener(
@@ -1415,7 +1416,7 @@ useEffect(() => {
                   // Fetch the task and show the modal
                   const taskRef = doc(db, "reminders", data.taskId);
                   const taskDoc = await getDoc(taskRef);
-                  
+
                   if (taskDoc.exists()) {
                     const task = { id: data.taskId, ...taskDoc.data() };
                     setCurrentReminderTask(task);
@@ -1432,16 +1433,16 @@ useEffect(() => {
         console.error('Error setting up notifications:', error);
       }
     };
-    
+
     setupNotifications();
-    
+
     return () => {
       if (responseSubscription && typeof NotificationManager.removeNotificationSubscription === 'function') {
         NotificationManager.removeNotificationSubscription(responseSubscription);
       }
     };
   }, [setCurrentReminderTask, setTaskReminderModalVisible]);
-  
+
   // Optimized rendering for loading state
   if (isLoading) {
     return (
@@ -1464,9 +1465,9 @@ useEffect(() => {
             {/* Active Timer Component */}
             {activeTimerTask && (
               <Animated.View style={{ opacity: contentFadeAnim }}>
-                <ActiveTimer 
-                  task={activeTimerTask} 
-                  onTimerComplete={handleTimerComplete} 
+                <ActiveTimer
+                  task={activeTimerTask}
+                  onTimerComplete={handleTimerComplete}
                 />
               </Animated.View>
             )}
@@ -1563,14 +1564,14 @@ useEffect(() => {
             />
           )}
 
-          <QuestCompletedModal 
+          <QuestCompletedModal
             visible={isQuestCompletedVisible}
             onClose={() => setIsQuestCompletedVisible(false)}
           />
 
-          <HelpModal 
-            visible={isHelpModalVisible} 
-            onClose={() => setHelpModalVisible(false)} 
+          <HelpModal
+            visible={isHelpModalVisible}
+            onClose={() => setHelpModalVisible(false)}
           />
 
 <MenuScreen
@@ -1581,12 +1582,12 @@ useEffect(() => {
   wallpaperSetting={wallpaperSetting} // Pass the wallpaper setting
 />
 
-          <ProgressReflections 
+          <ProgressReflections
             visible={isProgressReflectionsVisible}
             onClose={() => setProgressReflectionsVisible(false)}
           />
 
-          <OverdueNotification 
+          <OverdueNotification
             visible={showOverdueNotification}
             overdueTasksCount={overdueTasksList.length}
             overdueTasks={overdueTasksList}
@@ -1615,8 +1616,8 @@ useEffect(() => {
           />
         </View>
       ) : (
-        <ImageBackground 
-          source={wallpaperSource} 
+        <ImageBackground
+          source={wallpaperSource}
           style={styles.container}
           resizeMode={Platform.OS === 'android' ? 'cover' : undefined}
           fadeDuration={0}
@@ -1628,16 +1629,16 @@ useEffect(() => {
 
             {activeTimerTask && (
               <Animated.View style={{ opacity: contentFadeAnim }}>
-                <ActiveTimer 
-                  task={activeTimerTask} 
-                  onTimerComplete={handleTimerComplete} 
+                <ActiveTimer
+                  task={activeTimerTask}
+                  onTimerComplete={handleTimerComplete}
                 />
               </Animated.View>
             )}
 
-<Animated.View 
+<Animated.View
   style={[
-    styles.fullscreenRemindersArea, 
+    styles.fullscreenRemindersArea,
     { opacity: taskListFade }
   ]}
 >
@@ -1732,14 +1733,14 @@ useEffect(() => {
             />
           )}
 
-          <QuestCompletedModal 
+          <QuestCompletedModal
             visible={isQuestCompletedVisible}
             onClose={() => setIsQuestCompletedVisible(false)}
           />
 
-          <HelpModal 
-            visible={isHelpModalVisible} 
-            onClose={() => setHelpModalVisible(false)} 
+          <HelpModal
+            visible={isHelpModalVisible}
+            onClose={() => setHelpModalVisible(false)}
           />
 
 <MenuScreen
@@ -1751,12 +1752,12 @@ useEffect(() => {
   preRender={true} // New prop to enable pre-rendering
 />
 
-          <ProgressReflections 
+          <ProgressReflections
             visible={isProgressReflectionsVisible}
             onClose={() => setProgressReflectionsVisible(false)}
           />
 
-          <OverdueNotification 
+          <OverdueNotification
             visible={showOverdueNotification}
             overdueTasksCount={overdueTasksList.length}
             overdueTasks={overdueTasksList}

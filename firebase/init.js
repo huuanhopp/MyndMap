@@ -1,5 +1,6 @@
 // firebase/init.js
 import { auth, db } from './config';
+import app from './config';
 import { 
   doc, 
   getDoc, 
@@ -12,11 +13,53 @@ import {
   query,
   where,
   orderBy,
-  limit
+  limit,
+  serverTimestamp
 } from 'firebase/firestore';
 
-// Export auth for use in other components
+import { 
+  getAuth,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  signOut as firebaseSignOut,
+  onAuthStateChanged
+} from 'firebase/auth';
+
+import { getFirestore } from 'firebase/firestore';
+
+// Check if running in Expo Go
+export const isExpoGo = typeof window !== 'undefined' && window.ExponentConstants;
+
+// Export Firebase app and services
+export { app };
 export { auth };
+export { getAuth };
+export { getFirestore };
+
+// Export Firestore functions
+export { 
+  collection, 
+  doc, 
+  getDoc, 
+  setDoc, 
+  updateDoc, 
+  deleteDoc,
+  addDoc,
+  getDocs,
+  query,
+  where,
+  orderBy,
+  limit,
+  serverTimestamp
+};
+
+// Export Auth functions
+export { 
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  firebaseSignOut,
+  onAuthStateChanged
+};
 
 // Document operations
 export const getDocument = async (collectionName, docId) => {
@@ -108,6 +151,3 @@ export const createQuery = (collectionName, ...constraints) => {
   const collectionRef = collection(db, collectionName);
   return query(collectionRef, ...constraints);
 };
-
-// Export query functions for use in other components
-export { doc, getDoc, setDoc, updateDoc, deleteDoc, collection, addDoc, getDocs, query, where, orderBy, limit };

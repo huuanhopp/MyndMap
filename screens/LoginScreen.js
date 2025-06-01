@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useAuth } from "../contexts/AuthContext"; // Updated to use AuthContext
+import { testFirebaseConnection, testCreateUser, testLogin } from "../utils/firebaseTest";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useTranslation } from 'react-i18next';
@@ -54,6 +55,10 @@ const LoginScreen = () => {
     console.log('Email:', email);
     console.log('Password length:', password.length);
 
+    // Debug Firebase connection
+    const connectionTest = await testFirebaseConnection();
+    console.log('Firebase connection test:', connectionTest);
+
     // Check if user is currently locked out
     if (lockoutEndTime) {
       const currentTime = new Date().getTime();
@@ -94,6 +99,25 @@ const LoginScreen = () => {
     try {
       console.log('Attempting to unlock the gates of the realm');
       setLoading(true);
+      
+      // Test direct Firebase login first
+      console.log('Testing direct Firebase login...');
+      const directTest = await testLogin(email, password);
+      console.log('Direct Firebase test result:', directTest);
+      
+      if (!directTest.success) {
+        if (directTest.code === 'auth/user-not-found') {
+          Alert.alert(
+            'Account Not Found', 
+            'No account exists with this email. Would you like to create one?',
+            [
+              { text: 'Cancel', style: 'cancel' },
+              { text: 'Create Account', onPress: () => navigation.navigate('Signup') }
+            ]
+          );
+          return;
+        }
+      }
       
       // Using the login function from AuthContext with additional debugging
       console.log('Calling AuthContext login with email:', email);
