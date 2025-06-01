@@ -1,0 +1,26 @@
+{
+    "overdueNotification": {
+      "taskAttention": {
+        "single": "{{count}} overdue task needs attention",
+        "plural": "{{count}} overdue tasks need attention"
+      },
+      "dueDate": "Due: {{date}}",
+      "helpText": "Carry over to keep tracking these tasks, or delete if they're no longer needed",
+      "buttons": {
+        "carryOver": "Carry Over",
+        "delete": "Delete"
+      },
+      "alerts": {
+        "carryOverSuccess": {
+          "title": "Success",
+          "message": "Tasks have been moved."
+        },
+        "deleteConfirm": {
+          "title": "Delete Tasks",
+          "message": "Are you sure you want to delete these tasks? This action cannot be undone.",
+          "cancel": "Cancel",
+          "confirm": "Delete"
+        }
+      }
+    }
+  }

@@ -1,0 +1,26 @@
+{
+    "overdueNotification": {
+      "taskAttention": {
+        "single": "期限切れのタスクが{{count}}件あります",
+        "plural": "期限切れのタスクが{{count}}件あります"
+      },
+      "dueDate": "期限：{{date}}",
+      "helpText": "タスクを継続して追跡する場合は持ち越し、不要な場合は削除してください",
+      "buttons": {
+        "carryOver": "持ち越す",
+        "delete": "削除"
+      },
+      "alerts": {
+        "carryOverSuccess": {
+          "title": "タスクを持ち越しました",
+          "message": "タスクを今日のリストに移動しました"
+        },
+        "deleteConfirm": {
+          "title": "タスクを削除",
+          "message": "これらのタスクを削除してもよろしいですか？この操作は取り消せません。",
+          "cancel": "キャンセル",
+          "confirm": "削除"
+        }
+      }
+    }
+  }

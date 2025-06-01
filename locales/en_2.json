@@ -1,0 +1,372 @@
+{
+    "wiki": {
+      "title": "MyndMap Wiki",
+      "help": {
+        "button": "Help",
+        "modalTitle": "How to Use MyndMap",
+        "welcome": {
+          "title": "Welcome to MyndMap Wiki",
+          "content": "Your personal guide to understanding and managing ADHD. This tool is designed to help you learn, track progress, and develop helpful strategies."
+        },
+        "navigation": {
+          "title": "Navigation",
+          "content": "Scroll through different topics using the cards at the top. Each section focuses on a specific aspect of ADHD management."
+        },
+        "quickActions": {
+          "title": "Quick Actions",
+          "content": "Use the checklist in each section to perform quick self-assessments or implement strategies. Check off items as you complete them to track your progress."
+        },
+        "progressTracking": {
+          "title": "Progress Tracking",
+          "content": "Your progress is saved as you complete sections. Look for the green checkmarks on completed topics!"
+        },
+        "quickTip": {
+          "title": "Quick Tip",
+          "content": "Start with the \"Executive Function\" section if you're new to ADHD management, or choose any topic that feels most relevant to your current needs."
+        }
+      },
+      "sections": {
+        "executive": {
+          "title": "Executive Function",
+          "description": "Core mental skills for daily tasks",
+          "quickCheck": {
+            "title": "Quick Check-In",
+            "subtitle": "Take a moment to assess yourself",
+            "items": {
+              "energy": "How's your energy level?",
+              "mainTask": "What's your main task now?",
+              "resources": "Do you have what you need?"
+            }
+          },
+          "tips": {
+            "tip1": "Break tasks into smaller steps",
+            "tip2": "Use visual reminders and checklists",
+            "tip3": "Create structured routines"
+          },
+          "detail": {
+            "title": "Executive Function",
+            "overview": "Executive function encompasses the mental skills needed to plan, focus, remember instructions, and handle multiple tasks successfully.",
+            "keyPoints": {
+              "point1": "Working memory - holding information in mind while working",
+              "point2": "Cognitive flexibility - adapting to changing situations",
+              "point3": "Inhibitory control - filtering thoughts and impulses"
+            },
+            "challenges": {
+              "challenge1": "Difficulty organizing tasks and materials",
+              "challenge2": "Struggles with time management",
+              "challenge3": "Problems starting and completing tasks",
+              "challenge4": "Trouble remembering important details"
+            },
+            "caseStudy": {
+              "title": "Sarah's Journey with Executive Function",
+              "context": "Sarah, a 28-year-old graphic designer, struggled with project management and meeting deadlines.",
+              "problem": "She often felt overwhelmed by multiple projects, missed important details, and had trouble prioritizing tasks.",
+              "solution": "Sarah implemented several strategies:",
+              "steps": {
+                "step1": "Created a visual project board using Trello",
+                "step2": "Set up reminder systems with specific checkpoints",
+                "step3": "Broke down large projects into smaller, manageable tasks",
+                "step4": "Used time-blocking techniques for focused work"
+              },
+              "outcome": "After three months, Sarah saw significant improvements in her work quality and time management. Her client satisfaction ratings increased, and she reported feeling less stressed and more in control."
+            }
+          }
+        },
+        "timeManagement": {
+          "title": "Time Management",
+          "description": "Strategies for managing time effectively",
+          "quickCheck": {
+            "title": "Time Check",
+            "subtitle": "Assess your time constraints",
+            "items": {
+              "deadline": "Next deadline?",
+              "available": "Time available?",
+              "obstacles": "Potential obstacles?"
+            }
+          },
+          "tips": {
+            "tip1": "Use time-blocking techniques",
+            "tip2": "Set realistic deadlines",
+            "tip3": "Build in buffer time"
+          },
+          "detail": {
+            "title": "Time Management",
+            "overview": "Time management with ADHD requires unique strategies that account for time blindness and varying attention spans. It's about finding personalized systems that work for your brain.",
+            "keyPoints": {
+              "point1": "Time awareness - understanding how long tasks actually take",
+              "point2": "Planning flexibility - allowing buffer time for unexpected events",
+              "point3": "Task prioritization - identifying what truly needs attention"
+            },
+            "challenges": {
+              "challenge1": "Difficulty estimating how long tasks will take",
+              "challenge2": "Tendency to hyperfocus and lose track of time",
+              "challenge3": "Struggling with transitions between tasks",
+              "challenge4": "Problems with punctuality and meeting deadlines"
+            },
+            "caseStudy": {
+              "title": "Michael's Time Management Journey",
+              "context": "Michael, a 32-year-old software developer, consistently struggled with meeting project deadlines and managing multiple tasks.",
+              "problem": "He would often underestimate task duration, get caught in hyperfocus, and miss important meetings.",
+              "solution": "Michael implemented a comprehensive time management system:",
+              "steps": {
+                "step1": "Started using time tracking apps to understand actual task duration",
+                "step2": "Implemented the Pomodoro Technique with customized intervals",
+                "step3": "Set up calendar alerts with early warnings for transitions",
+                "step4": "Created a daily planning routine with buffer time"
+              },
+              "outcome": "After six weeks, Michael's on-time project delivery improved by 70%, and his stress levels significantly decreased. His team noted marked improvement in his availability for meetings."
+            }
+          }
+        },
+        "challenges": {
+          "title": "ADHD Challenges",
+          "description": "Common ADHD hurdles and solutions",
+          "quickCheck": {
+            "title": "Quick Reset",
+            "subtitle": "Reset your focus and attention",
+            "items": {
+              "breath": "Take a deep breath",
+              "surroundings": "Check your surroundings",
+              "focus": "Reset your focus"
+            }
+          },
+          "tips": {
+            "tip1": "Recognize your trigger patterns",
+            "tip2": "Develop coping strategies",
+            "tip3": "Create supportive environments"
+          },
+          "detail": {
+            "title": "Managing ADHD Challenges",
+            "overview": "ADHD presents unique challenges in daily life, but understanding these challenges is the first step to developing effective coping strategies.",
+            "keyPoints": {
+              "point1": "Emotional regulation - managing emotional responses",
+              "point2": "Sensory processing - dealing with environmental stimuli",
+              "point3": "Social interaction - navigating social situations and relationships"
+            },
+            "challenges": {
+              "challenge1": "Overwhelming emotional responses to situations",
+              "challenge2": "Difficulty with sensory overload in busy environments",
+              "challenge3": "Challenges in maintaining consistent social relationships",
+              "challenge4": "Struggles with impulse control in various situations"
+            },
+            "caseStudy": {
+              "title": "Emma's Challenge Management Story",
+              "context": "Emma, a 25-year-old teacher, struggled with emotional regulation and sensory overload in her classroom environment.",
+              "problem": "She found herself overwhelmed by classroom noise and had difficulty maintaining composure during stressful situations.",
+              "solution": "Emma developed a comprehensive management approach:",
+              "steps": {
+                "step1": "Created a calm-down corner in her classroom for herself and students",
+                "step2": "Implemented regular sensory breaks throughout the day",
+                "step3": "Developed specific protocols for high-stress situations",
+                "step4": "Used noise-canceling earbuds during independent work time"
+              },
+              "outcome": "Within two months, Emma reported better emotional regulation, reduced sensory overwhelm, and improved classroom management. Her students also benefited from the structured environment."
+            }
+          }
+        },
+        "strategies": {
+          "title": "Coping Strategies",
+          "description": "Practical techniques for daily life",
+          "quickCheck": {
+            "title": "Strategy Picker",
+            "subtitle": "Choose your working method",
+            "items": {
+              "bodyDouble": "Body double?",
+              "timer": "Timer method?",
+              "breakdown": "Break it down?"
+            }
+          },
+          "tips": {
+            "tip1": "Use external organization tools",
+            "tip2": "Create reward systems",
+            "tip3": "Practice mindfulness techniques"
+          },
+          "detail": {
+            "title": "Effective Coping Strategies",
+            "overview": "Developing effective coping strategies is crucial for managing ADHD. The right combination of strategies can significantly improve daily functioning and overall quality of life.",
+            "keyPoints": {
+              "point1": "Environmental modification - creating supportive spaces",
+              "point2": "Routine development - establishing helpful habits",
+              "point3": "Energy management - optimizing daily patterns"
+            },
+            "challenges": {
+              "challenge1": "Finding strategies that work consistently",
+              "challenge2": "Maintaining motivation to use strategies",
+              "challenge3": "Adapting strategies for different situations",
+              "challenge4": "Remembering to implement strategies regularly"
+            },
+            "caseStudy": {
+              "title": "David's Strategy Implementation",
+              "context": "David, a 29-year-old marketing manager, struggled to maintain organization and productivity in his fast-paced work environment.",
+              "problem": "He had trouble keeping track of projects, often missed important details, and struggled with task completion.",
+              "solution": "David implemented a multi-faceted strategy system:",
+              "steps": {
+                "step1": "Created a personalized workspace with visual organization tools",
+                "step2": "Implemented the 'body doubling' technique for focused work",
+                "step3": "Developed a morning routine with built-in preparation time",
+                "step4": "Established regular review and reset periods"
+              },
+              "outcome": "After three months, David's project completion rate improved by 60%, and his colleagues noted his increased reliability and organization. He reported feeling more confident and in control of his work."
+            }
+          }
+        },
+        "technology": {
+          "title": "Digital Impact",
+          "description": "Using technology effectively",
+          "quickCheck": {
+            "title": "Tech Check",
+            "subtitle": "Optimize your digital environment",
+            "items": {
+              "notifications": "Notifications managed?",
+              "apps": "Apps organized?",
+              "timers": "Timers set?"
+            }
+          },
+          "tips": {
+            "tip1": "Choose apps mindfully",
+            "tip2": "Set usage boundaries",
+            "tip3": "Leverage automation tools"
+          },
+          "detail": {
+            "title": "Technology and ADHD Management",
+            "overview": "Technology can be both a powerful tool and a significant challenge for individuals with ADHD. Learning to harness digital tools while managing their potential for distraction is essential.",
+            "keyPoints": {
+              "point1": "Digital organization - using apps and tools effectively",
+              "point2": "Distraction management - controlling digital interruptions",
+              "point3": "Automation - leveraging technology for routine tasks"
+            },
+            "challenges": {
+              "challenge1": "Managing screen time and digital distractions",
+              "challenge2": "Choosing the right tools without getting overwhelmed",
+              "challenge3": "Maintaining consistent use of digital systems",
+              "challenge4": "Balancing technology use with offline strategies"
+            },
+            "caseStudy": {
+              "title": "Lisa's Digital Transformation",
+              "context": "Lisa, a 35-year-old freelance writer, struggled with digital distractions and maintaining productive technology use.",
+              "problem": "She found herself constantly distracted by notifications and social media, affecting her work quality and deadlines.",
+              "solution": "Lisa developed a comprehensive digital management system:",
+              "steps": {
+                "step1": "Implemented app blockers during focused work periods",
+                "step2": "Created a digital task management system with reminders",
+                "step3": "Set up automation for routine tasks and communications",
+                "step4": "Established specific 'tech-free' periods in her day"
+              },
+              "outcome": "Within two months, Lisa's productivity increased by 40%, and she reported better work-life balance. Her clients noticed improved consistency in her deliverables and communication."
+            }
+          }
+        }
+      },
+      "common": {
+        "learnMore": "Learn More",
+        "completed": "completed",
+        "quickTips": "Quick Tips",
+        "overview": "Overview",
+        "keyPoints": "Key Points",
+        "challenges": "Common Challenges",
+        "context": "Context",
+        "problem": "Problem",
+        "solution": "Solution",
+        "outcome": "Outcome"
+      }
+    },
+    "progressReview": {
+      "header": {
+        "title": "Progress Review"
+      },
+      "modes": {
+        "title": "Support Mode",
+        "selectMode": "Choose Your Support Mode",
+        "bestFor": "Best for",
+        "changeMode": "Change Mode",
+        "nextSteps": "Suggested Next Steps",
+        "gentle": {
+          "title": "Gentle Support",
+          "description": "A low-pressure approach focused on breaking task paralysis and building confidence through micro-achievements. Perfect for overwhelmed days.",
+          "bestFor": "• Breaking through task paralysis\n• Building momentum with tiny steps\n• Regaining confidence\n• Low-energy days",
+          "nextSteps": [
+            "Pick one tiny task to start with",
+            "Set a 5-minute timer for getting started",
+            "Celebrate each small step completed",
+            "Take breaks whenever needed"
+          ]
+        },
+        "balanced": {
+          "title": "Routine Builder",
+          "description": "Focused on creating sustainable daily routines and habits. Helps establish consistent work patterns with flexible time-blocking.",
+          "bestFor": "• Creating daily routines\n• Building sustainable habits\n• Time-blocking practice\n• Work-break balance",
+          "nextSteps": [
+            "Set up your daily routine template",
+            "Block time for your most important tasks",
+            "Plan regular breaks between activities",
+            "Track your daily consistency"
+          ]
+        },
+        "intensive": {
+          "title": "Project Focus",
+          "description": "Deadline-driven approach with project management tools and sprint planning. Ideal for important deadlines and focused work periods.",
+          "bestFor": "• Meeting deadlines\n• Project management\n• Sprint planning\n• High-focus periods",
+          "nextSteps": [
+            "Break down your project into milestones",
+            "Set up sprint deadlines",
+            "Track progress towards goals",
+            "Review and adjust timeline"
+          ]
+        },
+        "dynamic": {
+          "title": "Pattern Master",
+          "description": "Advanced productivity system that learns from your successful patterns and builds personalized work flows. Unlock your peak performance times.",
+          "bestFor": "• Visual productivity mapping\n• Custom organization systems\n• Success pattern tracking\n• Personal workflow optimization",
+          "nextSteps": [
+            "Review your productivity heat map",
+            "Configure your custom organization system",
+            "Set up workflow templates",
+            "Check your success patterns"
+          ],
+          "premium": {
+            "title": "Premium Feature",
+            "description": "Upgrade to unlock Pattern Master Pro and discover your optimal productivity patterns",
+            "learnMore": "Learn More",
+            "maybeLater": "Maybe Later"
+          }
+        }
+      },
+      "stats": {
+        "title": "Progress Overview",
+        "totalTasks": "Total Tasks",
+        "completed": "Completed",
+        "successRate": "Success Rate",
+        "thisWeek": "This Week",
+        "currentStreak": "Current Streak",
+        "bestTime": "Best Time",
+        "morning": "Morning",
+        "afternoon": "Afternoon",
+        "evening": "Evening",
+        "night": "Night"
+      },
+      "insights": {
+        "show": "Show More Insights",
+        "hide": "Hide Insights",
+        "noInsights": "Complete some tasks to see insights!"
+      },
+      "help": {
+        "title": "How to Use Progress Review",
+        "description": "This screen helps you track your progress and provides personalized insights based on your working patterns.",
+        "close": "Close",
+        "sections": {
+          "modes": {
+            "title": "Support Modes",
+            "content": "Choose between Gentle Support, Routine Builder, Project Focus, or the premium Pattern Master Pro based on your current needs."
+          },
+          "stats": {
+            "title": "Your Progress",
+            "content": "View your completion rates, current streak, and identify your most productive time periods."
+          },
+          "insights": {
+            "title": "Personalized Insights",
+            "content": "Get strategies tailored to your working patterns and preferences."
+          }
+        }
+      }
+    }
+  }

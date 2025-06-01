@@ -1,0 +1,1173 @@
+{
+    "common": {
+      "ok": "OK" 
+    },
+    "onboarding": {
+      "defaultUsername": "新規ユーザー",
+      "welcome": {
+        "title": "MyndMapへようこそ！",
+        "message": "簡単な質問で、あなたに合わせた体験をカスタマイズしましょう。ADHDサポートをより効果的にするためのステップです。",
+        "start": "始めましょう！"
+      },
+      "gender": {
+        "title": "プロフィール設定",
+        "subtitle": "より良いサポートのため、性別を教えてください",
+        "options": {
+          "male": "男性",
+          "female": "女性",
+          "other": "その他"
+        }
+      },
+      "adhd": {
+        "title": "ADHDについて",
+        "subtitle": "あなたとADHDの関係について教えてください。",
+        "options": {
+          "diagnosed": "ADHD診断済み",
+          "suspected": "ADHDの可能性を感じている",
+          "exploring": "ADHDについて学んでいる"
+        }
+      },
+      "challenges": {
+        "title": "日常の課題",
+        "subtitle": "最も困難を感じる領域を3つまで選んでください。",
+        "options": {
+          "focus": "集中力の維持",
+          "organization": "整理整頓",
+          "time": "時間管理",
+          "emotional": "感情コントロール",
+          "procrastination": "先送り習慣"
+        }
+      },
+      "workStyle": {
+        "title": "作業スタイル",
+        "subtitle": "どのように作業に取り組むのが好みですか？",
+        "options": {
+          "structured": "決まった routine",
+          "flexible": "柔軟なアプローチ",
+          "deadline": "締切重視",
+          "bodyDouble": "誰かと一緒に作業"
+        }
+      },
+      "environment": {
+        "title": "理想の環境",
+        "subtitle": "どんな環境で最も作業がはかどりますか？",
+        "options": {
+          "quiet": "静かな場所",
+          "ambient": "適度な背景音のある環境",
+          "busy": "活気のある環境",
+          "varying": "日によって変える"
+        }
+      },
+      "timePreference": {
+        "title": "最適な時間帯",
+        "subtitle": "いつが最も生産的ですか？",
+        "options": {
+          "morning": "早朝",
+          "afternoon": "午後",
+          "evening": "夕方・夜",
+          "variable": "日によって異なる"
+        }
+      },
+      "learning": {
+        "title": "学習スタイル",
+        "subtitle": "情報を最もよく理解できる方法は？",
+        "options": {
+          "visual": "視覚的（図や画像）",
+          "auditory": "聴覚的（音声）",
+          "kinesthetic": "実践的（体験）",
+          "reading": "読み書き"
+        }
+      },
+      "alert": {
+        "required": {
+          "title": "入力が必要です",
+          "message": "続行する前に選択してください"
+        },
+        "maxSelection": {
+          "title": "選択数制限",
+          "message": "3つまでしか選択できません"
+        },
+        "error": {
+          "title": "エラー",
+          "message": "問題が発生しました。もう一度お試しください。"
+        }
+      },
+      "common": {
+        "continue": "次へ",
+        "complete": "設定完了",
+        "back": "戻る",
+        "skip": "後で設定する"
+      }
+    },
+    "menu": {
+      "title": "メ\nニ\nュ\nー",
+      "profile": "プロフィール",
+      "myndCooling": "マインドクーリング",
+      "myndBudget": "マインド予算",
+      "myndChecker": "ムードチェッカー",
+      "organization": "整理整頓",
+      "comingSoon": "近日公開",
+      "myndWiki": "マインドWiki",
+      "leaderboard": "ランキング",
+      "community": "コミュニティ",
+      "customizeArne": "アルネをカスタマイズ",
+      "subscription": "サブスクリプション",
+      "shortcuts": "ショートカット",
+      "settings": "設定",
+      "close": "閉じる",
+      "logout": "ログアウト",
+      "logoutConfirm": "ログアウトの確認",
+      "logoutMessage": "本当にログアウトしますか？",
+      "confirmLogout": "はい、ログアウトします",
+      "cancel": "キャンセル",
+      "logoutError": "ログアウトに失敗しました。もう一度お試しください。",
+      "versionHistory": "バージョン履歴",
+      "level": "レベル",
+      "soon": "近日公開"
+    },
+    "home": {
+      "calendar": "カレンダー"
+    },
+    "generalError": {
+      "error": "エラー"
+    },
+    "profile": {
+      "level": "レベル"
+    },
+    "versionControl": {
+      "title": "バージョン履歴",
+      "changes": {
+        "languageSupport": "英語と日本語の完全サポート",
+        "community": "「コミュニティ」機能の実装",
+        "notifications": "iOS通知システムの改善",
+        "performance": "パフォーマンスとバグ修正",
+        "taskSystem": "タスク作成システムの更新",
+        "uiUpdate": "UIの更新",
+        "translation": "翻訳サポートの統合",
+        "uiOverhaul": "UI の大規模な改善",
+        "reminders": "非解除可能なリマインダーの実装",
+        "notes": "「ノート」機能の実装",
+        "taskEditing": "タスク編集機能の強化",
+        "aiFeatures": "AI機能の追加",
+        "myndWiki": "マインドマップWikiの追加"
+      }
+    },
+    "wiki": {
+      "help": {
+        "modalTitle": "MyndMap Wikiについて",
+        "description": "MyndMap Wikiは、ADHDについて学びたいユーザーのための情報の中心地です。特に、ADHDを持つ人が最も苦労する分野（実行機能、時間管理など）に焦点を当てています。"
+      }
+    },
+    "generalSettings": {
+      "back": "戻る",
+      "close": "閉じる",
+      "beta": "ベータ版",
+      "ok": "OK",
+      "cancel": "キャンセル",
+      "error": "エラー",
+      "success": "成功",
+      "loading": "読み込み中..."
+    },
+    "inviteFriend": {
+      "title": "友達を招待...",
+      "description": "TestFlightのリンクを友達とシェアして、アプリのベータ版に参加するよう招待しましょう！",
+      "shareButton": "招待リンクをシェア",
+      "closeButton": "閉じる",
+      "shareMessage": "この素晴らしいアプリに参加しませんか？ベータ版はこちらからダウンロード: {testFlightLink}"
+    },
+      "mindCooling": {
+        "title": "マインドクーリング",
+        "instructions": "1. 心に浮かぶ考えを書き留めましょう。\n2. 深呼吸をしながら、一つずつ手放していきましょう。\n3. 今この瞬間とやるべきことに集中しましょう。",
+        "inputPlaceholder": "今の気持ちは...",
+        "addThought": "追加する",
+        "letGo": "手放す",
+        "backToHome": "戻る",
+        "track1": "トラック1",
+        "track2": "トラック2",
+        "track3": "トラック3",
+        "play": "再生",
+        "pause": "一時停止",
+        "loading": "読み込み中...",
+        "nowPlaying": "再生中",
+        "meditating": "瞑想中",
+        "ready": "準備完了",
+        "useHaptics": "バイブレーション",
+        "showCompleted": "完了した項目を表示",
+        "thoughts": "あなたの思考",
+        "totalSessions": "合計セッション数",
+        "totalDuration": "合計時間",
+        "categories": {
+          "urgent": "緊急",
+          "important": "重要",
+          "random": "ランダム",
+          "worry": "心配事"
+        },
+        "taskReminder": {
+          "title": "時間です！",
+          "complete": "完了",
+          "reschedule": "再スケジュール",
+          "delete": "削除"
+      },
+        "stats": {
+          "sessionsToday": "今日のセッション",
+          "totalMinutes": "合計時間（分）",
+          "averageSession": "平均セッション時間"
+        },
+        "actions": {
+          "delete": "削除",
+          "complete": "完了",
+          "undo": "元に戻す"
+        },
+        "settings": {
+          "title": "設定",
+          "volume": "音量",
+          "notifications": "通知"
+        }
+      },
+    "overdueTasks": {
+      "title": "期限切れのタスク",
+      "alert": {
+        "message": "期限内に完了していないタスクが{{count}}件あります。",
+        "message_plural": "期限内に完了していないタスクが{{count}}件あります。",
+        "question": "どうしますか？"
+      },
+      "buttons": {
+        "carryOver": "持ち越す",
+        "delete": "削除"
+      },
+      "success": {
+        "deleted": {
+          "single": "期限切れのタスク1件を削除しました。",
+          "plural": "期限切れのタスク{{count}}件を削除しました。"
+        },
+        "carriedOver": {
+          "single": "期限切れのタスク1件を今日に再設定しました。",
+          "plural": "期限切れのタスク{{count}}件を今日に再設定しました。"
+        }
+      },
+      "errors": {
+        "delete": "タスクの削除に失敗しました。もう一度お試しください。",
+        "carryOver": "タスクの持ち越しに失敗しました。もう一度お試しください。"
+      }
+    },
+    "moodChecker": {
+      "title": "マインドチェッカー",
+      "caption": "オプションをスクロールしてください",
+      "greeting": "こんにちは、マインドマッパー！今日の気分はどうですか？",
+      "whatsMind": "なるほど。何か心に浮かぶことはありますか？",
+      "sorry": "それがあなたに影響を与えていることがわかります。どれが最も当てはまりますか？",
+      "intensity": "1から10の段階で、これらの感情の強さはどのくらいですか？",
+      "advice": "アドバイスをお聞きになりますか？",
+      "suggestion": "こちらをお勧めします：",
+      "howSounds": "これはいかがでしょうか？",
+      "anythingElse": "お役に立てて嬉しいです。他に話したいことはありますか？",
+      "otherTopic": "他にどのようなトピックについて話したいですか？",
+      "thankYou": "お話しいただきありがとうございました。会話を振り返り、終了する準備ができたら'X'ボタンを押してください。",
+      "moods": {
+        "great": "とても良い",
+        "okay": "まあまあ",
+        "notSoGood": "あまり良くない",
+        "terrible": "最悪"
+      },
+      "issues": {
+        "workStress": "仕事のストレス",
+        "personalIssues": "個人的な問題",
+        "healthConcerns": "健康の心配",
+        "notSure": "よくわからない"
+      },
+      "workStressIssues": {
+        "overwhelmingWorkload": "仕事量が多すぎる",
+        "difficultColleagues": "難しい同僚との関係",
+        "lackOfWorkLifeBalance": "ワークライフバランスの欠如",
+        "jobInsecurity": "仕事の不安定さ"
+      },
+      "personalIssues": {
+        "relationshipProblems": "人間関係の問題",
+        "familyConflicts": "家族との対立",
+        "financialStress": "経済的なストレス",
+        "lowSelfEsteem": "自尊心の低さ"
+      },
+      "healthConcerns": {
+        "chronicIllness": "慢性疾患",
+        "mentalHealth": "メンタルヘルス",
+        "sleepProblems": "睡眠の問題",
+        "poorDietExerciseHabits": "不健康な食事・運動習慣"
+      },
+      "notSureIssues": {
+        "feelingLost": "方向性を失っている感覚",
+        "lackOfMotivation": "モチベーション不足",
+        "generalAnxiety": "全般的な不安",
+        "unexplainedMoodSwings": "説明のつかない気分の変動"
+      },
+      "intensityLevels": {
+        "mild": "1-3 (軽度)",
+        "moderate": "4-7 (中程度)",
+        "intense": "8-10 (強度)"
+      },
+      "adviceOptions": {
+        "yes": "はい、お願いします",
+        "no": "いいえ、結構です"
+      },
+      "adviceFeedback": {
+        "helpful": "役に立ちました",
+        "needMoreSupport": "もっとサポートが必要です"
+      },
+      "furtherDiscussion": {
+        "no": "いいえ、結構です",
+        "yes": "はい、他の心配事があります"
+      },
+      "advice": {
+        "workStress": {
+          "overwhelmingWorkload": {
+            "1": "ポモドーロ・テクニックを使用してみてください：25分間作業し、5分間休憩します。",
+            "2": "視覚的なタスクボードを作成して、仕事を整理しましょう。",
+            "3": "ノイズキャンセリングヘッドホンやホワイトノイズを使用して、気が散るのを最小限に抑えます。",
+            "4": "大きなプロジェクトを小さな管理可能なタスクに分割しましょう。"
+          },
+          "difficultColleagues": {
+            "1": "積極的に耳を傾け、相手の視点を理解しようと努めてください。",
+            "2": "'私'を主語にした文で、他人を非難せずに自分の気持ちを表現しましょう。",
+            "3": "フラストレーションを感じる状況に対応する前に、短い休憩を取りましょう。",
+            "4": "複雑なトピックについては、書面でのコミュニケーションを検討してください。"
+          },
+          "lackOfWorkLifeBalance": {
+            "1": "仕事と個人の時間の境界を明確にしましょう。視覚的な合図やアラームを使用して、仕事の終わりを示します。",
+            "2": "仕事モードから個人の時間への移行を助けるため、仕事後の構造化されたルーティンを作成しましょう。",
+            "3": "タイムブロッキング技術を使用して、仕事と個人的な活動に特定の時間を割り当てます。",
+            "4": "個人の時間中に仕事の考えから「切り替える」のを助けるために、マインドフルネス exercises を実践しましょう。"
+          },
+          "jobInsecurity": {
+            "1": "定期的にスキルを更新しましょう。一貫性を保つために、毎週特定の時間を学習に充てます。",
+            "2": "'成功日記'をつけて、自分の成果を記録しましょう。これは自信を高め、自分の能力を思い出させるのに役立ちます。",
+            "3": "経済的な安全網を開発しましょう。衝動的な支出の傾向を管理するために、予算アプリを使用してください。",
+            "4": "深呼吸や段階的筋弛緩法などのストレス軽減テクニックを実践しましょう。"
+          }
+        },
+        "personalIssues": {
+          "relationshipProblems": {
+            "1": "パートナーとオープンで正直なコミュニケーションを実践しましょう。",
+            "2": "一緒に問題に取り組むためにカップルカウンセリングを検討してください。",
+            "3": "自分の興味や自己ケアを育てることに焦点を当てましょう。",
+            "4": "関係のための定期的な質の高い時間を設けてください。"
+          },
+          "familyConflicts": {
+            "1": "'私'を主語にした文を使用して、非難せずに感情を表現しましょう。",
+            "2": "家族のメンバーの視点を理解するために積極的に耳を傾けてください。",
+            "3": "持続的な問題に取り組むために家族カウンセリングを提案しましょう。",
+            "4": "明確な境界を設定し、それを丁寧に伝えてください。"
+          },
+          "financialStress": {
+            "1": "収入と支出を追跡するための詳細な予算を作成しましょう。",
+            "2": "不必要な支出を減らす方法を探してください。",
+            "3": "長期的な計画のために財務アドバイザーに相談することを検討しましょう。",
+            "4": "追加の収入源や収益化できるスキルを探索してください。"
+          },
+          "lowSelfEsteem": {
+            "1": "ポジティブな自己対話を実践し、ネガティブな考えに挑戦しましょう。",
+            "2": "小さな達成可能な目標を設定し、自分の成果を祝福してください。",
+            "3": "人生のポジティブな側面に焦点を当てるために感謝日記をつけましょう。",
+            "4": "自信を感じ、有能だと感じる活動に従事してください。"
+          }
+        },
+        "healthConcerns": {
+          "chronicIllness": {
+            "1": "自分の状態についてよく学び、より制御感を得ましょう。",
+            "2": "同様の課題に直面している他の人々とつながるためにサポートグループに参加してください。",
+            "3": "包括的なケアプランを開発するために医療提供者と協力しましょう。",
+            "4": "瞑想やジェントルヨガなどのストレス軽減テクニックを探索してください。"
+          },
+          "mentalHealth": {
+            "1": "感情調節をサポートするために規則正しい睡眠スケジュールを確立しましょう。",
+            "2": "ストレスと不安を管理するためにマインドフルネス瞑想を実践してください。",
+            "3": "セラピストやカウンセラーから専門的な助けを求めましょう。",
+            "4": "気分を向上させ、ストレスを軽減するために定期的な運動に従事してください。"
+          },
+          "sleepProblems": {
+            "1": "体に睡眠時間を知らせるために一貫した就寝ルーティンを作成しましょう。",
+            "2": "就寝前の画面時間を制限し、デバイスにブルーライトフィルターを使用してください。",
+            "3": "深呼吸や段階的筋弛緩法などのリラクゼーション技術を試してみましょう。",
+            "4": "就寝時間に近いカフェインや重い食事を避けてください。"
+          },
+          "poorDietExerciseHabits": {
+            "1": "食事や運動ルーティンに小さな、持続可能な変更から始めましょう。",
+            "2": "食事日記を使用して、食習慣を追跡し、改善が必要な領域を特定してください。",
+            "3": "運動をより魅力的にするために楽しい身体活動を見つけましょう。",
+            "4": "栄養価の高い食事をより便利にするために健康的な選択肢の食事準備をしてください。"
+          }
+        },
+        "notSure": {
+          "feelingLost": {
+            "1": "自分の価値観と人生に意味を与えるものについて振り返ってみましょう。",
+            "2": "目的と方向性の感覚を生み出すために、小さな達成可能な目標を設定してください。",
+            "3": "情熱を発見するために新しい趣味や興味を探索しましょう。",
+            "4": "ガイダンスを得るためにライフコーチやカウンセラーと話すことを検討してください。"
+          },
+          "lackOfMotivation": {
+            "1": "タスクをより小さな、管理可能なステップに分割しましょう。",
+            "2": "'5分ルール'を使用してください：タスクを始めることに5分だけコミットします。",
+            "3": "タスクの完了や目標達成のための報酬システムを作成しましょう。",
+            "4": "モチベーションに影響を与えている根本的な問題を特定し、対処してください。"
+          },
+          "generalAnxiety": {
+            "1": "不安を感じたときに深呼吸 exercises を実践しましょう。",
+            "2": "証拠に基づく思考で不安な考えに挑戦してください。",
+            "3": "不安を悪化させる可能性のあるカフェインとアルコールの摂取を制限しましょう。",
+            "4": "全体的な不安レベルを減らすために定期的な運動ルーティンを確立してください。"
+          },
+          "unexplainedMoodSwings": {
+            "1": "パターンと潜在的なトリガーを特定するために気分日記をつけましょう。",
+            "2": "十分な睡眠を取り、一貫した睡眠スケジュールを維持していることを確認してください。",
+            "3": "瞑想や段階的筋弛緩法などのストレス軽減テクニックを実践しましょう。",
+            "4": "潜在的な健康上の問題を排除するために医療提供者と話すことを検討してください。"
+          }
+        },
+        "intensity": {
+          "mild": {
+            "1": "自分の感情を認識し、自己思いやりを実践する時間を取りましょう。",
+            "2": "人生でうまくいっていることについて振り返る機会としてこれを使用してください。",
+            "3": "ジャーナリングを検討して、より深く自分の思考と感情を探索しましょう。",
+            "4": "ポジティブな気分を維持するために楽しい活動に従事してください。"
+          },
+          "moderate": {
+            "1": "自分を中心に戻すために簡単なマインドフルネス exercises を実践しましょう。",
+            "2": "サポートとつながりを求めて友人や愛する人に連絡してください。",
+            "3": "気分を向上させるために短い散歩や軽いストレッチをしましょう。",
+            "4": "ネガティブな思考に対抗するためにポジティブなアファメーションを使用してください。"
+          },
+          "intense": {
+            "1": "強い感情を管理するために5-4-3-2-1法などのグラウンディング技術に焦点を当てましょう。",
+            "2": "サポートを求めてメンタルヘルスの専門家に連絡することを検討してください。",
+            "3": "神経系を落ち着かせるのに役立つ深呼吸 exercises を実践しましょう。",
+            "4": "休憩を取り、自己ケアを実践する許可を自分に与えてください。"
+          }
+        },
+        "fallback": "自分自身のケアを忘れずに、必要なときはサポートを求めてください。"
+      }
+    },
+    "common": {
+      "back": "← 戻る",
+      "error": "エラー",
+      "cancel": "キャンセル",
+      "delete": "削除",
+      "update": "更新",
+      "post": "投稿",
+      "loading": "読み込み中..."
+    },
+    "leaderboard": {
+      "title": "リーダーボード",
+      "subtitle": "最高のMyndMapperは誰だ...",
+      "loading": "コミュニティを読み込み中...",
+      "noData": "リーダーボードデータがありません。",
+      "tasksCompleted": "完了したタスク",
+      "error": "リーダーボードの読み込みに失敗しました。後でもう一度お試しください。",
+      "backButton": "戻る",
+      "retryButton": "再試行",
+      "forumButton": "ADHDフォーラム",
+      "rank": "順位",
+      "name": "名前",
+      "tasks": "タスク",
+      "helpModal": {
+        "title": "リーダーボードのヘルプと説明",
+        "welcome": "MyndMapperリーダーボードへようこそ！使い方は以下の通りです：",
+        "understanding": {
+          "title": "リーダーボードの理解：",
+          "point1": "• リーダーボードはMyndMapperのトップパフォーマーを表示します。",
+          "point2": "• ユーザーは完了したタスクの数に基づいてランク付けされます。",
+          "point3": "• あなたの位置は簡単に識別できるようハイライトされています。"
+        },
+        "details": {
+          "title": "リーダーボードの詳細：",
+          "point1": "• 順位：リーダーボード上のあなたの位置。",
+          "point2": "• 名前：MyndMapperユーザーの名前またはユーザー名。",
+          "point3": "• タスク：ユーザーが完了したタスクの総数。"
+        },
+        "improving": {
+          "title": "ランクの改善：",
+          "point1": "• MyndMapperアプリでより多くのタスクを完了して、リーダーボードを上昇させましょう。",
+          "point2": "• 一貫性が鍵です - 定期的にタスクを完了するよう心がけましょう。",
+          "point3": "• 毎週自己ベストを更新する挑戦をしましょう。"
+        },
+        "forum": {
+          "title": "ADHDディスカッションフォーラム：",
+          "point1": "• ADHDディスカッションフォーラムにアクセスして他のユーザーとつながりましょう。",
+          "point2": "• ヒントを共有し、質問し、ADHD関連のトピックについて話し合いましょう。",
+          "point3": "• 他の人をサポートし、洞察を得ることで、自分のパフォーマンスを向上させることができます。"
+        },
+        "tips": {
+          "title": "ヒント：",
+          "point1": "• リーダーボードは定期的に更新されるので、進捗を確認するために頻繁にチェックしましょう。",
+          "point2": "• リーダーボードをモチベーションとして使用しますが、誰もがADHDの旅は独特であることを忘れないでください。",
+          "point3": "• ランクに関係なく、自分の成果を祝福しましょう！"
+        },
+        "closeButton": "閉じる"
+      }
+    },
+    "discussionForum": {
+      "title": "ADHDフォーラム",
+      "goToGeneralForum": "一般フォーラムへ",
+      "loadingPosts": "投稿を読み込み中...",
+      "noPosts": "まだ投稿がありません。最初の投稿者になりましょう！",
+      "editPostPlaceholder": "投稿を編集...",
+      "newPostPlaceholder": "あなたの考えを共有しましょう...",
+      "userTag": "MyndMapper",
+      "edited": "編集済み",
+      "deletePost": {
+        "title": "投稿を削除",
+        "message": "この投稿を削除してもよろしいですか？"
+      },
+      "errors": {
+        "addEmojiPost": "絵文字の投稿に失敗しました。もう一度お試しください。",
+        "addNewPost": "新しい投稿の追加に失敗しました。もう一度お試しください。",
+        "updatePost": "投稿の更新に失敗しました。もう一度お試しください。",
+        "deletePost": "投稿の削除に失敗しました。もう一度お試しください。"
+      },
+      "moderator": {
+        "name": "アーネ",
+        "message": "ヘイトスピーチ、個人攻撃、または話題から外れたコメントは許可されません。"
+      }
+    },
+        "organization": {
+          "title": "整理の進捗",
+          "addNewArea": "整理する新しいエリアを追加",
+          "add": "追加",
+          "deleteArea": "エリアを削除",
+          "deleteConfirmation": "このエリアを削除してもよろしいですか？",
+          "cancel": "キャンセル",
+          "delete": "削除",
+          "loading": "エリアを読み込んでいます...",
+          "complete": "完了",
+          "achievements": "実績",
+          "firstAreaOrganized": "最初のエリアを整理",
+          "areasOrganized": "エリアを整理",
+          "achievementUnlocked": "実績解除！",
+          "earnedAchievement": "獲得した実績：",
+          "greatJob": "すばらしい！",
+          "organizedArea": "エリアを整理しました。その調子で頑張りましょう！",
+          "error": "エラー",
+          "failedToAddArea": "エリアの追加に失敗しました。もう一度お試しください。",
+          "failedToUpdateArea": "エリアの更新に失敗しました。もう一度お試しください。",
+          "failedToUpdateAreaType": "エリアタイプの更新に失敗しました。もう一度お試しください。",
+          "failedToDeleteArea": "エリアの削除に失敗しました。もう一度お試しください。",
+          "timeEstimate": "分",
+          "minutes": "分",
+        "priority": {
+        "low": "低",
+        "medium": "中",
+        "high": "高"
+       },
+       "tips": {
+        "title": "整理のコツ",
+        "breakTasks": "• タスクを小さく分ける",
+        "startSmall": "• まずは5分から始める",
+        "twoMinRule": "• 2分ルール：2分以内でできることは今すぐ行う",
+        "focusOne": "• 一つのエリアに集中する",
+        "celebrate": "• 小さな成功を祝う！",
+        "setTimer": "• 集中して掃除する時間を決める",
+        "music": "• 元気が出る音楽をかける",
+        "takeBreaks": "• エリア間で休憩を取る"
+      },
+      "gotIt": "了解！",
+      "showCompleted": "完了したタスクを表示",
+      "hideCompleted": "完了したタスクを非表示"
+    },
+      "myndBudget": {
+        "title": "マインドバジェット",
+        "enterBudget": "予算を入力",
+        "update": "更新",
+        "spentToday": "今日の支出",
+        "budgetStreak": "予算達成連続日数",
+        "days": "日",
+        "recentExpenses": "最近の支出",
+        "clearAll": "すべてクリア",
+        "addExpense": "支出を追加",
+        "scanFood": "食品をスキャン",
+        "scanMisc": "その他をスキャン",
+        "expenseName": "支出名",
+        "amount": "金額",
+        "close": "閉じる",
+        "loading": "予算を読み込んでいます...",
+        "totalBudget": "総予算：",
+        "fixedCostsBudget": "固定費予算：",
+        "budgetPeriod": "予算期間：",
+        "fixedCosts": "固定費：",
+        "variableCosts": "変動費：",
+        "tapToToggle": "タップして固定費と変動費を切り替える",
+        "filterButton": "フィルター",
+        "all": "すべて",
+        "fixed": "固定",
+        "variable": "変動",
+        "totalBudgetLabel": "総予算",
+        "fixedCostsBudgetLabel": "固定費予算",
+        "enterTotalBudget": "総予算を入力",
+        "enterFixedCostsBudget": "固定費予算を入力",
+        "fixedCostsTodayText": "今日の固定費",
+        "variableCostsTodayText": "今日の変動費",
+        "fixedCost": "固定費",
+        "variableCost": "変動費",
+        "expense": "支出",
+        "name": "名前",
+        "category": "カテゴリー",
+        "type": "タイプ",
+        "event": "イベント",
+        "deleteExpense": "支出を削除",
+        "expenseDetails": "支出の詳細",
+        "fixedCostsProgressLabel": "固定費",
+        "variableCostsProgressLabel": "変動費",
+        "progressBarCaption": "タップして固定費と変動費を切り替える",
+        "budgetPeriodLabel": "予算期間",
+        "addExpenseFixedCost": "固定費",
+        "addExpenseVariableCost": "変動費",
+        "budgetPeriods": {
+          "daily": "毎日",
+          "weekly": "毎週",
+          "monthly": "毎月",
+          "biweekly": "隔週",
+          "payday": "給料日"
+        },
+        "categories": {
+          "food": "食費",
+          "transport": "交通費",
+          "entertainment": "娯楽費",
+          "utilities": "光熱費",
+          "other": "その他"
+        },
+        "seasonalEvents": {
+          "newYear": "お正月",
+          "cherryBlossom": "花見",
+          "goldenWeek": "ゴールデンウィーク",
+          "obon": "お盆",
+          "christmas": "クリスマス"
+        },
+        "alerts": {
+          "invalidAmount": "無効な金額",
+          "invalidAmountMessage": "金額には有効な正の数を入力してください。",
+          "invalidInput": "無効な入力",
+          "invalidInputMessage": "支出の名前、金額、カテゴリーを入力してください。",
+          "invalidBudget": "無効な予算",
+          "invalidBudgetMessage": "予算には有効な正の数を入力してください。",
+          "success": "成功",
+          "budgetUpdated": "予算が正常に更新されました！",
+          "expenseAdded": "支出が正常に追加されました！",
+          "error": "エラー",
+          "failedToUpdate": "予算の更新に失敗しました。もう一度お試しください。",
+          "failedToAdd": "支出の追加に失敗しました。もう一度お試しください。",
+          "failedToDelete": "支出の削除に失敗しました。もう一度お試しください。"
+        },
+        "help": {
+          "title": "マインドバジェットのヘルプと使い方",
+          "welcome": "マインドバジェットへようこそ！財務管理の方法は以下の通りです：",
+          "settingBudget": {
+            "title": "1. 予算の設定：",
+            "content": "• 総予算と固定費予算を入力します\n• 予算期間（日次、週次、月次など）を選択します\n• 「更新」をタップして予算設定を保存します"
+          },
+          "addingExpenses": {
+            "title": "2. 支出の追加：",
+            "content": "• 「支出を追加」をタップして新しい支出を記録します\n• 支出名、金額を入力し、カテゴリーを選択します\n• 固定費か変動費かを選択します\n• 必要に応じて、季節のイベントと関連付けます"
+          },
+          "trackingProgress": {
+            "title": "3. 進捗の追跡：",
+            "content": "• 固定費と変動費の日次支出を確認します\n• 予算達成の連続日数をチェックしてモチベーションを維持します\n• プログレスバーを使用して支出を視覚化します"
+          },
+          "managingExpenses": {
+            "title": "4. 支出の管理：",
+            "content": "• リストで最近の支出を確認します\n• 支出をタップして詳細を表示します\n• フィルターを使用して特定のタイプの支出を表示します\n• 支出を左にスワイプして削除します"
+          },
+          "reminder": "予算管理はADHDを管理する上で重要な部分です。マインドバジェットを使用して財務を把握し、経済的ストレスを軽減しましょう！",
+          "close": "閉じる"
+        }
+      },
+    "mainOptions": {
+      "collaboration": "Dr. Nakashimaとのコラボレーション",
+      "caption": "混沌の中の明瞭さ。",
+      "signUpEmail": "メールアドレスで登録",
+      "signInWithGoogle": "Google でサインイン",
+      "moreOptions": "その他のオプション",
+      "loginWithEmail": "メールアドレスでログイン",
+      "privacyPolicy": "プライバシーポリシー",
+      "termsOfService": "利用規約",
+      "logoAlt": "MyndMapロゴ",
+      "optionsLogoAlt": "MyndMapメインイラスト"
+    },
+    "profile": {
+      "title": "プロフィール",
+      "name": "名前",
+      "enterName": "名前を入力してください",
+      "email": "メールアドレス",
+      "ageGroup": "年齢層",
+      "mainStruggle": "主な課題",
+      "adhdStatus": "ADHD状態",
+      "tasksCompleted": "完了したタスク",
+      "level": "レベル",
+      "accountCreated": "アカウント作成日",
+      "notSpecified": "未指定",
+      "priority": "優先度",
+      "viewCompletedTasks": "完了したタスクを表示",
+      "viewBarCharts": "棒グラフを表示",
+      "loading": "プロフィールを読み込んでいます...",
+      "noCompletedTasks": "まだ完了したタスクはありません。頑張り続けましょう！"
+    },
+    "login": {
+      "enterYourRealm": "あなたの領域に入る",
+      "email": "メールアドレス",
+      "password": "パスワード",
+      "forgotPassword": "パスワードをお忘れですか？",
+      "embark": "始める",
+      "noQuestLog": "アカウントをお持ちでない方は登録",
+      "summoning": "プロフィールを呼び出しています...",
+      "tooManyAttempts": "試行回数超過",
+      "tooManyAttemptsMessage": "ログイン試行回数が上限を超えました。後でもう一度お試しください。",
+      "invalidEmail": "無効なメールアドレス",
+      "invalidEmailMessage": "有効なメールアドレスを入力してください。",
+      "feebleKey": "弱いパスワード",
+      "feebleKeyMessage": "パスワードは8文字以上である必要があります。",
+      "unknownTraveler": "未知の旅人",
+      "unknownTravelerMessage": "このメールアドレスのアカウントが見つかりません。メールアドレスを確認するか、新規登録してください。",
+      "incorrectKey": "不正なパスワード",
+      "incorrectKeyMessage": "入力されたパスワードが正しくありません。もう一度お試しください。",
+      "connectionLost": "接続が失われました",
+      "connectionLostMessage": "領域に接続できません。インターネット接続を確認して、もう一度お試しください。",
+      "mysteriousForces": "謎の力",
+      "mysteriousForcesMessage": "不明なエラーが発生しました。後でもう一度お試しください。"
+    },
+    "calendarScreen": {
+      "title": "カレンダー",
+      "currentTasks": "現在のタスク",
+      "noTasks": "この日付のタスクはありません",
+      "dayStreak": "日連続達成中！",
+      "error": {
+        "title": "エラー",
+        "datePassed": "過去の日付は選択できません。",
+        "selectDate": "先に日付を選択してください。"
+      },
+      "help": {
+        "title": "カレンダーヘルプ",
+        "content": {
+          "overview": "カレンダー画面では、日付ごとにタスクを確認・管理できます。",
+          "markers": "タスクがある日付にはドットが表示されます。",
+          "interaction": "日付をタップしてその日のタスクを確認または追加できます。",
+          "taskList": "下のリストに選択した日付のタスクが表示されます。",
+          "editing": "タスクをタップして編集または削除できます。",
+          "energyLevels": "タスクはエネルギーレベルで色分けされており、その日のエネルギーに応じて計画を立てやすくなっています。",
+          "timeBlocks": "タイムブロックで各タスクの予想所要時間を示し、時間管理をサポートします。",
+          "priorities": "優先度マーカーで重要なタスクを把握できます。",
+          "streak": "毎日の達成度を記録して、モチベーション維持をサポートします！"
+        },
+        "close": "閉じる"
+      },
+      "energyLevels": {
+        "high": "高エネルギー",
+        "medium": "中エネルギー",
+        "low": "低エネルギー"
+      },
+      "priority": {
+        "high": "高優先",
+        "medium": "中程度",
+        "low": "低優先"
+      },
+      "filters": {
+        "all": "すべてのタスク"
+      },
+      "mood": {
+        "great": "とても良い",
+        "good": "良い",
+        "neutral": "普通",
+        "difficult": "難しい",
+        "overwhelming": "圧倒的"
+      },
+      "timeBlock": {
+        "15min": "クイックタスク（15分）",
+        "30min": "ショートタスク（30分）",
+        "1hour": "ロングタスク（1時間）"
+      },
+      "fixedCost": "固定費",
+      "variableCost": "変動費"
+    },
+    "home": {
+      "loading": "読み込み中...",
+      "greeting": "こんにちは、{{name}}！",
+      "defaultName": "マインドマッパー",
+      "subtitle": "{{day}}のタスク:",
+      "subtitleWithTasks": "この{{day}}、これらのタスクがあなたを待っています:",
+      "noFutureTasks": "将来のタスクはありません... \n \n 下のフィールドを使用して始めましょう。",
+      "noCurrentTasks": "現在のタスクはありません... \n \n 下のフィールドを使用して始めましょう。",
+      "enterTask": "タスクを入力...",
+      "notes": "ノート",
+      "overdueTasksTitle": "期限切れのタスク",
+      "overdueTasksMessage": "{{count}}個のタスクが期限内に完了していません。どうしますか？",
+      "overdueTasksMessage_plural": "{{count}}個のタスクが期限内に完了していません。どうしますか？",
+      "carryOver": "持ち越す",
+      "delete": "削除",
+      "tasksDeletedTitle": "タスクが削除されました",
+      "tasksDeletedMessage": "{{count}}個の期限切れタスクが削除されました。",
+      "tasksDeletedMessage_plural": "{{count}}個の期限切れタスクが削除されました。",
+      "errorTitle": "エラー",
+      "errorDeleteMessage": "タスクの削除に失敗しました。もう一度お試しください。",
+      "tasksUpdatedTitle": "タスクが更新されました",
+      "tasksUpdatedMessage": "{{count}}個の期限切れタスクが今日に再スケジュールされました。",
+      "tasksUpdatedMessage_plural": "{{count}}個の期限切れタスクが今日に再スケジュールされました。",
+      "errorCarryOverMessage": "タスクの持ち越しに失敗しました。もう一度お試しください。",
+      "future": "未来",
+      "current": "現在",
+      "betaVersion": "バージョン 2.1.1a",
+      "help": "ヘルプ",
+      "calendar": "カレンダー",
+      "logout": "ログアウト",
+      "taskCompletion": "タスク完了",
+      "taskCompletionQuestion": "タスクを完了しましたか: \"{{task}}\"?",
+      "no": "いいえ",
+      "yes": "はい！",
+      "taskRescheduled": "タスクが再スケジュールされました",
+      "encouragement": "あなたならできます！",
+      "priority": "優先度",
+      "subtasks": "サブタスク",
+      "reminder": "リマインダーを設定",
+      "reminderSetFor": "リマインダーが設定されています: {{date}}",
+      "priorityLevels": {
+        "lowest": "最も低い",
+        "medium": "中",
+        "high": "高い",
+        "urgent": "緊急"
+      },
+      "maxSubtasks": "最大 {{max}} 個のサブタスクを追加できます"
+    },
+    "helpModal": {
+      "title": "ヘルプ＆使い方",
+      "welcome": "MyndMapperへようこそ！アプリの使い方は次のとおりです:",
+      "creatingTasks": "タスクを作成:",
+      "creatingTasksContent": "\n• 画面下部の入力フィールドにタスクを入力し、'リターン'を押して追加します。\n\n• タスクをタップして、詳細、優先度、期日を設定し、サブタスクを追加します。",
+      "managingTasks": "タスク管理:",
+      "managingTasksContent": "\n• タスクを左にスワイプすると、完了、優先度の編集、サブタスクの追加、削除のオプションが表示されます。\n\n• 優先度アイコン（旗）をタップすると、タスクの優先度をすばやく変更できます。\n\n• 画面右下の'現在/未来'トグルを使用して、現在のタスクと今後のタスクを切り替えます。",
+      "otherFeatures": "その他の機能:",
+      "otherFeaturesContent": "\n• 画面左下の'ノート'をタップして、クイックノートにアクセスします。\n\n• メニューアイコン（左上）を使用して、プロフィール、MyndCooling機能、MyndBudgetなどにアクセスします。\n\n• アプリは、最優先タスクについて通知し、完了状況を尋ねます。\n\n• 期限切れのタスクはフラグが立てられ、繰り越すか削除するよう促されます。",
+      "tips": "ヒント:",
+      "tipsContent": "\n• 定期的にタスクを完了して、連続記録を維持し、レベルアップしましょう！\n\n• 休憩が必要なときや圧倒されたときには、MyndCooling機能を使用しましょう。\n\n• メニューのリーダーボードで他のユーザーとの比較を確認できます。",
+      "close": "閉じる"
+    },
+    "help_Modal": {
+      "welcome": "タスクハブへようこそ！",
+      "overview": {
+        "title": "概要",
+        "description": "これはあなたの個人的な生産性コマンドセンターです。シンプルながらパワフルなインターフェースで、タスクの管理、進捗の追跡、整理整頓ができます。"
+      },
+      "mainFeatures": {
+        "title": "主な機能",
+        "taskManagement": {
+          "title": "タスク管理",
+          "description": "• 現在のタスクの表示と管理\n• 現在と将来のタスクの切り替え\n• 最優先タスクの簡単な識別\n• タスク完了でXPを獲得"
+        },
+        "progressTracking": {
+          "title": "進捗追跡",
+          "description": "進捗レビューでできること：\n• 生産性分析の確認\n• パーソナライズされた効率化のヒント\n• 完了率の追跡\n• XP進捗のモニタリング"
+        },
+        "notesSystem": {
+          "title": "ノートシステム",
+          "description": "ノート機能でできること：\n• カテゴリー別のノート作成\n• 重要な情報の保存\n• 参考資料の手元保管\n• カスタムカテゴリーでの整理"
+        }
+      },
+      "quickTips": {
+        "title": "クイックヒント",
+        "xp": "タスクを完了してXPを獲得しレベルアップ",
+        "progress": "進捗レビューで個別の生産性インサイトを確認",
+        "priority": "優先タスクは見やすくハイライト表示",
+        "toggle": "ワンタップで現在と将来のタスクを切り替え"
+      }
+    },
+      "questCompletedModal": {
+      "title": "素晴らしい仕事！",
+      "subtitle": "MyndMapperからのヒントです...",
+      "chooseTipsButton": "ヒントを選ぶ",
+      "closeButton": "閉じる",
+      "categoryModalTitle": "最も苦手なことは何ですか？",
+      "backButton": "戻る",
+      "categories": {
+        "gettingStarted": "はじめの一歩",
+        "executiveFunction": "実行機能",
+        "timeManagement": "時間管理",
+        "organization": "整理整頓",
+        "focusAndConcentration": "集中力"
+      },
+      "tips": {
+        "gettingStarted": [
+          "タスクを小さく管理しやすい手順に分けましょう。",
+          "「2分ルール」を使いましょう：2分以内でできるタスクは今すぐ実行します。",
+          "5分のタイマーをセットし、その時間だけタスクに取り組むことを約束しましょう。",
+          "1日のスケジュールを視覚的に組み立てましょう。",
+          "各セッションで明確で達成可能な目標を設定しましょう。",
+          "タスクを始めた後、自分にご褒美をあげて正の強化をしましょう。",
+          "気が散らないよう、作業を始める前に作業スペースを整えましょう。",
+          "よくあるタスクには「準備完了」チェックリストを使いましょう。"
+        ],
+        "executiveFunction": [
+          "手帳やデジタルカレンダーを使って、タスクや締め切りを管理しましょう。",
+          "毎日のルーティンを作り、できるだけそれを守りましょう。",
+          "計画や意思決定には、図表やダイアグラムなどの視覚的な補助を使いましょう。",
+          "マインドフルネスを実践して、集中力を高めストレスを減らしましょう。",
+          "複雑なタスクは小さな管理しやすい手順に分けましょう。",
+          "複数のステップがあるタスクにはチェックリストを使い、手順を忘れないようにしましょう。",
+          "重要な締め切りや予定にはリマインダーを設定しましょう。",
+          "定期的に目標や優先順位を見直し、更新しましょう。"
+        ],
+        "timeManagement": [
+          "ポモドーロ・テクニックを使いましょう：25分間作業し、5分間休憩します。",
+          "アイゼンハワー・マトリックス（緊急度/重要度のグリッド）を使ってタスクに優先順位をつけましょう。",
+          "各タスクにかかる時間を見積もり、それに応じてスケジュールを立てましょう。",
+          "タイマーを使って作業を追跡し、定期的に休憩を取りましょう。",
+          "1日のスケジュールを視覚的に組み立てましょう。",
+          "各セッションで明確で達成可能な目標を設定しましょう。",
+          "色分けしたリストを使ってタスクに優先順位をつけましょう。",
+          "定期的に進捗を確認して、軌道に乗っているか確認しましょう。"
+        ],
+        "organization": [
+          "異なるタイプのタスクやプロジェクトには色分けを使いましょう。",
+          "物理的なアイテムには「一つ入れたら一つ出す」ルールを実施して、散らかりを防ぎましょう。",
+          "異なる活動やアイテムのタイプごとに専用のスペースを作りましょう。",
+          "突然のアイデアやタスクをメモするためにノートパッドを使いましょう。",
+          "定期的に作業スペースを整理整頓し、気が散る要因を減らしましょう。",
+          "ファイルの整理やバックアップにはデジタルツールを使いましょう。",
+          "入ってくる書類やメールを処理するシステムを作りましょう。",
+          "ラベルやコンテナを使って、アイテムを整理し、簡単にアクセスできるようにしましょう。"
+        ],
+        "focusAndConcentration": [
+          "ウェブサイトブロッカーを使用したり通知をオフにしたりして、気が散る要因を最小限に抑えましょう。",
+          "マインドフルネス瞑想を実践して集中力を高めましょう。",
+          "集中力を高めるために、歌詞のない背景音や音楽を使いましょう。",
+          "長時間の集中力を維持するために、定期的に短い休憩を取りましょう。",
+          "「ボディダブリング」テクニックを使いましょう：誰かと一緒に作業して集中力を保ちます。",
+          "専用の作業スペースを作り、脳に集中モードに入る合図を送りましょう。",
+          "落ち着きのなさを抑えるために、フィジェットトイやストレスボールを使いましょう。",
+          "集中力が途切れそうに感じたら、深呼吸の練習をしましょう。"
+        ]
+      }
+    },
+    "achievements": {
+      "screenTitle": "実績",
+      "firstArea": {
+        "name": "最初の一歩",
+        "description": "最初の整理タスクを完了"
+      },
+      "fiveAreas": {
+        "name": "スタート",
+        "description": "5つの整理タスクを完了"
+      },
+      "tenAreas": {
+        "name": "進捗中",
+        "description": "10個の整理タスクを完了"
+      },
+      "fifteenAreas": {
+        "name": "勢いづいてきた",
+        "description": "15個の整理タスクを完了"
+      },
+      "twentyAreas": {
+        "name": "着実な進歩",
+        "description": "20個の整理タスクを完了"
+      },
+      "thirtyAreas": {
+        "name": "整理の達人",
+        "description": "30個の整理タスクを完了"
+      },
+      "thirtyFiveAreas": {
+        "name": "整理のエキスパート",
+        "description": "35個の整理タスクを完了"
+      },
+      "fortyAreas": {
+        "name": "整理のマスター",
+        "description": "40個の整理タスクを完了"
+      },
+      "fiftyAreas": {
+        "name": "整理の伝説",
+        "description": "50個の整理タスクを完了"
+      }
+    },
+    "taskModal": {
+      "createNewTask": "タスクの作成",
+      "enterTaskTitle": "タスクのタイトルを入力",
+      "priority": "優先度",
+      "reminderInterval": "リマインダー間隔",
+      "priorityLevels": {
+        "lowest": "最低",
+        "medium": "中",
+        "high": "高",
+        "urgent": "緊急"
+      },
+      "minutes": "分",
+      "deadline": "期限",
+      "selectDate": "日付を選択",
+      "subtasks": "サブタスク ({{count}}/{{max}})",
+      "enterSubtask": "サブタスクを入力",
+      "addSubtask": "サブタスクを追加",
+      "additionalInfo": "追加情報またはマイクロタスク",
+      "cancel": "キャンセル",
+      "saveChanges": "変更を保存",
+      "summon": "召喚！",
+      "taskLimitReached": "タスク制限に達しました",
+      "taskLimitExplanation": "勇敢なMyndMapperよ、待て！この優先度レベルのタスク制限に達しました。この構造は、ADHDの人々のために各優先度レベルでのタスク数を制限することで、負担を軽減するよう設計されています：\n\n• 緊急タスク1つ\n• 高優先度タスク2つ\n• 中優先度タスク3つ\n• 最低優先度タスク4つ\n\nこれにより、集中力を維持し、タスクの過負荷を防ぎます。新しいタスクを追加する前に、既存のタスクを完了するか、優先度を調整することを検討してください。",
+      "understood": "理解しました",
+      "helpModal": {
+        "title": "タスク作成ガイド",
+        "content": "タスクの作成方法は以下の通りです：\n\n1. クエストタイトル：タスクの名前を入力します。\n\n2. 優先度：タスクの重要性を選択します。\n• 緊急（1つ許可）：重大で時間に敏感なタスク。\n• 高（2つ許可）：早急に注意が必要な重要なタスク。\n• 中（3つ許可）：中程度の重要性のタスク。\n• 最低（4つ許可）：必要であれば待つことができるタスク。\n\n3. リマインダー間隔：このタスクについて通知を受ける頻度。\n\n4. 将来の予定：該当する場合、タスクの将来の日付を設定します。\n\n5. サブタスク：メインタスクを小さな管理可能なステップに分割します（最大3つ）。\n\n6. マイクロタスク：各サブタスクに対して1つの小さな具体的なアクションを追加します。\n\nタスクを制限することで集中力を維持し、負担を防ぐことができます。新しいタスクのためのスペースを作るには、既存のタスクを完了するか優先度を調整してください。",
+        "close": "閉じる"
+      }
+    },
+    "taskItem": {
+      "topPriority": "最優先 - これに集中してください！",
+      "urgent": "緊急 - できるだけ早く対応",
+      "high": "高優先度 - 重要",
+      "medium": "中優先度",
+      "low": "低優先度 - 時間があるときに",
+      "viewSubtasks": "サブタスクを見る ({{count}}件)"
+    },
+    "notes": {
+      "allCategories": "すべてのカテゴリー",
+      "categories": {
+        "general": "一般",
+        "groceries": "食料品",
+        "tasks": "タスク",
+        "ideas": "アイデア",
+        "personal": "個人",
+        "work": "仕事",
+        "quick": "クイック",
+        "remember": "リマインダー",
+        "other": "その他"
+      },
+      "groceries": {
+        "mealBased": "食事ベース",
+        "simpleList": "シンプルリスト"
+      },
+      "title": "ノート",
+      "loading": "ノートを読み込み中...",
+      "noteContent": "ノートの内容",
+      "addNote": "追加",
+      "saveNote": "保存",
+      "cancel": "キャンセル",
+      "returnHome": "ホームに戻る",
+      "emptyList": "まだノートがありません。上から新しいノートを追加してください！",
+      "selectCategory": "カテゴリを選択",
+      "close": "閉じる",
+      "addItem": "アイテムを追加",
+      "itemName": "アイテム名",
+      "quantity": "数量",
+      "cost": "価格",
+      "addItemButton": "アイテムを追加",
+      "helpTitle": "ノートガイド",
+      "helpWelcome": "ようこそ、勇敢なマインドマッパー！ノートの使い方は以下の通りです：",
+      "helpCreating": "1. ノートの作成：",
+      "helpCreatingSteps": "• ドロップダウンメニューからカテゴリを選択\n• テキストフィールドにノートのタイトルを入力\n• 食料品の場合、食事やアイテムを追加できます\n• 「ノートを追加」をタップして保存",
+      "helpCategories": "2. カテゴリ：",
+      "helpCategoriesDetails": "• 一般：雑多な思考用\n• 食料品：食事計画と買い物リスト用\n• タスク：追加のクエストとToDoリスト用\n• アイデア：閃きのアイデア用\n• 個人：プライベートな考え事用\n• 仕事：仕事関連の事項用\n• その他：他のカテゴリに当てはまらないユニークな項目用",
+      "helpEditing": "3. 編集と削除：",
+      "helpEditingSteps": "• 編集アイコンをタップしてノートを修正\n• ゴミ箱アイコンをタップしてノートを削除",
+      "helpFiltering": "4. フィルタリング：",
+      "helpFilteringDetails": "• フィルターオプションを使用してカテゴリ別にノートを表示",
+      "helpGroceries": "5. 食料品機能：",
+      "helpGroceriesDetails": "• 食事ベースとシンプルリストのモードを選択\n• 食事や個別のアイテムを数量と価格とともに追加\n• 市場クエストの計画に最適！",
+      "helpRemember": "これらのスクロールはあなたの個人的な年代記です。思考を整理し、クエストを計画し、日々の混沌を制御するために使用してください！",
+      "groceriesHelpTitle": "食料品機能の使い方",
+      "groceriesHelpChoose": "リストタイプを選択",
+      "groceriesHelpChooseDetails": "トグルスイッチを使用して、食事ベースのリスト、シンプルリスト、または両方を選択します。",
+      "groceriesHelpMealBased": "食事ベースのリスト：",
+      "groceriesHelpMealBasedSteps": "1. 食事名を入力し、「食事を追加」をタップ\n2. 各食事に対して「アイテムを食事に追加」をタップ\n3. アイテムの詳細（名前、数量、価格）を入力\n4. 「アイテムを追加」をタップして食事に含める",
+      "groceriesHelpSimple": "シンプルリスト：",
+      "groceriesHelpSimpleSteps": "1. アイテム名を入力し、「アイテムを追加」をタップ\n2. 必要に応じて各アイテムの数量と価格を追加\n3. ゴミ箱アイコンをタップしてアイテムを削除",
+      "groceriesHelpSaving": "リストの保存：",
+      "groceriesHelpSavingDetails": "アイテムや食事を追加したら、下部の「ノートを追加」をタップして食料品リストを保存します。",
+      "addMeal": "食事を追加",
+      "addItemToMeal": "アイテムを食事に追加",
+      "noMeals": "まだ食事が追加されていません。\n上から食事を追加してください！",
+      "noItems": "この食事にはまだアイテムが追加されていません。",
+      "addItemToList": "アイテムを追加",
+      "noGroceryItems": "まだアイテムが追加されていません。\n上からアイテムを追加してください！",
+      "meals": "食事",
+      "items": "アイテム",
+      "simpleListItems": "シンプルリストアイテム",
+      "howToUseGroceries": "食料品機能の使い方",
+      "alerts": {
+        "deleteNoteTitle": "ノートを削除",
+        "deleteNoteMessage": "このノートを削除してもよろしいですか？",
+        "emptyNoteTitle": "空のノート",
+        "emptyNoteMessage": "保存する前にノートの内容を入力してください。"
+      },
+      "errors": {
+        "failedToLoad": "ノートの読み込みに失敗しました。後でもう一度お試しください。",
+        "failedToSave": "ノートの保存に失敗しました。もう一度お試しください。",
+        "failedToDelete": "ノートの削除に失敗しました。もう一度お試しください。"
+      },
+      "filters": {
+        "all": "すべて",
+        "lowFocus": "低集中",
+        "medium": "中集中",
+        "highFocus": "高集中"
+      },
+      "searchPlaceholder": "ノート、タグ、カテゴリを検索...",
+      "inputPlaceholder": "何を考えていますか？タップして思考をキャプチャしましょう...",
+      "addTagsPlaceholder": "タグを追加...(Enterキーを押して追加)",
+      "clearSearch": "検索をクリア",
+      "energyLevels": {
+        "low": "低集中",
+        "medium": "中集中",
+        "high": "高集中"
+      },
+      "empty": {
+        "noNotes": "まだノートがありません。上から最初のノートを追加してください",
+        "searchNoResults": "検索に一致するノートはありません",
+        "noFilteredNotes": "まだ{{filter}}のノートはありません"
+      },
+      "characters": "文字"
+    },
+    "common": {
+      "error": "エラー",
+      "cancel": "キャンセル",
+      "delete": "削除",
+      "save": "保存",
+      "update": "更新"
+    },
+    "notifications": {
+      "areaAttention": "エリアの整理が必要です",
+      "areaAttentionBody": "「{{areaName}}」を整理してから1週間が経ちました。簡単な整理をする時間です！",
+      "timeUp": "マインドマッパー！",
+      "timeUpBody": "「{{taskText}}」の{{interval}}分タイマーが終了しました",
+      "futureTasks": "今後のタスクの通知",
+      "futureTasksBody": "{{count}}個の今後のタスクがあります。計画を立てましょう！",
+      "taskCheckIn": "タスクの確認",
+      "taskCheckInBody": "何か気になることはありますか？",
+      "adhd_pro_tip": "ADHDのプロティップ",
+      "proTip1": "ご存知ですか？タスクを計画してから5分以内に始める人は、60％の確率でタスクを完了します。今すぐ始めてみませんか？",
+      "proTip2": "タスクを小さなステップに分けると、圧倒されにくくなります。今すぐできる小さなステップを見つけられますか？",
+      "proTip3": "覚えておいてください：完璧より完了が大切です。今日進められるタスクは何ですか？",
+      "proTip4": "研究によると、タスクを完了すると脳内でドーパミンが放出され、気分やモチベーションが向上します。どのタスクに取り組んでこの効果を得られますか？",
+      "proTip5": "事実：ツァイガルニク効果によると、未完了のタスクは記憶に残りやすいです。タスクを完了することで、精神的な余裕が生まれます！",
+      "rescheduledTask": "タスクが再設定されました",
+      "rescheduledTaskBody": "「{{taskText}}」の時間が再び終了しました",
+      "rescheduledTaskBody2nd": "2回目です",
+      "rescheduledTaskBody3rd": "3回目です",
+      "rescheduledTaskBody4th": "4回目です",
+      "rescheduledTaskBodyNth": "{{count}}回目です"
+    },
+    "signup": {
+      "forgeYourAccount": "アカウントを創造する",
+      "email": "メールアドレス",
+      "password": "パスワード",
+      "enlist": "登録",
+      "alreadyALegend": "すでに伝説ですか？ログイン",
+      "forgingDestiny": "あなたの運命を形作っています...",
+      "error": "エラー",
+      "success": "成功",
+      "emailPasswordRequired": "メールアドレスとパスワードが必要です",
+      "accountCreated": "アカウントが正常に作成されました",
+      "ok": "OK",
+      "auth/email-already-in-use": "このメールアドレスはすでに使用されています。別のメールアドレスをお試しください。",
+      "auth/invalid-email": "メールアドレスの形式が正しくありません。",
+      "auth/weak-password": "パスワードは6文字以上である必要があります。"
+    },
+    "privacyPolicy": {
+      "title": "プライバシーポリシー",
+      "content": "MyndMapプライバシーポリシー\n発効日：2025年2月17日\n\n1. はじめに\nAI搭載の生産性向上アプリケーションであるMyndMap（以下「アプリ」）へようこそ。[貴社名]（以下「当社」）は、英国ロンドンに拠点を置き、お客様のプライバシー保護に努めています。本プライバシーポリシーは、お客様が当社のアプリを使用する際にお客様の情報をどのように収集、使用、および開示するかについて説明するものです。本ポリシーは、世界中のユーザーに適用されます。\n\n2. 収集する情報\n当社は、当社サービスを提供および改善し、お客様のエクスペリエンスをパーソナライズするために情報を収集します。当社が収集する情報の種類は、お客様のMyndMapとのインタラクションによって異なります。\n\na) 個人情報：\n    • アカウント情報：お客様がアカウントを作成する際、当社はお客様のメールアドレスと選択されたパスワードを収集します。お客様は、オプションのプロフィール情報を提供することもできます。\n    • 連絡先情報：お客様がサポートを求めて当社に連絡する場合、当社はお客様の名前、メールアドレス、およびお客様が提供することを選択した情報を収集する場合があります。\n\nb) 利用データ：\n    • アプリのインタラクションデータ：機能の使用状況、閲覧した画面、アプリ内でのアクションなど、お客様がアプリとどのようにインタラクションするかに関するデータを収集します。\n    • 機能利用統計：ユーザーの好みと機能改善を理解するために、さまざまな機能の利用状況を追跡します。\n    • パフォーマンスおよびクラッシュレポート：アプリの安定性とパフォーマンスを確保するために、クラッシュとエラーに関するデータを収集します。\n    • デバイス情報：MyndMapへのアクセスに使用するデバイスに関する情報（デバイスの種類、オペレーティングシステム、ハードウェア設定など）を収集します。\n    • ログデータ：当社のサーバーは、お客様によるアプリの使用によって作成された情報（「ログデータ」）を自動的に記録します。ログデータには、お客様のIPアドレス、ブラウザの種類、ドメイン、参照元/終了ページ、閲覧したページ、場所、お客様の携帯電話会社、デバイスおよびアプリケーションID、検索語句、およびCookie情報が含まれる場合があります。\n\nc) ユーザー生成コンテンツ：\n    • タスク、メモ、およびコンテンツ：タスク、メモ、およびアプリ内で直接提供するその他の情報など、お客様がMyndMap内で作成、入力、またはアップロードするコンテンツ。\n\n3. 情報の利用方法\n当社は、収集した情報をさまざまな目的で使用します。これには以下が含まれます。\n\na) サービスの提供と改善：\n    • MyndMapの運営、維持、および改善。\n    • お客様のエクスペリエンスをパーソナライズし、コンテンツと機能をカスタマイズ。\n    • 新しい機能と機能性の開発。\n    • ユーザーサポートの提供と問い合わせへの対応。\n\nb) コミュニケーション：\n    • お客様のアカウント、アップデート、およびアプリに関する重要なお知らせについてお客様とコミュニケーション。\n    • 適用される法律で許可され、お客様の好みに応じて、プロモーション資料およびマーケティングコミュニケーションをお客様に送信。\n\nc) 分析と調査：\n    • アプリのパフォーマンスとユーザー行動を分析して、傾向を特定し、アプリを改善。\n    • MyndMapのAI機能とユーザーエクスペリエンスを向上させるための研究開発活動を実施。集計および匿名化されたデータは、研究目的で提携先の臨床心理学者と共有される場合があります。\n\nd) 法的およびセキュリティ目的：\n    • 適用される法律、規制、法的手続き、または政府の要請を遵守。\n    • 当社のアプリ、システム、およびユーザーのセキュリティと完全性を保護。\n    • 当社の利用規約およびその他のポリシーを施行。\n    • 詐欺、セキュリティ侵害、およびその他の潜在的に禁止または違法な行為を防止、検出、および調査。\n\n4. データストレージとセキュリティ\n当社はデータセキュリティを真剣に受け止め、お客様の情報を不正アクセス、使用、または開示から保護するために適切な技術的および組織的対策を実施します。\n\na) セキュリティ対策：保管時および転送中のデータを保護するために、業界標準の暗号化技術を使用しています。お客様のデータの継続的な機密性、完全性、および可用性を確保するために、当社のセキュリティ慣行とインフラストラクチャを定期的に評価しています。\n\nb) データ保持：当社は、本プライバシーポリシーに概説されている目的を達成するために必要な期間、個人情報を保持します。ただし、法律でより長い保持期間が要求または許可されている場合を除きます。\n\nc) データ転送と処理：お客様の情報は、当社のサーバーが所在し、当社のサービスプロバイダーが事業を展開している英国を含む、お客様の居住国外の国に転送され、処理される場合があります。当社は、お客様の個人情報が本プライバシーポリシーおよび適用されるデータ保護法に従って保護された状態を維持するために適切な保護措置を講じます。\n\n5. 情報の共有\n当社は、お客様の個人情報を第三者に販売、取引、または貸与することはありません。当社は、以下の限定的な状況下で情報を共有する場合があります。\n\na) サービスプロバイダーとの共有：当社は、ホスティング、データ分析、メール配信、カスタマーサポート、分析など、当社に代わって機能の実行およびサービスの提供を行うために、第三者のサービスプロバイダーを利用します。これらのサービスプロバイダーは、当社に代わってこれらのタスクを実行するために必要な範囲でのみ個人情報にアクセスでき、他の目的で開示または使用しない義務を負っています。\n\nb) 法的理由による開示：当社は、召喚状、裁判所命令、法的手続き、法執行機関の要請、法的請求、または政府の問い合わせに対応するため、および当社の法的権利を保護、確立、または行使するため、または法的請求に対して防御するために情報を開示する場合があります。\n\nc) 事業譲渡：当社が事業を発展させ続ける中で、子会社または事業部門を売却または買収する可能性があります。そのような取引では、ユーザー情報は一般的に譲渡される事業資産の1つですが、（ユーザーが別途同意しない限り）既存のプライバシーポリシーで行われた約束に従うものとします。\n\nd) 集計および匿名化されたデータ：当社は、集計および匿名化されたデータ（お客様個人を特定しない情報）を、調査、マーケティング、分析、およびその他の目的で第三者と共有する場合があります。\n\n6. お客様の権利\n当社はお客様の個人情報に関するお客様の権利を尊重します。お客様の管轄区域によっては、お客様は以下の権利を有する場合があります。\n\na) アクセス権：当社が保有するお客様の個人データへのアクセスを要求する権利を有します。\n\nb) 訂正権：不正確または不完全な個人データを訂正するよう当社に要求する権利を有します。\n\nc) 消去権：法律で認められている特定の例外を除き、お客様の個人データの削除を要求する権利を有します。\n\nd) 処理の制限権：特定の状況下でお客様の個人データの処理を制限するよう当社に要求する権利を有します。\n\ne) データポータビリティの権利：お客様の個人データを構造化され、一般的に使用され、機械可読性のある形式で受け取り、そのデータを別の管理者に送信する権利を有します。\n\nf) 異議申立権：ダイレクトマーケティング目的など、特定の状況下でお客様の個人データの処理に異議を申し立てる権利を有します。\n\ng) 同意の撤回権：当社がお客様の個人データの処理にお客様の同意に依拠している場合、お客様はいつでも同意を撤回する権利を有します。同意の撤回は、撤回前の同意に基づく処理の合法性に影響を与えません。\n\nh) 苦情を申し立てる権利：お客様の個人データの当社の処理が適用されるデータ保護法に違反していると思われる場合、監督当局に苦情を申し立てる権利を有します。\n\nこれらの権利のいずれかを行使するには、userhelp@myndmap.ukまでお問い合わせください。適用されるデータ保護法に従ってお客様のリクエストに対応いたします。\n\n7. 特定の管轄区域情報\n\na) 欧州経済領域（EEA）および英国（UK）のユーザー向け：\n    • 処理の法的根拠：当社は、以下の1つまたは複数の法的根拠に基づいてお客様の個人データを処理します。（i）お客様の同意、（ii）お客様との契約の履行に必要な場合、（iii）当社の法的義務の遵守、および/または（iv）当社の正当な利益。\n    • GDPR代表者：[貴社名]のEUにおけるGDPR代表者には、userhelp@myndmap.ukまでご連絡いただけます。\n\nb) 米国カリフォルニア州のユーザー向け：\n    • CCPAの権利：カリフォルニア州消費者プライバシー法（CCPA）は、カリフォルニア州の居住者に個人情報に関する特定の権利を付与しています。お客様は、当社が収集、使用、開示、および販売する個人情報を知る権利を要求する権利を有します。また、お客様は、お客様の個人情報の削除を要求し、お客様の個人情報の販売をオプトアウトする権利も有します。当社は個人情報を販売しません。\n    • CCPAの権利を行使するには、userhelp@myndmap.ukまでお問い合わせください。\n\nc) 日本のユーザー向け：\n    • 個人情報保護法（APPI）：当社は、お客様の個人情報をAPPIおよび関連法規制に従って取り扱います。お客様は、APPIに基づいて、お客様の個人情報の開示、訂正、追加、削除、利用停止、または消去を要求する権利を含む、お客様の個人情報に関する権利を有します。\n    • APPI関連のお問い合わせまたはお客様の権利の行使については、userhelp@myndmap.ukまでお問い合わせください。\n\n8. 子供のプライバシー\nMyndMapは18歳未満の子供を対象としておらず、18歳未満の子供から故意に個人情報を収集することはありません。18歳未満の子供から個人情報を収集したことが判明した場合、当社はできるだけ早くそのような情報を削除するための措置を講じます。\n\n9. 本プライバシーポリシーの変更\n当社は、当社の慣行または法的義務の変更を反映するために、本プライバシーポリシーを随時更新する場合があります。重要な変更については、アプリ内に新しいプライバシーポリシーを掲載するか、適用される法律で義務付けられているその他の手段によって通知します。更新がないか定期的に本プライバシーポリシーを確認することをお勧めします。本プライバシーポリシーの変更は、このページに掲載された時点で有効になります。\n\n10. お問い合わせ\n本プライバシーポリシーまたは当社のデータ慣行についてご質問またはご不明な点がございましたら、以下までお問い合わせください。\n[貴社名]\n[貴社住所]\nuserhelp@myndmap.uk\n\n11. アクセシビリティ\n当社は、障害のある個人を含むすべての人に当社のプライバシーポリシーがアクセス可能であることを保証することに努めています。本プライバシーポリシーへのアクセスに問題が発生した場合は、userhelp@myndmap.ukまでお問い合わせください。"
+    },
+    "termsOfService": {
+      "title": "利用規約",
+      "content": "MyndMap利用規約\n発効日：2025年2月17日\n\n1. 規約への同意\nMyndMapアプリケーション（以下「アプリ」）にアクセスして使用することにより、お客様は本利用規約（以下「規約」）に拘束されることに同意するものとします。本規約は全世界に適用されます。\n\n2. サービス内容\nMyndMapは、ADHDの方や神経型の方を含む個人が、タスクやメモの管理、およびパーソナライズされた洞察と方法を通じて生産性を向上させるのを支援するために設計された、AI搭載の生産性向上アプリケーションです。MyndMapは、英国ロンドンに拠点を置く[貴社名]によって開発されました。\n\n3. ユーザーアカウントと責任\n3.1 アカウントのセキュリティ：お客様は、アカウント認証情報の機密性、およびお客様のアカウントで行われるすべてのアクティビティについて責任を負います。\n3.2 合法的な使用：お客様は、合法的な目的のため、および本規約と適用されるすべての法令に従ってのみ、本アプリを使用することに同意するものとします。\n3.3 年齢要件：本アプリを使用するには、18歳以上である必要があります。本アプリを使用することにより、お客様はこの年齢要件を満たしていることを表明し、保証するものとします。\n3.4 禁止行為：お客様は、以下を行わないことに同意するものとします。\n    a) 違法な目的、または違法行為の助長のために本アプリを使用すること。\n    b) 本アプリまたはその関連システムもしくはネットワークへの不正アクセスを試みること。\n    c) 本アプリの運営を妨害または中断させること。\n    d) 当社または他者の知的財産権を侵害または違反するために本アプリを使用すること。\n    e) ウイルス、ワーム、欠陥、トロイの木馬、または破壊的な性質を持つあらゆるアイテムを送信すること。\n    f) 他者の個人情報を収集または追跡すること。\n    g) 本アプリまたは当社のシステムに損害を与え、使用不能にし、過負荷にし、または損なう可能性のある方法で本アプリを使用すること。\n\n4. データプライバシーと保護\n4.1 データ収集：当社は、本アプリの機能を提供および改善するために、特定のユーザーデータを収集します。これには、利用データ、タスクとメモのコンテンツ、およびアプリ内でのインタラクションが含まれる場合があります。データ収集慣行の詳細については、当社のプライバシーポリシーを参照してください。\n4.2 GDPRコンプライアンス（欧州経済領域および英国のユーザー向け）：\n    a) [貴社名]は、一般データ保護規則（GDPR）に従ってお客様の個人データを保護することをお約束します。\n    b) お客様は、お客様の個人データへのアクセス、修正、消去、処理の制限、およびデータポータビリティの権利を有します。\n    c) GDPR関連のお問い合わせまたはお客様の権利の行使については、userhelp@myndmap.ukまでお問い合わせください。\n4.3 CCPAコンプライアンス（米国カリフォルニア州のユーザー向け）：\n    a) [貴社名]は、カリフォルニア州消費者プライバシー法（CCPA）を遵守しています。\n    b) カリフォルニア州の居住者は、自己の個人情報に関して、知る権利、削除する権利、および個人情報の販売をオプトアウトする権利を含む特定の権利を有します。\n    c) CCPAの権利を行使するには、userhelp@myndmap.ukまでお問い合わせください。\n4.4 データセキュリティ：当社は、お客様のデータを保護するために合理的なセキュリティ対策を実施します。ただし、完全に不可解なシステムはなく、絶対的なセキュリティを保証することはできません。\n4.5 データ転送：MyndMapを使用することにより、お客様は、お客様の情報の英国および当社のサービスプロバイダーが所在するその他の国への転送および処理に同意するものとします。\n\n5. 知的財産権\n5.1 アプリの所有権：本アプリおよびそのオリジナルコンテンツ、機能、および機能は、[貴社名]が所有しており、国際著作権法、商標法、特許法、営業秘密法、およびその他の知的財産法または所有権法によって保護されています。\n5.2 限定ライセンス：お客様が本規約を遵守することを条件として、[貴社名]はお客様に、個人的、非商業的な目的でお客様が本アプリを使用するための、限定的、非独占的、譲渡不能、取消可能なライセンスを付与します。\n\n6. 保証の否認\n6.1 現状有姿での提供：本アプリは、「現状のまま」および「利用可能な範囲で」提供され、明示または黙示を問わず、商品性、特定目的への適合性、または非侵害の保証を含むがこれらに限定されない、いかなる種類の保証もありません。\n6.2 精度に関する保証なし：[貴社名]は、本アプリのAI駆動機能がエラーフリー、正確、信頼性があること、または本アプリがお客様の特定の要件や期待を満たすことを保証するものではありません。本アプリは、支援ツールとして意図されており、専門家のアドバイスの代わりと見なされるべきではありません。\n6.3 中断されないことの保証なし：当社は、本アプリが中断されないこと、またはエラーがないこと、欠陥が修正されること、または本アプリもしくはそれを利用可能にするサーバーにウイルスまたはその他の有害なコンポーネントがないことを保証しません。\n\n7. 責任の制限\n7.1 適用される法律で認められる最大限の範囲で、[貴社名]は、間接的、偶発的、特別、結果的、または懲罰的損害、または直接的または間接的に発生した利益または収益の損失、もしくはデータ、使用、営業権、またはその他の無形の損失について、(a) お客様による本アプリの使用または使用不能、(b) 当社のサーバーおよび/またはそこに保存されている個人情報への不正アクセスまたは使用、(c) 本アプリとの間の送信の中断または停止、(d) 第三者によって本アプリを介してまたは本アプリに送信される可能性のあるバグ、ウイルス、トロイの木馬など、(e) コンテンツの誤りまたは脱落、またはお客様による本アプリの使用の結果として被ったあらゆる種類の損失または損害に起因する責任を負わないものとします。\n7.2 責任の制限が許可されていない管轄区域では、当社の責任は法律で許可される最大限の範囲に制限されます。\n\n8. 補償\nお客様は、お客様またはお客様のアカウントを使用して本アプリにアクセスする他の人物による、本規約の違反またはお客様のアカウントに関連する活動（過失または不正行為を含む）に起因するすべての損失、費用、損害、および費用（合理的な弁護士費用を含む）から、[貴社名]、その役員、取締役、従業員、エージェント、ライセンサー、およびサプライヤーを補償、防御、および免責することに同意するものとします。\n\n9. 準拠法および紛争解決\n9.1 準拠法：本規約は、法の抵触に関する規定にかかわらず、イングランドおよびウェールズの法律に準拠し、同法に従って解釈されるものとします。\n9.2 紛争解決：本規約に起因または関連する紛争は、イングランドおよびウェールズの裁判所の専属管轄権に服するものとします。他の管轄区域のユーザーの場合、お客様の地域の法律も適用される場合があることにご注意ください。\n\n10. 規約の変更\n[貴社名]は、いつでも本規約を変更または置き換える権利を留保します。本アプリ内に新しい規約を掲載したり、電子メールを送信したりするなど、重要な変更については通知を提供します。変更後も本アプリを継続して使用することは、新しい規約への同意を構成するものとします。\n\n11. 連絡先情報\n本利用規約についてご質問がある場合は、以下までお問い合わせください。\n[貴社名]\n[貴社住所]\nuserhelp@myndmap.uk\n\n12. アクセシビリティ\n当社は、すべての人に本利用規約をアクセスできるように努めています。本規約へのアクセスに問題が発生した場合は、userhelp@myndmap.ukまでお問い合わせください。\n\nMyndMapを使用することにより、あなたはこの利用規約を読み、理解し、これに拘束されることに同意したものとみなされます。"
+    },
+    "xp": {
+      "gain": "経験値+!",
+      "levelUp": "レベルアップ!"
+    }
+  }

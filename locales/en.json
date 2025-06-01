@@ -1,0 +1,1497 @@
+{
+    "common": {
+      "ok": "OK",
+      "back": "Back",
+      "error": "Error",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "update": "Update",
+      "save": "Save",
+      "post": "Post",
+      "loading": "Loading..."
+    },
+    "termsOfService": {
+      "title": "Terms of Service",
+      "content": "Terms of Service for MyndMap\nEffective Date: 2025-02-17\n\n1. Acceptance of Terms\nBy accessing and using the MyndMap application ('App'), you agree to be bound by these Terms of Service ('Terms'). These Terms are applicable worldwide.\n\n2. Description of Service\nMyndMap is an AI-powered productivity application designed to assist individuals, including those with ADHD and neurotypical users, in managing tasks, notes, and improving productivity through personalized insights and methods. MyndMap is developed by [Your Company Name], founded in London, UK.\n\n3. User Accounts and Responsibilities\n3.1 Account Security: You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.\n3.2 Lawful Use: You agree to use the App only for lawful purposes and in accordance with these Terms and all applicable laws and regulations.\n3.3 Age Requirement: You must be at least 18 years old to use this App. By using the App, you represent and warrant that you meet this age requirement.\n3.4 Prohibited Conduct: You agree not to:\n    a) Use the App for any unlawful purpose or for the promotion of illegal activities.\n    b) Attempt to gain unauthorized access to the App or its related systems or networks.\n    c) Interfere with or disrupt the operation of the App.\n    d) Use the App to infringe upon or violate our intellectual property rights or the intellectual property rights of others.\n    e) Transmit any viruses, worms, defects, Trojan horses, or any items of a destructive nature.\n    f) Collect or track the personal information of others.\n    g) Use the App in a way that could damage, disable, overburden, or impair the App or our systems.\n\n4. Data Privacy and Protection\n4.1 Data Collection: We collect certain user data to provide and improve the App's functionality. This may include usage data, task and note content, and interactions within the App. Please refer to our Privacy Policy for detailed information on data collection practices.\n4.2 GDPR Compliance (For Users in the European Economic Area and the UK):\n    a) [Your Company Name] is committed to protecting your personal data in accordance with the General Data Protection Regulation (GDPR).\n    b) You have the right to access, rectify, erase, restrict processing of your personal data, and the right to data portability.\n    c) For any GDPR-related inquiries or to exercise your rights, please contact us at userhelp@myndmap.uk.\n4.3 CCPA Compliance (For Users in California, USA):\n    a) [Your Company Name] complies with the California Consumer Privacy Act (CCPA).\n    b) California residents have specific rights regarding their personal information, including the right to know, the right to delete, and the right to opt-out of the sale of personal information.\n    c) To exercise your CCPA rights, please contact us at userhelp@myndmap.uk.\n4.4 Data Security: We implement reasonable security measures to protect your data. However, no system is entirely impenetrable, and we cannot guarantee absolute security.\n4.5 Data Transfer: By using MyndMap, you consent to the transfer and processing of your information in the United Kingdom and other countries where our service providers are located.\n\n5. Intellectual Property\n5.1 App Ownership: The App and its original content, features, and functionality are owned by [Your Company Name] and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.\n5.2 Limited License: Subject to your compliance with these Terms, [Your Company Name] grants you a limited, non-exclusive, non-transferable, revocable license to use the App for your personal, non-commercial use.\n\n6. Disclaimer of Warranties\n6.1 As Is Basis: The App is provided on an 'AS IS' and 'AS AVAILABLE' basis without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose, or non-infringement.\n6.2 No Guarantee of Accuracy: [Your Company Name] does not warrant that the AI-driven features of the App will be error-free, accurate, reliable, or that the App will meet your specific requirements or expectations. The App is intended to be a tool for assistance and should not be considered a substitute for professional advice.\n6.3 No Uninterruption: We do not warrant that the App will be uninterrupted or error-free, that defects will be corrected, or that the App or the servers that make it available are free of viruses or other harmful components.\n\n7. Limitation of Liability\n7.1 To the maximum extent permitted by applicable law, [Your Company Name] shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from (a) your use or inability to use the App; (b) any unauthorized access to or use of our servers and/or any personal information stored therein; (c) any interruption or cessation of transmission to or from the App; (d) any bugs, viruses, trojan horses, or the like that may be transmitted to or through our App by any third party; or (e) any errors or omissions in any content or for any loss or damage of any kind incurred as a result of your use of the app.\n7.2 In jurisdictions where limitations of liability are not permitted, our liability will be limited to the maximum extent permitted by law.\n\n8. Indemnification\nYou agree to indemnify, defend and hold harmless [Your Company Name], its officers, directors, employees, agents, licensors and suppliers from and against all losses, expenses, damages and costs, including reasonable attorneys' fees, resulting from any violation of these Terms or any activity related to your account (including negligent or wrongful conduct) by you or any other person accessing the App using your account.\n\n9. Governing Law and Dispute Resolution\n9.1 Governing Law: These Terms shall be governed by and construed in accordance with the laws of England and Wales, without regard to its conflict of law provisions.\n9.2 Dispute Resolution: Any disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of England and Wales. For users in other jurisdictions, please note that your local laws may also apply.\n\n10. Changes to Terms\n[Your Company Name] reserves the right to modify or replace these Terms at any time. We will provide notice of any significant changes, such as by posting the new Terms within the App or by sending you an email. Your continued use of the App after any changes constitutes acceptance of the new Terms.\n\n11. Contact Information\nIf you have any questions about these Terms of Service, please contact us at:\n[Your Company Name]\n[Your Company Address]\nuserhelp@myndmap.uk\n\n12. Accessibility\nWe are committed to making our Terms of Service accessible to everyone. If you experience any difficulty accessing these Terms, please contact us at userhelp@myndmap.uk for assistance.\n\nBy using MyndMap, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service."
+    },
+    "xp": {
+      "gain": "+XP!",
+      "levelUp": "Level Up!"
+    },
+    "privacyPolicy": {
+      "title": "Privacy Policy",
+      "content": "Privacy Policy for MyndMap\nEffective Date: 2025-02-17\n\n1. Introduction\nWelcome to MyndMap ('App'), an AI-powered productivity application.  [Your Company Name] ('we', 'us', or 'our'), founded in London, UK, is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and disclose your information when you use our App. This policy applies to users worldwide.\n\n2. Information We Collect\nWe collect information to provide and improve our services, and to personalize your experience. The types of information we collect depend on your interaction with MyndMap.\n\na) Personal Information:\n    • Account Information: When you create an account, we collect your email address and a chosen password. You may also provide optional profile information.\n    • Contact Information: If you contact us for support, we may collect your name, email address, and any information you choose to provide.\n\nb) Usage Data:\n    • App Interaction Data: We collect data on how you interact with the App, such as features used, screens visited, and actions taken within the App.\n    • Feature Usage Statistics: We track the usage of different features to understand user preferences and improve functionality.\n    • Performance and Crash Reports: To ensure app stability and performance, we collect data about crashes and errors.\n    • Device Information: We collect information about the device you use to access MyndMap, including device type, operating system, and hardware settings.\n    • Log Data: Our servers automatically record information ('log data') created by your use of the App. Log data may include your IP address, browser type, domain, referring/exit pages, pages viewed, location, your mobile carrier, device and application IDs, search terms, and cookie information.\n\nc) User-Generated Content:\n    • Tasks, Notes, and Content: The content you create, input, or upload within MyndMap, including tasks, notes, and any other information you directly provide within the App.\n\n3. How We Use Your Information\nWe use the information we collect for various purposes, including:\n\na) Providing and Improving the Service:\n    • To operate, maintain, and improve MyndMap.\n    • To personalize your experience and customize content and features.\n    • To develop new features and functionality.\n    • To provide user support and respond to inquiries.\n\nb) Communication:\n    • To communicate with you about your account, updates, and important announcements related to the App.\n    • To send you promotional materials and marketing communications, where permitted by applicable law and in accordance with your preferences.\n\nc) Analytics and Research:\n    • To analyze App performance and user behavior to identify trends and improve the App.\n    • To conduct research and development activities to enhance MyndMap's AI capabilities and user experience. Aggregated and anonymized data may be shared with partnering clinical psychologists for research purposes.\n\nd) Legal and Security Purposes:\n    • To comply with applicable laws, regulations, legal processes, or governmental requests.\n    • To protect the security and integrity of our App, systems, and users.\n    • To enforce our Terms of Service and other policies.\n    • To prevent, detect, and investigate fraud, security breaches, and other potentially prohibited or illegal activities.\n\n4. Data Storage and Security\nWe take data security seriously and implement appropriate technical and organizational measures to protect your information from unauthorized access, use, or disclosure.\n\na) Security Measures: We use industry-standard encryption technologies to protect data at rest and in transit. We regularly assess our security practices and infrastructure to ensure the ongoing confidentiality, integrity, and availability of your data.\n\nb) Data Retention: We retain personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.\n\nc) Data Transfer and Processing: Your information may be transferred to and processed in countries outside of your country of residence, including the United Kingdom, where our servers are located and our service providers operate. We will take appropriate safeguards to ensure that your personal information remains protected in accordance with this Privacy Policy and applicable data protection laws.\n\n5. Sharing of Information\nWe do not sell, trade, or rent your personal information to third parties. We may share information in the following limited circumstances:\n\na) With Service Providers: We engage third-party service providers to perform functions and provide services to us, such as hosting, data analysis, email delivery, customer support, and analytics. These service providers have access to personal information only to the extent necessary to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.\n\nb) For Legal Reasons: We may disclose information to respond to subpoenas, court orders, legal process, law enforcement requests, legal claims, or government inquiries, and to protect, establish, or exercise our legal rights or defend against legal claims.\n\nc) Business Transfers: As we continue to develop our business, we might sell or buy subsidiaries, or business units. In such transactions, user information is generally one of the transferred business assets but remains subject to the promises made in any pre-existing Privacy Policy (unless the user consents otherwise).\n\nd) Aggregated and Anonymized Data: We may share aggregated and anonymized data (information that does not identify you personally) with third parties for research, marketing, analytics, and other purposes.\n\n6. Your Rights\nWe respect your rights regarding your personal information. Depending on your jurisdiction, you may have the following rights:\n\na) Access: You have the right to request access to your personal data that we hold.\n\nb) Rectification: You have the right to request that we correct any inaccurate or incomplete personal data.\n\nc) Erasure: You have the right to request the deletion of your personal data, subject to certain exceptions as permitted by law.\n\nd) Restriction of Processing: You have the right to request that we restrict the processing of your personal data in certain circumstances.\n\ne) Data Portability: You have the right to receive your personal data in a structured, commonly used, and machine-readable format and have the right to transmit that data to another controller.\n\nf) Objection: You have the right to object to the processing of your personal data in certain circumstances, including for direct marketing purposes.\n\ng) Withdrawal of Consent: If we rely on your consent for the processing of your personal data, you have the right to withdraw your consent at any time. Withdrawal of consent does not affect the lawfulness of processing based on consent before its withdrawal.\n\nh) Right to Lodge a Complaint: You have the right to lodge a complaint with a supervisory authority if you believe that our processing of your personal data infringes applicable data protection laws.\n\nTo exercise any of these rights, please contact us at userhelp@myndmap.uk. We will respond to your request in accordance with applicable data protection laws.\n\n7. Specific Jurisdictional Information\n\na) For Users in the European Economic Area (EEA) and the United Kingdom (UK):\n    • Legal Basis for Processing: We process your personal data based on one or more of the following legal bases: (i) your consent; (ii) the necessity for the performance of a contract with you; (iii) compliance with our legal obligations; and/or (iv) our legitimate interests.\n    • GDPR Representative: [Your Company Name]'s GDPR representative in the EU can be contacted at userhelp@myndmap.uk.\n\nb) For Users in California, USA:\n    • CCPA Rights: The California Consumer Privacy Act (CCPA) provides California residents with specific rights regarding their personal information. You have the right to request to know what personal information we collect, use, disclose, and sell. You also have the right to request deletion of your personal information and to opt-out of the sale of your personal information. We do not sell personal information.\n    • To exercise your CCPA rights, please contact us at userhelp@myndmap.uk.\n\nc) For Users in Japan:\n    • Act on Protection of Personal Information (APPI): We will handle your personal information in accordance with the APPI and related regulations. You have rights regarding your personal information under APPI, including the right to request disclosure, correction, addition, deletion, cessation of use, or erasure of your personal information. \n    • For APPI-related inquiries or to exercise your rights, please contact us at userhelp@myndmap.uk.\n\n8. Children's Privacy\nMyndMap is not intended for children under the age of 18, and we do not knowingly collect personal information from children under 18. If we become aware that we have collected personal information from a child under 18, we will take steps to delete such information as soon as possible.\n\n9. Changes to This Privacy Policy\nWe may update this Privacy Policy from time to time to reflect changes in our practices or legal obligations. We will notify you of any material changes by posting the new Privacy Policy within the App or by other means as required by applicable law. We encourage you to review this Privacy Policy periodically for any updates. Changes to this Privacy Policy are effective when they are posted on this page.\n\n10. Contact Us\nIf you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:\n[Your Company Name]\n[Your Company Address]\nuserhelp@myndmap.uk\n\n11. Accessibility\nWe are committed to ensuring that our Privacy Policy is accessible to everyone, including individuals with disabilities. If you experience any difficulty accessing this Privacy Policy, please contact us at userhelp@myndmap.uk for assistance."
+    },
+    "signup": {
+      "forgeYourAccount": "Forge Your Account",
+      "email": "Email",
+      "password": "Password",
+      "enlist": "Enlist",
+      "alreadyALegend": "Already a legend? Log in",
+      "forgingDestiny": "Forging your destiny...",
+      "error": "Error",
+      "success": "Success",
+      "emailPasswordRequired": "Email and password are required",
+      "accountCreated": "Account created successfully",
+      "ok": "OK",
+      "auth/email-already-in-use": "This email is already in use. Please try another.",
+      "auth/invalid-email": "The email address is badly formatted.",
+      "auth/weak-password": "The password must be at least 6 characters long."
+    },
+    "login": {
+      "enterYourRealm": "Enter Your Realm",
+      "email": "Email",
+      "password": "Password",
+      "forgotPassword": "Forgot Password?",
+      "embark": "Embark",
+      "noQuestLog": "No quest log? Sign up",
+      "summoning": "Summoning your profile...",
+      "tooManyAttempts": "Too Many Attempts",
+      "tooManyAttemptsMessage": "You have exceeded the allowed number of login attempts. Please try again later.",
+      "invalidEmail": "Invalid Email",
+      "invalidEmailMessage": "Please enter a valid email address.",
+      "feebleKey": "Feeble Key",
+      "feebleKeyMessage": "Your password must be at least 8 characters long.",
+      "unknownTraveler": "Unknown Traveler",
+      "unknownTravelerMessage": "No account found with this email. Please check your email or sign up.",
+      "incorrectKey": "Incorrect Key",
+      "incorrectKeyMessage": "The password you entered is incorrect. Please try again.",
+      "connectionLost": "Connection Lost",
+      "connectionLostMessage": "Unable to connect to the realm. Please check your internet connection and try again.",
+      "mysteriousForces": "Mysterious Forces",
+      "mysteriousForcesMessage": "An unknown error occurred. Please try again later."
+    },
+    "organization": {
+      "title": "Organization Progress",
+      "addNewArea": "Add new area to organize",
+      "add": "Add",
+      "deleteArea": "Delete Area",
+      "deleteConfirmation": "Are you sure you want to delete this area?",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "loading": "Loading areas...",
+      "complete": "Complete",
+      "achievements": "Achievements",
+      "firstAreaOrganized": "First Area Organized",
+      "areasOrganized": "Areas Organized",
+      "achievementUnlocked": "Achievement Unlocked!",
+      "earnedAchievement": "You've earned:",
+      "greatJob": "Great job!",
+      "organizedArea": "Area organized! Keep up the good work!",
+      "error": "Error",
+      "failedToAddArea": "Failed to add area. Please try again.",
+      "failedToUpdateArea": "Failed to update area. Please try again.",
+      "failedToUpdateAreaType": "Failed to update area type. Please try again.",
+      "failedToDeleteArea": "Failed to delete area. Please try again.",
+      "timeEstimate": "Mins",
+      "minutes": "minutes",
+      "priority": {
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High"
+      }
+    },
+    "notes": {
+      "allCategories": "All Categories",
+      "categories": {
+        "general": "General",
+        "groceries": "Groceries",
+        "tasks": "Tasks",
+        "ideas": "Ideas",
+        "personal": "Personal",
+        "work": "Work",
+        "quick": "Quick",
+        "remember": "Remember",
+        "other": "Other"
+      },
+      "groceries": {
+        "mealBased": "Meal-based",
+        "simpleList": "Simple List"
+      },
+      "title": "Notes",
+      "loading": "Loading notes...",
+      "noteContent": "Note content",
+      "addNote": "Add",
+      "saveNote": "Save",
+      "cancel": "Cancel",
+      "returnHome": "Return Home",
+      "emptyList": "No notes yet. Start by adding a note above!",
+      "selectCategory": "Select Category",
+      "close": "Close",
+      "addItem": "Add Item",
+      "itemName": "Item name",
+      "quantity": "Quantity",
+      "cost": "Cost",
+      "addItemButton": "Add Item",
+      "helpTitle": "Notes Guide",
+      "helpWelcome": "Welcome, brave MyndMapper! Here's how to use Notes:",
+      "helpCreating": "1. Creating a Note:",
+      "helpCreatingSteps": "• Choose a category from the dropdown menu\n• Enter your note's title in the text field\n• For Groceries, you can add meals and items\n• Tap \"Add Note\" to save your scroll",
+      "helpCategories": "2. Categories:",
+      "helpCategoriesDetails": "• General: For miscellaneous thoughts\n• Groceries: For meal planning and shopping lists\n• Tasks: For additional quests and to-dos\n• Ideas: For sparks of inspiration\n• Personal: For private musings\n• Work: For professional matters\n• Other: For unique entries that don't fit elsewhere",
+      "helpEditing": "3. Editing and Deleting:",
+      "helpEditingSteps": "• Tap the edit icon to modify a note\n• Tap the trash icon to banish a note",
+      "helpFiltering": "4. Filtering:",
+      "helpFilteringDetails": "• Use the filter option to view scrolls by category",
+      "helpGroceries": "5. Groceries Feature:",
+      "helpGroceriesDetails": "• Choose between Meal-based and Simple List modes\n• Add meals and individual items with quantities and costs\n• Perfect for planning your market quests!",
+      "helpRemember": "Remember, these scrolls are your personal chronicle. Use them to organize your thoughts, plan your quests, and conquer the chaos of daily life!",
+      "groceriesHelpTitle": "How to Use Groceries",
+      "groceriesHelpChoose": "Choose Your List Type",
+      "groceriesHelpChooseDetails": "Use the toggle switches to choose between Meal-based List, Simple List, or both.",
+      "groceriesHelpMealBased": "Meal-based List:",
+      "groceriesHelpMealBasedSteps": "1. Enter a meal name and tap \"Add Meal\"\n2. Tap \"Add Item to Meal\" for each meal\n3. Enter item details: name, quantity, and cost\n4. Tap \"Add Item\" to include it in the meal",
+      "groceriesHelpSimple": "Simple List:",
+      "groceriesHelpSimpleSteps": "1. Enter an item name and tap \"Add Item\"\n2. Optionally add quantity and cost for each item\n3. Tap the trash icon to remove an item",
+      "groceriesHelpSaving": "Saving Your List:",
+      "groceriesHelpSavingDetails": "Once you've added items or meals, tap \"Add Note\" at the bottom to save your grocery list.",
+      "addMeal": "Add Meal",
+      "addItemToMeal": "Add Item to Meal",
+      "noMeals": "No meals added yet.\nStart by adding a meal above!",
+      "noItems": "No items added to this meal yet.",
+      "addItemToList": "Add Item",
+      "noGroceryItems": "No items added yet.\nStart by adding items above!",
+      "meals": "Meals",
+      "items": "Items",
+      "simpleListItems": "Simple List Items",
+      "howToUseGroceries": "How to use Groceries",
+      "alerts": {
+        "deleteNoteTitle": "Delete Note",
+        "deleteNoteMessage": "Are you sure you want to delete this note?",
+        "emptyNoteTitle": "Empty Note",
+        "emptyNoteMessage": "Please add some content to your note before saving."
+      },
+      "errors": {
+        "failedToLoad": "Failed to load notes. Please try again later.",
+        "failedToSave": "Failed to save note. Please try again.",
+        "failedToDelete": "Failed to delete note. Please try again."
+      },
+      "filters": {
+        "all": "All",
+        "lowFocus": "Low Focus",
+        "medium": "Medium",
+        "highFocus": "High Focus"
+      },
+      "searchPlaceholder": "Search notes, tags, categories...",
+      "inputPlaceholder": "What's on your mind? Tap to capture your thoughts...",
+      "addTagsPlaceholder": "Add tags... (Press Enter to add)",
+      "clearSearch": "Clear Search",
+      "energyLevels": {
+        "low": "Low Focus",
+        "medium": "Medium Focus",
+        "high": "High Focus"
+      },
+      "empty": {
+        "noNotes": "No notes yet. Add your first note above",
+        "searchNoResults": "No notes match your search",
+        "noFilteredNotes": "No {{filter}} notes yet"
+      },
+      "characters": "characters"
+    },
+    "questCompletedModal": {
+      "title": "Amazing Job!",
+      "subtitle": "Here's a tip MyndMapper...",
+      "chooseTipsButton": "Choose Tips",
+      "closeButton": "Close",
+      "categoryModalTitle": "What do you struggle with the most?",
+      "backButton": "Back",
+      "categories": {
+        "gettingStarted": "Getting Started",
+        "executiveFunction": "Executive Function",
+        "timeManagement": "Time Management",
+        "organization": "Organization",
+        "focusAndConcentration": "Focus and Concentration"
+      },
+      "tips": {
+        "gettingStarted": [
+          "Break tasks into smaller, manageable steps.",
+          "Use the 'two-minute rule': if a task takes less than two minutes, do it now.",
+          "Set a timer for 5 minutes and commit to working on the task for just that time.",
+          "Create a visual schedule to organize your day.",
+          "Set clear, achievable goals for each session.",
+          "Use positive reinforcement to reward yourself after starting a task.",
+          "Prepare your workspace before starting to minimize distractions.",
+          "Use a 'ready to go' checklist for common tasks."
+        ],
+        "executiveFunction": [
+          "Use a planner or digital calendar to keep track of tasks and deadlines.",
+          "Create a daily routine and stick to it as much as possible.",
+          "Use visual aids like charts or diagrams to help with planning and decision-making.",
+          "Practice mindfulness to improve focus and reduce stress.",
+          "Break complex tasks into smaller, manageable steps.",
+          "Use checklists for multi-step tasks to avoid forgetting steps.",
+          "Set reminders for important deadlines and appointments.",
+          "Regularly review and update your goals and priorities."
+        ],
+        "timeManagement": [
+          "Use the Pomodoro Technique: work for 25 minutes, then take a 5-minute break.",
+          "Prioritize tasks using the Eisenhower Matrix (urgent/important grid).",
+          "Estimate how long each task will take and schedule accordingly.",
+          "Use a timer to stay on track and take regular breaks.",
+          "Create a visual schedule to organize your day.",
+          "Set clear, achievable goals for each session.",
+          "Use color-coded lists to prioritize tasks.",
+          "Review your progress regularly to stay on track."
+        ],
+        "organization": [
+          "Use color-coding for different types of tasks or projects.",
+          "Implement a 'one in, one out' rule for physical items to prevent clutter.",
+          "Create designated spaces for different activities or types of items.",
+          "Use a notepad to jot down sudden ideas or tasks.",
+          "Declutter your workspace regularly to reduce distractions.",
+          "Use digital tools for file organization and backup.",
+          "Create a system for handling incoming paperwork and emails.",
+          "Use labels and containers to keep items organized and easily accessible."
+        ],
+        "focusAndConcentration": [
+          "Minimize distractions by using website blockers or turning off notifications.",
+          "Practice mindfulness meditation to improve focus.",
+          "Use background noise or music without lyrics to help concentration.",
+          "Take regular short breaks to maintain focus over longer periods.",
+          "Use the 'body doubling' technique: work alongside someone else to stay focused.",
+          "Create a dedicated workspace to signal your brain it's time to focus.",
+          "Use fidget toys or stress balls to help with restlessness.",
+          "Practice deep breathing exercises when you feel your focus slipping."
+        ]
+      }
+    },
+    "overdueTasks": {
+      "title": "Overdue Tasks",
+      "alert": {
+        "message": "You have {{count}} task that was not completed on time.",
+        "message_plural": "You have {{count}} tasks that were not completed on time.",
+        "question": "What would you like to do?"
+      },
+      "buttons": {
+        "carryOver": "Carry Over",
+        "delete": "Delete"
+      },
+      "success": {
+        "deleted": {
+          "single": "1 overdue task has been removed.",
+          "plural": "{{count}} overdue tasks have been removed."
+        },
+        "carriedOver": {
+          "single": "1 overdue task has been rescheduled for today.",
+          "plural": "{{count}} overdue tasks have been rescheduled for today."
+        }
+      },
+      "errors": {
+        "delete": "Failed to delete tasks. Please try again.",
+        "carryOver": "Failed to carry over tasks. Please try again."
+      }
+    },
+    "taskItem": {
+      "topPriority": "Top Priority - Focus on this!",
+      "urgent": "Urgent - Handle ASAP",
+      "high": "High Priority - Important",
+      "medium": "Medium Priority",
+      "low": "Low Priority - When you have time",
+      "viewSubtasks": "Click to see subtasks ({{count}})",
+      "rescheduled": "Rescheduled"
+    },
+    "taskModal": {
+      "createNewTask": "Task Creation",
+      "enterTaskTitle": "Enter task title",
+      "editTask": "Edit Task",
+      "priority": "Priority",
+      "tags": "Category",
+      "reminderInterval": "Reminder Frequency",
+      "priorityLevels": {
+        "lowest": "Lowest",
+        "medium": "Medium",
+        "high": "High",
+        "urgent": "Urgent"
+      },
+      "minutes": "mins",
+      "deadline": "Deadline",
+      "selectDate": "Select Date",
+      "create": "Create",
+      "subtasks": "Subtasks ({{count}}/{{max}})",
+      "enterSubtask": "Enter subtask",
+      "addSubtask": "Add Subtask",
+      "additionalInfo": "Additional info or micro-task",
+      "cancel": "Cancel",
+      "saveChanges": "Save Changes",
+      "summon": "Create!",
+      "steps": "Subtasks",
+      "taskLimitReached": "Task Limit Reached",
+      "taskLimitExplanation": "Halt, brave MyndMapper! The task limit for this priority level has been reached. This structure is designed to reduce overwhelm for ADHDers by limiting the number of tasks at each priority level:\n\n• 1 Urgent task\n• 2 High priority tasks\n• 3 Medium priority tasks\n• 4 Lowest priority tasks\n\nThis helps maintain focus and prevents task overload. Consider completing some existing tasks or adjusting their priorities before adding new ones.",
+      "understood": "Understood",
+      "helpModal": {
+        "title": "Task Creation Guide",
+        "content": "Here's how to forge your task:\n\n1. Quest Title: Enter the name of your task.\n\n2. Priority: Choose the importance of your task.\n• Urgent (1 allowed): For critical, time-sensitive tasks.\n• High (2 allowed): Important tasks that need attention soon.\n• Medium (3 allowed): Tasks of moderate importance.\n• Lowest (4 allowed): Tasks that can wait if necessary.\n\n3. Reminder Interval: How often you want to be reminded of this task.\n\n4. Schedule for Future: Set a future date for the task, if applicable.\n\n5. Subtasks: Break your main task into smaller, manageable steps (up to 3).\n\n6. Micro Tasks: Add one small, specific action for each subtask.\n\nRemember, limiting tasks helps maintain focus and prevents overwhelm. Complete existing tasks or adjust priorities to make room for new ones.",
+        "close": "Close"
+      }
+    },
+    "taskReminder": {
+      "title": "Time's Up!",
+      "complete": "Complete",
+      "reschedule": "Reschedule",
+      "delete": "Delete"
+    },
+    "helpModal": {
+      "title": "Help & Instructions",
+      "welcome": "Welcome to MyndMapper! Here's how to use the app:",
+      "creatingTasks": "Creating Tasks:",
+      "creatingTasksContent": "\n• Enter your task in the input field at the bottom of the screen and press 'return' to add it.\n\n• Tap on a task to edit its details, set priority, due date, and add subtasks.",
+      "managingTasks": "Managing Tasks:",
+      "managingTasksContent": "\n• Swipe left on a task to reveal options: complete, edit priority, add subtask, or delete.\n\n• Tap the priority icon (flag) to quickly change a task's priority.\n\n• Use the 'Current/Future' toggle at the bottom right to switch between current and upcoming tasks.",
+      "otherFeatures": "Other Features:",
+      "otherFeaturesContent": "\n• Tap 'Notes' at the bottom left to access your quick notes.\n\n• Use the menu icon (top left) to access your profile, MyndCooling feature, MyndBudget, and more.\n\n• The app will notify you about your highest priority task and ask for completion status.\n\n• Overdue tasks will be flagged, and you'll be prompted to carry them over or delete them.",
+      "tips": "Tips:",
+      "tipsContent": "\n• Complete tasks regularly to maintain your streak and level up!\n\n• Use the MyndCooling feature when you need a break or feel overwhelmed.\n\n• Check the Leaderboard in the menu to see how you compare with other users.",
+      "close": "Close"
+    },
+    "calendarScreen": {
+      "title": "Calendar",
+      "currentTasks": "Current Tasks",
+      "noTasks": "No tasks for this date",
+      "dayStreak": "day streak!",
+      "error": {
+        "title": "Error",
+        "datePassed": "You cannot select a past date.",
+        "selectDate": "Please select a date first."
+      },
+      "help": {
+        "title": "Calendar Help",
+        "content": {
+          "overview": "The Calendar Screen allows you to view and manage your tasks by date.",
+          "markers": "Dates with tasks are marked with a dot.",
+          "interaction": "Tap on a date to view or add tasks for that day.",
+          "taskList": "The task list below shows tasks for the selected date.",
+          "editing": "Tap on a task to edit or delete it.",
+          "energyLevels": "Tasks are color-coded by energy level to help you plan your day based on your available energy.",
+          "timeBlocks": "Time blocks show estimated duration for each task to help with time management.",
+          "priorities": "Priority markers help you focus on what's most important.",
+          "streak": "Keep track of your daily completion streak for motivation!"
+        },
+        "close": "Close"
+      },
+      "energyLevels": {
+        "high": "High Energy",
+        "medium": "Medium Energy",
+        "low": "Low Energy"
+      },
+      "priority": {
+        "high": "High Priority",
+        "medium": "Medium",
+        "low": "Low Priority"
+      },
+      "filters": {
+        "all": "All Tasks"
+      },
+      "mood": {
+        "great": "Feeling Great",
+        "good": "Good",
+        "neutral": "Neutral",
+        "difficult": "Challenging",
+        "overwhelming": "Overwhelming"
+      },
+      "timeBlock": {
+        "15min": "Quick Task (15m)",
+        "30min": "Short Task (30m)",
+        "1hour": "Long Task (1h)"
+      },
+      "fixedCost": "Fixed Cost",
+      "variableCost": "Variable Cost"
+    },
+    "notifications": {
+      "areaAttention": "Area Needs Attention",
+      "areaAttentionBody": "It's been a week since you organized \"{{areaName}}\". Time for a quick tidy-up!",
+      "timeUp": "MyndMapper!",
+      "timeUpBody": "{{interval}} minute timer is up for task: {{taskText}}",
+      "futureTasks": "Future Tasks Reminder",
+      "futureTasksBody": "You have {{count}} upcoming task. Plan ahead!",
+      "futureTasksBody_plural": "You have {{count}} upcoming tasks. Plan ahead!",
+      "taskCheckIn": "Task Check-in",
+      "taskCheckInBody": "Is there anything on your mind?",
+      "adhd_pro_tip": "ADHD Pro Tip",
+      "proTip1": "Did you know? People who start tasks within 5 minutes of planning them are 60% more likely to complete them. Why not start now?",
+      "proTip2": "Breaking tasks into smaller steps can make them feel less overwhelming. Can you identify one small step to take right now?",
+      "proTip3": "Remember: Done is better than perfect. What's one task you can make progress on today?",
+      "proTip4": "Studies show that completing a task releases dopamine in the brain, improving mood and motivation. Which task can you tackle to get that boost?",
+      "proTip5": "Fact: The Zeigarnik effect shows that unfinished tasks are more likely to stay in your memory. Completing tasks can free up mental space!",
+      "rescheduledTask": "Task Rescheduled",
+      "rescheduledTaskBody": "Time's up again for \"{{taskText}}\".",
+      "rescheduledTaskBody2nd": "This is the second time.",
+      "rescheduledTaskBody3rd": "This is the third time.",
+      "rescheduledTaskBody4th": "This is the fourth time.",
+      "rescheduledTaskBodyNth": "This is the {{count}}th time."
+    },
+    "onboarding": {
+      "defaultUsername": "New User",
+      "welcome": {
+        "title": "Welcome to MyndMap!",
+        "message": "I'm Arne, your personal mentor on your journey to productivity! \n \n Let's personalize your experience with a few questions...",
+        "start": "Let's Get Started!"
+      },
+      "gender": {
+        "title": "Tell Us About Yourself",
+        "subtitle": "Select your gender to help personalize your experience",
+        "options": {
+          "male": "Male",
+          "female": "Female",
+          "other": "Non-Binary/Other"
+        }
+      },
+      "adhd": {
+        "title": "Your ADHD Journey",
+        "subtitle": "Tell us about your relationship with ADHD.",
+        "options": {
+          "diagnosed": "Diagnosed with ADHD",
+          "suspected": "Suspecting ADHD",
+          "exploring": "Exploring and Learning"
+        }
+      },
+      "challenges": {
+        "title": "Daily Challenges",
+        "subtitle": "Select up to 3 areas you find most challenging.",
+        "options": {
+          "focus": "Maintaining Focus",
+          "organization": "Staying Organized",
+          "time": "Managing Time",
+          "emotional": "Emotional Regulation",
+          "procrastination": "Procrastination"
+        }
+      },
+      "workStyle": {
+        "title": "Your Work Style",
+        "subtitle": "How do you prefer to tackle tasks?",
+        "options": {
+          "structured": "Structured Routine",
+          "flexible": "Flexible Approach",
+          "deadline": "Deadline-Driven",
+          "bodyDouble": "Working Alongside Others"
+        }
+      },
+      "environment": {
+        "title": "Ideal Environment",
+        "subtitle": "Where do you work best?",
+        "options": {
+          "quiet": "Quiet Space",
+          "ambient": "Ambient Background",
+          "busy": "Active Environment",
+          "varying": "Changes Day-to-Day"
+        }
+      },
+      "timePreference": {
+        "title": "Peak Performance Time",
+        "subtitle": "When are you most productive?",
+        "options": {
+          "morning": "Early Morning",
+          "afternoon": "Afternoon",
+          "evening": "Evening",
+          "variable": "It Varies"
+        }
+      },
+      "learning": {
+        "title": "Learning Style",
+        "subtitle": "How do you best process information?",
+        "options": {
+          "visual": "Visual (Images & Diagrams)",
+          "auditory": "Auditory (Listening)",
+          "kinesthetic": "Hands-on Practice",
+          "reading": "Reading & Writing"
+        }
+      },
+      "alert": {
+        "required": {
+          "title": "Input Needed",
+          "message": "Please make a selection before continuing"
+        },
+        "maxSelection": {
+          "title": "Maximum Reached",
+          "message": "You can select up to 3 options"
+        },
+        "error": {
+          "title": "Oops!",
+          "message": "Something went wrong. Please try again."
+        }
+      },
+      "common": {
+        "continue": "Continue",
+        "complete": "Complete Setup",
+        "back": "Back",
+        "skip": "Skip for Now"
+      }
+    },
+    "myndBudget": {
+      "title": "Mynd Budget",
+      "enterBudget": "Enter budget",
+      "update": "Update",
+      "spentToday": "Spent Today",
+      "budgetStreak": "Budget Streak",
+      "days": "days",
+      "recentExpenses": "Recent Expenses",
+      "clearAll": "Clear All",
+      "addExpense": "Add Expense",
+      "scanFood": "Scan Food",
+      "scanMisc": "Scan Misc",
+      "expenseName": "Expense name",
+      "amount": "Amount",
+      "close": "Close",
+      "loading": "Loading your budget...",
+      "totalBudget": "Total Budget:",
+      "fixedCostsBudget": "Fixed Costs Budget:",
+      "budgetPeriod": "Budget Period:",
+      "fixedCosts": "Fixed Costs:",
+      "variableCosts": "Variable Costs:",
+      "tapToToggle": "Tap to toggle between Fixed and Variable Costs",
+      "filterButton": "Filter",
+      "all": "All",
+      "fixed": "Fixed",
+      "variable": "Variable",
+      "help": {
+        "title": "MyndBudget Help & Instructions",
+        "close": "Close"
+      },
+      "enterTotalBudget": "Enter total budget",
+      "enterFixedCostsBudget": "Enter fixed costs budget",
+      "fixedCostsToday": "Fixed Costs Today",
+      "variableCostsToday": "Variable Costs Today",
+      "fixedCost": "Fixed Cost",
+      "variableCost": "Variable Cost",
+      "expense": "Expense",
+      "name": "Name",
+      "category": "Category",
+      "type": "Type",
+      "event": "Event",
+      "deleteExpense": "Delete expense",
+      "expenseDetails": "Expense Details",
+      "budgetPeriods": {
+        "daily": "Daily",
+        "weekly": "Weekly",
+        "monthly": "Monthly",
+        "biweekly": "Bi-weekly",
+        "payday": "Payday"
+      },
+      "categories": {
+        "food": "Food",
+        "transport": "Transport",
+        "entertainment": "Entertainment",
+        "utilities": "Utilities",
+        "other": "Other"
+      },
+      "seasonalEvents": {
+        "newYear": "New Year",
+        "cherryBlossom": "Cherry Blossom",
+        "goldenWeek": "Golden Week",
+        "obon": "Obon",
+        "christmas": "Christmas"
+      },
+      "alerts": {
+        "invalidAmount": "Invalid Amount",
+        "invalidAmountMessage": "Please enter a valid positive number for the amount.",
+        "invalidInput": "Invalid Input",
+        "invalidInputMessage": "Please enter name, amount, and category for the expense.",
+        "invalidBudget": "Invalid Budget",
+        "invalidBudgetMessage": "Please enter valid positive numbers for the budgets.",
+        "success": "Success",
+        "budgetUpdated": "Budgets updated successfully!",
+        "expenseAdded": "Expense added successfully!",
+        "error": "Error",
+        "failedToUpdate": "Failed to update budgets. Please try again.",
+        "failedToAdd": "Failed to add expense. Please try again.",
+        "failedToDelete": "Failed to delete expense. Please try again."
+      }
+    },
+    "menu": {
+      "title": "M\nE\nN\nU",
+      "profile": "Profile",
+      "myndCooling": "Mynd Cooling",
+      "myndBudget": "Mynd Budget",
+      "myndChecker": "Mood Checker",
+      "myndWiki": "MyndMap Wiki",
+      "organization": "Organization",
+      "leaderboard": "Leaderboard",
+      "community": "Chat",
+      "comingSoon": "Coming Soon",
+      "customizeArne": "Arne",
+      "subscription": "Subscription",
+      "shortcuts": "Shortcuts",
+      "settings": "Settings",
+      "close": "Close",
+      "logout": "Logout",
+      "logoutConfirm": "Confirm Logout",
+      "logoutMessage": "Are you sure you want to logout?",
+      "confirmLogout": "Yes, Logout",
+      "cancel": "Cancel",
+      "logoutError": "Failed to logout. Please try again.",
+      "versionHistory": "Version History",
+      "level": "Level",
+      "soon": "Soon"
+    },
+    "home": {
+      "calendar": "Calendar",
+      "loading": "Loading...",
+      "greeting": "Hello, {{name}}!",
+      "defaultName": "MyndMapper",
+      "subtitle": "Tasks for {{day}}:",
+      "subtitleWithTasks": "On this {{day}}, these tasks await you:",
+      "noFutureTasks": "No future tasks await... \n \n Use the field below to get started.",
+      "noCurrentTasks": "No current tasks await... \n \n Use the field below to get started.",
+      "subtitleTimer": "Time Left:",
+      "enterTask": "Enter Task...",
+      "notes": "Notes",
+      "future": "Future",
+      "current": "Current",
+      "betaVersion": "Version 2.1.2",
+      "logout": "Logout",
+      "overdueTasksTitle": "Overdue Tasks",
+      "overdueTasksMessage": "You have {{count}} task that was not completed on time. What would you like to do?",
+      "overdueTasksMessage_plural": "You have {{count}} tasks that were not completed on time. What would you like to do?",
+      "carryOver": "Carry Over",
+      "delete": "Delete",
+      "tasksDeletedTitle": "Tasks Deleted",
+      "tasksDeletedMessage": "{{count}} overdue task has been removed.",
+      "tasksDeletedMessage_plural": "{{count}} overdue tasks have been removed.",
+      "errorTitle": "Error",
+      "errorDeleteMessage": "Failed to delete tasks. Please try again.",
+      "tasksUpdatedTitle": "Tasks Updated",
+      "tasksUpdatedMessage": "{{count}} overdue task has been rescheduled for today.",
+      "tasksUpdatedMessage_plural": "{{count}} overdue tasks have been rescheduled for today.",
+      "errorCarryOverMessage": "Failed to carry over tasks. Please try again.",
+      "taskCompletion": "Task Completion",
+      "taskCompletionQuestion": "Have you completed the task: \"{{task}}\"?",
+      "no": "No",
+      "yes": "Yes!",
+      "taskRescheduled": "Task Rescheduled",
+      "encouragement": "You can do it!",
+      "priority": "Priority",
+      "subtasks": "Subtasks",
+      "reminder": "Set Reminder",
+      "reminderSetFor": "Reminder Set for: {{date}}",
+      "priorityLevels": {
+        "lowest": "Lowest",
+        "medium": "Medium",
+        "high": "High",
+        "urgent": "Urgent"
+      },
+      "maxSubtasks": "You can add up to {{max}} subtasks"
+    },
+    "profile": {
+      "level": "Level",
+      "title": "Profile",
+      "name": "Name",
+      "enterName": "Enter your name",
+      "email": "Email",
+      "ageGroup": "Age Group",
+      "mainStruggle": "Main Struggle",
+      "adhdStatus": "ADHD Status",
+      "tasksCompleted": "Tasks Completed",
+      "accountCreated": "Account Created",
+      "notSpecified": "Not specified",
+      "priority": "Priority",
+      "viewCompletedTasks": "View Completed Tasks",
+      "viewBarCharts": "View Bar Charts",
+      "loading": "Loading profile...",
+      "noCompletedTasks": "No completed tasks yet. Keep going!"
+    },
+    "versionControl": {
+      "title": "Version History",
+      "changes": {
+        "languageSupport": "Full English and Language support",
+        "community": "Implementation of 'Community' feature",
+        "notifications": "iOS Notification overhaul",
+        "performance": "Performance and bug fixes",
+        "taskSystem": "Updated Task Creation system",
+        "uiUpdate": "UI update",
+        "translation": "Integrated translation support",
+        "uiOverhaul": "UI Overhaul",
+        "reminders": "Implementation of non-dismissible reminders",
+        "notes": "'Notes' implementation",
+        "taskEditing": "Enhanced Task Editing",
+        "aiFeatures": "Addition of AI and AI Features",
+        "myndWiki": "Addition of MyndMap Wiki"
+      }
+    },
+    "wiki": {
+      "help": {
+        "modalTitle": "About MyndMap Wiki",
+        "description": "The MyndMap Wiki serves as a central hub of information for users wanting to learn about ADHD, specifically focusing on areas where ADHDers struggle the most, such as Executive Function, Time Management, and more."
+      }
+    },
+    "general": {
+      "back": "Back",
+      "close": "Close",
+      "ok": "OK",
+      "cancel": "Cancel",
+      "error": "Error",
+      "success": "Success",
+      "beta": "Beta",
+      "loading": "Loading..."
+    },
+    "inviteFriend": {
+      "title": "Invite a Friend...",
+      "description": "Share the TestFlight link with your friends to invite them to join the beta version of our app!",
+      "shareButton": "Share Invite Link",
+      "closeButton": "Close",
+      "shareMessage": "Join me on this amazing app! Download the beta version here: {testFlightLink}"
+    },
+    "leaderboard": {
+      "title": "Leaderboard",
+      "subtitle": "Who's the greatest MyndMapper...",
+      "tasksCompleted": "Tasks Completed",
+      "loading": "Loading Leaderboard...",
+      "backButton": "Back",
+      "noData": "No leaderboard data available.",
+      "error": "Failed to load leaderboard. Please try again later.",
+      "retryButton": "Try Again",
+      "forumButton": "ADHD Forum",
+      "rank": "Rank",
+      "name": "Name",
+      "tasks": "Tasks",
+      "helpModal": {
+        "title": "Leaderboard Help & Instructions",
+        "welcome": "Welcome to the MyndMapper Leaderboard! Here's how it works:",
+        "understanding": {
+          "title": "Understanding the Leaderboard:",
+          "point1": "• The leaderboard shows the top performers in MyndMapper.",
+          "point2": "• Users are ranked based on the number of tasks they've completed.",
+          "point3": "• Your position is highlighted for easy identification."
+        },
+        "details": {
+          "title": "Leaderboard Details:",
+          "point1": "• Rank: Your position on the leaderboard.",
+          "point2": "• Name: The name or username of the MyndMapper user.",
+          "point3": "• Tasks: The total number of tasks completed by the user."
+        },
+        "improving": {
+          "title": "Improving Your Rank:",
+          "point1": "• Complete more tasks in the MyndMapper app to move up the leaderboard.",
+          "point2": "• Consistency is key - try to complete tasks regularly.",
+          "point3": "• Challenge yourself to beat your personal best each week."
+        },
+        "forum": {
+          "title": "ADHD Discussion Forum:",
+          "point1": "• Access the ADHD Discussion Forum to connect with other users.",
+          "point2": "• Share tips, ask questions, and discuss ADHD-related topics.",
+          "point3": "• Supporting others and gaining insights can help you improve your own performance."
+        },
+        "tips": {
+          "title": "Tips:",
+          "point1": "• The leaderboard updates regularly, so check back often to see your progress.",
+          "point2": "• Use the leaderboard as motivation, but remember that everyone's ADHD journey is unique.",
+          "point3": "• Celebrate your achievements, no matter your rank!"
+        },
+        "closeButton": "Close"
+      }
+    },
+    "help_Modal": {
+      "welcome": "Welcome to MyndMap!",
+      "overview": {
+        "title": "Overview",
+        "description": "This is your personal productivity command center. Here you can manage your tasks, track your progress, and stay organized with a simple yet powerful interface."
+      },
+      "mainFeatures": {
+        "title": "Main Features",
+        "taskManagement": {
+          "title": "Task Management",
+          "description": "• View and manage your current tasks\n• Toggle between current and future tasks\n• Easily identify your highest priority task\n• Gain XP rewards for completing tasks"
+        },
+        "progressTracking": {
+          "title": "Progress Tracking",
+          "description": "Access the Progress Review to:\n• See your productivity analytics\n• Get personalized efficiency tips\n• Track your completion rates\n• Monitor your XP progression"
+        },
+        "notesSystem": {
+          "title": "Notes System",
+          "description": "Use the Notes feature to:\n• Create categorized notes\n• Store important information\n• Keep reference materials handy\n• Organize by custom categories"
+        }
+      },
+      "quickTips": {
+        "title": "Quick Tips",
+        "xp": "Complete tasks to earn XP and level up",
+        "progress": "Use the Progress Review for personalized productivity insights",
+        "priority": "Priority tasks are highlighted for easy identification",
+        "toggle": "Toggle between current and future tasks with one tap"
+      }
+    },
+    "discussionForum": {
+      "title": "ADHD Forum",
+      "goToGeneralForum": "Go to General Forum",
+      "loadingPosts": "Loading posts...",
+      "noPosts": "No posts yet. Be the first to share!",
+      "editPostPlaceholder": "Edit your post...",
+      "newPostPlaceholder": "Share your thoughts...",
+      "userTag": "MyndMapper",
+      "edited": "edited",
+      "deletePost": {
+        "title": "Delete Post",
+        "message": "Are you sure you want to delete this post?"
+      },
+      "errors": {
+        "addEmojiPost": "Failed to add emoji post. Please try again.",
+        "addNewPost": "Failed to add new post. Please try again.",
+        "updatePost": "Failed to update post. Please try again.",
+        "deletePost": "Failed to delete post. Please try again."
+      },
+      "moderator": {
+        "name": "Arne",
+        "message": "Hate speech, personal attacks, or off-topic comments will not be tolerated."
+      },
+      "generalForum": {
+        "title": "General Discussion Forum",
+        "backButton": "← Back",
+        "goToADHDForum": "Go to ADHD Forum",
+        "loading": "Loading posts...",
+        "emptyList": "No posts yet. Be the first to share!",
+        "shareThoughts": "Share your thoughts...",
+        "editPost": "Edit your post...",
+        "post": "Post",
+        "update": "Update",
+        "deleteConfirmTitle": "Delete Post",
+        "deleteConfirmMessage": "Are you sure you want to delete this post?",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "errorDeleting": "Failed to delete post. Please try again.",
+        "errorAdding": "Failed to add new post. Please try again.",
+        "errorUpdating": "Failed to update post. Please try again.",
+        "edited": "(edited)",
+        "userTag": "MyndMapper"
+      }
+    },
+    "achievements": {
+      "screenTitle": "Achievements",
+      "firstArea": {
+        "name": "First Step",
+        "description": "Completed your first organization task"
+      },
+      "fiveAreas": {
+        "name": "Getting Started",
+        "description": "Completed 5 organization tasks"
+      },
+      "tenAreas": {
+        "name": "Making Progress",
+        "description": "Completed 10 organization tasks"
+      },
+      "fifteenAreas": {
+        "name": "Building Momentum",
+        "description": "Completed 15 organization tasks"
+      },
+      "twentyAreas": {
+        "name": "Steady Progress",
+        "description": "Completed 20 organization tasks"
+      },
+      "thirtyAreas": {
+        "name": "Organization Pro",
+        "description": "Completed 30 organization tasks"
+      },
+      "thirtyFiveAreas": {
+        "name": "Expert Organizer",
+        "description": "Completed 35 organization tasks"
+      },
+      "fortyAreas": {
+        "name": "Master Organizer",
+        "description": "Completed 40 organization tasks"
+      },
+      "fiftyAreas": {
+        "name": "Organization Legend",
+        "description": "Completed 50 organization tasks"
+      }
+    },
+    "moodChecker": {
+      "title": "Mynd Checker",
+      "caption": "Scroll through the options",
+      "captionMorning": "Start your day with reflection",
+      "captionAfternoon": "Take a midday check-in",
+      "captionEvening": "End your day with mindfulness",
+      "timeOfDay": {
+        "morning": "morning",
+        "afternoon": "afternoon",
+        "evening": "evening"
+      },
+      "greetings": {
+        "morning": "Good morning! How are you feeling as you start your day?",
+        "afternoon": "Taking a moment to check in. How's your day going?",
+        "evening": "As the day winds down, how are you feeling?"
+      },
+      "greeting": "Greetings, MyndMapper! How are you feeling today?",
+      "whatsMind": "I see. What's on your mind?",
+      "sorry": "I understand this is affecting you. Which one resonates with you the most?",
+      "askForAdvice": "Would you like some advice?",
+      "intensity": "On a scale of 1 to 10, how intense are these feelings?",
+      "advice": "Would you like some advice?",
+      "suggestion": "Here's what I suggest:",
+      "howSounds": "How does this sound?",
+      "anythingElse": "I'm glad I could help. Is there anything else you'd like to discuss?",
+      "otherTopic": "What other topic would you like to discuss?",
+      "thankYou": "Thank you for chatting with me. Feel free to review our conversation, and press the 'X' button when you're ready to leave.",
+      "moods": {
+        "energetic": "Energetic",
+        "calm": "Calm",
+        "anxious": "Anxious",
+        "tired": "Tired",
+        "optimistic": "Optimistic",
+        "overwhelmed": "Overwhelmed",
+        "focused": "Focused",
+        "distracted": "Distracted",
+        "stressed": "Stressed",
+        "accomplished": "Accomplished",
+        "frustrated": "Frustrated",
+        "balanced": "Balanced",
+        "relaxed": "Relaxed",
+        "exhausted": "Exhausted",
+        "reflective": "Reflective",
+        "restless": "Restless",
+        "satisfied": "Satisfied",
+        "disconnected": "Disconnected",
+        "mixed": "Mixed feelings",
+        "neutral": "Neutral",
+        "great": "Great",
+        "okay": "Okay",
+        "notSoGood": "Not so good",
+        "terrible": "Terrible"
+      },
+      "issues": {
+        "workStress": "Work stress",
+        "personalIssues": "Personal issues",
+        "healthConcerns": "Health concerns",
+        "creativeBlocks": "Creative blocks",
+        "socialChallenges": "Social challenges",
+        "environmentalStressors": "Environmental stressors",
+        "notSure": "I'm not sure"
+      },
+      "workStressIssues": {
+        "overwhelmingWorkload": "Overwhelming workload",
+        "difficultColleagues": "Difficult colleagues",
+        "lackOfWorkLifeBalance": "Lack of work-life balance",
+        "jobInsecurity": "Job insecurity",
+        "careerStagnation": "Career stagnation",
+        "toxicWorkEnvironment": "Toxic work environment"
+      },
+      "personalIssues": {
+        "relationshipProblems": "Relationship problems",
+        "familyConflicts": "Family conflicts",
+        "financialStress": "Financial stress",
+        "lowSelfEsteem": "Low self-esteem",
+        "identityConcerns": "Identity concerns",
+        "lifePurpose": "Finding life purpose"
+      },
+      "healthConcerns": {
+        "chronicIllness": "Chronic illness",
+        "mentalHealth": "Mental health",
+        "sleepProblems": "Sleep problems",
+        "poorDietExerciseHabits": "Poor diet/exercise habits",
+        "substanceUse": "Substance use concerns",
+        "exhaustion": "Burnout/exhaustion"
+      },
+      "creativeBlocksIssues": {
+        "lackOfInspiration": "Lack of inspiration",
+        "perfectionism": "Perfectionism",
+        "fearOfFailure": "Fear of failure",
+        "projectOverwhelm": "Project overwhelm",
+        "impostersyndrome": "Imposter syndrome"
+      },
+      "socialChallengesIssues": {
+        "socialAnxiety": "Social anxiety",
+        "loneliness": "Loneliness/isolation",
+        "conflictResolution": "Conflict resolution",
+        "establishingBoundaries": "Establishing boundaries",
+        "workplaceRelationships": "Workplace relationships"
+      },
+      "environmentalStressorsIssues": {
+        "livingConditions": "Living conditions",
+        "noiseDisturbances": "Noise/disturbances",
+        "clutterDisorganization": "Clutter/disorganization",
+        "lackOfNature": "Lack of nature access",
+        "commutingStress": "Commuting stress"
+      },
+      "notSureIssues": {
+        "feelingLost": "Feeling lost",
+        "lackOfMotivation": "Lack of motivation",
+        "generalAnxiety": "General anxiety",
+        "unexplainedMoodSwings": "Unexplained mood swings",
+        "emotionalNumbness": "Emotional numbness",
+        "unidentifiedStress": "Unidentified stress"
+      },
+      "intensityLevels": {
+        "veryMild": "1-2 (Very Mild)",
+        "mild": "3-4 (Mild)",
+        "moderate": "5-6 (Moderate)",
+        "significant": "7-8 (Significant)",
+        "intense": "9-10 (Intense)"
+      },
+      "adviceOptions": {
+        "yes": "Yes, please",
+        "resources": "I'd prefer resources",
+        "no": "No, thanks"
+      },
+      "adviceFeedback": {
+        "helpful": "That's helpful",
+        "needMoreSupport": "I need more support",
+        "notRelevant": "That doesn't seem relevant for me"
+      },
+      "furtherDiscussion": {
+        "no": "No, thanks",
+        "yes": "Yes, I have another concern"
+      },
+      "supportResources": {
+        "workStress": {
+          "careerCoaching": "Career Coach",
+          "stressManagementCourse": "Stress Management Course",
+          "boundariesWorkshop": "Boundaries Workshop"
+        },
+        "personalIssues": {
+          "therapist": "Therapist/Counselor",
+          "supportGroups": "Support Groups",
+          "relationshipCounseling": "Relationship Counseling"
+        },
+        "healthConcerns": {
+          "medicalProfessional": "Medical Professional",
+          "therapist": "Mental Health Professional",
+          "wellnessCoach": "Wellness Coach"
+        },
+        "creativeBlocks": {
+          "creativeCoaching": "Creative Coach",
+          "artistCommunities": "Artist Communities",
+          "creativityWorkshops": "Creativity Workshops"
+        },
+        "socialChallenges": {
+          "socialSkillsGroup": "Social Skills Group",
+          "therapist": "Therapist",
+          "communityEvents": "Community Events"
+        },
+        "environmentalStressors": {
+          "professionalOrganizer": "Professional Organizer",
+          "housingResources": "Housing Resources",
+          "environmentalConsultant": "Environmental Consultant"
+        },
+        "notSure": {
+          "generalTherapist": "General Therapist",
+          "lifeCoach": "Life Coach",
+          "mentalHealthHotline": "Mental Health Hotline"
+        }
+      },
+      "customInputModalTitle": "Share More Details",
+      "customInputPlaceholder": "How are you feeling about this specifically?",
+      "customInputPrompt": "Would you like to share more specific thoughts about what you're experiencing?",
+      "customInputOptions": {
+        "skip": "Skip",
+        "addThoughts": "Add my thoughts"
+      },
+      "recurringIssuePrompt": "I notice this issue has come up before. How would you describe where you are with it now?",
+      "recurringIssueOptions": {
+        "stillStruggling": "Still struggling with the same aspects",
+        "differentAspect": "Dealing with a different aspect now",
+        "seekingMoreHelp": "Looking for more focused help"
+      },
+      "highIntensityPrompt": "You've rated this at a high intensity level. How are you managing right now?",
+      "highIntensityOptions": {
+        "manageable": "It's difficult but manageable",
+        "needSupport": "I could use more support",
+        "crisis": "I'm in crisis/very overwhelmed"
+      },
+      "crisisResourcesPrompt": "I'm sorry to hear you're going through such a difficult time. Here are some immediate resources that might help:",
+      "crisisResourcesOptions": {
+        "callHotline": "Call Crisis Hotline",
+        "textCrisisLine": "Text Crisis Line",
+        "emergencyServices": "Emergency Services"
+      },
+      "crisisResourcesFollowupPrompt": "Would you still like to continue our conversation while you consider these resources?",
+      "crisisResourcesFollowupOptions": {
+        "yes": "Yes, please continue",
+        "no": "No, I'll focus on these resources"
+      },
+      "professionalHelpPrompt": "Based on what you've shared, you might benefit from professional support. Here are some options:",
+      "professionalHelpOptions": {
+        "notNow": "Not ready for this yet"
+      },
+      "professionalHelpFollowupPrompt": "Would you like more detailed information about these professional resources?",
+      "professionalHelpFollowupOptions": {
+        "yes": "Yes, more details please",
+        "no": "No, that's enough for now"
+      },
+      "professionalResourcesDetail": "Here's information about finding support: 1) Many workplaces offer Employee Assistance Programs with free counseling. 2) Community health centers often provide sliding-scale services. 3) Online therapy platforms can provide more flexible options.",
+      "professionalResourcesDetailOptions": {
+        "thanks": "Thank you for this information"
+      },
+      "positiveFollowups": {
+        "morning": "I'm glad to hear that. What area of life would you like to focus on today?",
+        "afternoon": "That's good to hear. Is there something specific on your mind right now?",
+        "evening": "It's great you're ending your day on a positive note. What area would you like to reflect on?"
+      },
+      "negativeFollowups": {
+        "general": "I'm sorry to hear you're not feeling great. What area seems to be affecting you most right now?"
+      },
+      "specificIssuePrompt": "I understand. Could you tell me more specifically what aspect is affecting you?",
+      "returningUserIssue": "Welcome back. I've noticed patterns in our conversations. What specific aspect would you like to focus on today?",
+      "intensityPrompt": "On a scale of 1 to 10, how intensely is this affecting you?",
+      "adviceRequestPrompt": "Would you like some advice or resources for dealing with this?",
+      "adviceFormat": "Here are two suggestions that might help:\n\n1. {{specific}}\n\n2. {{general}}\n\nHow does this sound?",
+      "alternativeAdvicePrompt": "I understand these suggestions don't quite fit. What would you prefer?",
+      "alternativeAdviceOptions": {
+        "tryAgain": "Try different suggestions",
+        "resources": "Show me resources instead",
+        "endConversation": "End conversation"
+      },
+      "resourceSuggestionsPrompt": "Here are some resources that might help with your situation:",
+      "followUpChecks": {
+        "evening": "Before we wrap up for the day, is there anything else you'd like to discuss?",
+        "default": "Is there anything else you'd like to discuss today?"
+      },
+      "followUpOptions": {
+        "anotherIssue": "Yes, another concern",
+        "scheduleLater": "Schedule a check-in",
+        "endNow": "No, I'm good for now"
+      },
+      "additionalTopicPrompt": "What would you like to discuss next?",
+      "scheduleCheckInPrompt": "When would you like me to check in with you?",
+      "scheduleOptions": {
+        "tomorrow": "Tomorrow",
+        "fewDays": "In a few days",
+        "nextWeek": "Next week",
+        "noThanks": "No thanks"
+      },
+      "confirmSchedulePrompt": "Great, I'll send you a reminder {{time}}. You can always come back sooner if needed.",
+      "confirmScheduleOptions": {
+        "thanks": "Thanks, looking forward to it"
+      },
+      "endConversationWithInput": "Thank you for sharing your thoughts with me today. Have a good {{timeOfDay}}!",
+      "endConversation": "Thank you for checking in today. I hope you have a wonderful {{timeOfDay}}!",
+      "endConversationOptions": {
+        "thanks": "Thank you!"
+      },
+      "notifications": {
+        "title": "Mynd Checker Check-in",
+        "body": "It's time for your scheduled mood check-in. How are you feeling today?"
+      },
+      "advice": {
+        "workStress": {
+          "overwhelmingWorkload": {
+            "1": "Use the Pomodoro Technique: work for 25 minutes, then take a 5-minute break.",
+            "2": "Create a visual task board to organize your work.",
+            "3": "Use noise-cancelling headphones or white noise to minimize distractions.",
+            "4": "Break large projects into smaller, manageable tasks."
+          },
+          "difficultColleagues": {
+            "1": "Practice active listening and try to understand their perspective.",
+            "2": "Use 'I' statements to express your feelings without blaming others.",
+            "3": "Take short breaks before responding to frustrating situations.",
+            "4": "Consider using written communication for complex topics."
+          },
+          "lackOfWorkLifeBalance": {
+            "1": "Set clear boundaries between work and personal time.",
+            "2": "Create a structured after-work routine to help transition from work mode.",
+            "3": "Use time-blocking techniques to allocate specific hours for work and personal activities.",
+            "4": "Practice mindfulness exercises to help 'switch off' from work thoughts."
+          },
+          "jobInsecurity": {
+            "1": "Update your skills regularly. Set aside specific time each week for learning.",
+            "2": "Keep a 'success journal' to document your achievements.",
+            "3": "Develop a financial safety net. Use budgeting apps to help manage spending.",
+            "4": "Practice stress-reduction techniques like deep breathing or progressive muscle relaxation."
+          },
+          "careerStagnation": {
+            "1": "Identify skills gaps and create a personal development plan.",
+            "2": "Seek out mentorship within or outside your organization.",
+            "3": "Take on challenging projects that can showcase your abilities.",
+            "4": "Network regularly and stay connected with industry developments."
+          },
+          "toxicWorkEnvironment": {
+            "1": "Document problematic interactions or situations for future reference.",
+            "2": "Build a support network of trusted colleagues.",
+            "3": "Focus on what you can control and set clear boundaries.",
+            "4": "Consider whether this environment aligns with your values and career goals."
+          }
+        },
+        "personalIssues": {
+          "relationshipProblems": {
+            "1": "Practice open and honest communication with your partner.",
+            "2": "Seek couples counseling to work through issues together.",
+            "3": "Focus on nurturing your own interests and self-care.",
+            "4": "Set aside regular quality time for your relationship."
+          },
+          "familyConflicts": {
+            "1": "Use 'I' statements to express your feelings without blaming.",
+            "2": "Practice active listening to understand family members' perspectives.",
+            "3": "Suggest family counseling to work through persistent issues.",
+            "4": "Establish clear boundaries and communicate them respectfully."
+          },
+          "financialStress": {
+            "1": "Create a detailed budget to track income and expenses.",
+            "2": "Look for ways to reduce unnecessary spending.",
+            "3": "Consider consulting a financial advisor for long-term planning.",
+            "4": "Explore additional income sources or skills you can monetize."
+          },
+          "lowSelfEsteem": {
+            "1": "Practice positive self-talk and challenge negative thoughts.",
+            "2": "Set small, achievable goals and celebrate your accomplishments.",
+            "3": "Keep a gratitude journal to focus on positive aspects of your life.",
+            "4": "Engage in activities that make you feel confident and competent."
+          },
+          "identityConcerns": {
+            "1": "Allow yourself time to explore different aspects of your identity without judgment.",
+            "2": "Connect with communities that share your experiences or interests.",
+            "3": "Journal regularly about your values, beliefs, and what feels authentic to you.",
+            "4": "Consider working with a therapist who specializes in identity development."
+          },
+          "lifePurpose": {
+            "1": "Reflect on times when you've felt most engaged and fulfilled in your life.",
+            "2": "Experiment with different activities to discover what resonates with you.",
+            "3": "Consider how your unique strengths could contribute to causes you care about.",
+            "4": "Create a personal mission statement that aligns with your core values."
+          }
+        },
+        "healthConcerns": {
+          "chronicIllness": {
+            "1": "Educate yourself about your condition to feel more in control.",
+            "2": "Join a support group to connect with others facing similar challenges.",
+            "3": "Work with your healthcare provider to develop a comprehensive care plan.",
+            "4": "Explore stress-reduction techniques like meditation or gentle yoga."
+          },
+          "mentalHealth": {
+            "1": "Establish a regular sleep schedule to support emotional regulation.",
+            "2": "Practice mindfulness meditation to manage stress and anxiety.",
+            "3": "Seek professional help from a therapist or counselor.",
+            "4": "Engage in regular physical exercise to boost mood and reduce stress."
+          },
+          "sleepProblems": {
+            "1": "Create a consistent bedtime routine to signal your body it's time to sleep.",
+            "2": "Limit screen time before bed and use blue light filters on devices.",
+            "3": "Try relaxation techniques like deep breathing or progressive muscle relaxation.",
+            "4": "Avoid caffeine and heavy meals close to bedtime."
+          },
+          "poorDietExerciseHabits": {
+            "1": "Start with small, sustainable changes to your diet or exercise routine.",
+            "2": "Use a food diary to track your eating habits and identify areas for improvement.",
+            "3": "Find physical activities you enjoy to make exercise more appealing.",
+            "4": "Meal prep healthy options to make nutritious eating more convenient."
+          },
+          "substanceUse": {
+            "1": "Track your usage patterns to identify triggers and habits.",
+            "2": "Consider speaking with a healthcare provider about support options.",
+            "3": "Find healthy alternatives to manage stress and difficult emotions.",
+            "4": "Build a support network of people who understand your goals."
+          },
+          "exhaustion": {
+            "1": "Prioritize sleep and rest as essential components of your health.",
+            "2": "Learn to recognize your personal early warning signs of burnout.",
+            "3": "Practice setting boundaries around work and personal commitments.",
+            "4": "Schedule regular periods of complete disconnection and recovery."
+          }
+        },
+        "creativeBlocks": {
+          "lackOfInspiration": {
+            "1": "Change your environment or routine to expose yourself to new stimuli.",
+            "2": "Engage in 'creative cross-training' by exploring different art forms or media.",
+            "3": "Allow yourself to create without judgment or pressure for a specific outcome.",
+            "4": "Keep an inspiration collection of images, quotes, or ideas that resonate with you."
+          },
+          "perfectionism": {
+            "1": "Set time limits for projects to prevent endless refinement.",
+            "2": "Create 'intentionally imperfect' work to practice tolerating imperfection.",
+            "3": "Focus on the process and what you're learning rather than the end product.",
+            "4": "Remember that finished imperfect work has more impact than perfect work that's never completed."
+          },
+          "fearOfFailure": {
+            "1": "Reframe 'failures' as experiments and learning opportunities.",
+            "2": "Share your work with supportive people before seeking wider feedback.",
+            "3": "Create a 'failure resume' that celebrates risks taken and lessons learned.",
+            "4": "Start with small, low-stakes creative projects to build confidence."
+          },
+          "projectOverwhelm": {
+            "1": "Break your project into small, specific tasks with clear completion criteria.",
+            "2": "Focus on completing one component at a time rather than jumping between tasks.",
+            "3": "Create a visual progress tracker to see how far you've come.",
+            "4": "Set realistic deadlines that account for other commitments in your life."
+          },
+          "impostersyndrome": {
+            "1": "Keep a 'wins' folder of achievements, positive feedback, and successes.",
+            "2": "Recognize that even experienced creators feel uncertain about their work.",
+            "3": "Focus on developing specific skills rather than comparing yourself to others.",
+            "4": "Share your experiences with trusted peers - you'll often find they feel the same way."
+          }
+        },
+        "socialChallenges": {
+          "socialAnxiety": {
+            "1": "Start with brief, structured social interactions where expectations are clear.",
+            "2": "Prepare conversation topics or questions in advance of social gatherings.",
+            "3": "Practice deep breathing or grounding techniques before social events.",
+            "4": "Challenge negative thoughts about how others perceive you."
+          },
+          "loneliness": {
+            "1": "Join groups or classes based on interests rather than with the primary goal of making friends.",
+            "2": "Schedule regular check-ins with friends and family, even brief ones.",
+            "3": "Volunteer for community organizations to create meaningful connections.",
+            "4": "Use technology intentionally to maintain relationships with distant connections."
+          },
+          "conflictResolution": {
+            "1": "Focus on understanding the other person's perspective before responding.",
+            "2": "Use 'I' statements to express your feelings without placing blame.",
+            "3": "Identify the specific issue at hand rather than bringing up past conflicts.",
+            "4": "Take breaks during heated moments to prevent escalation."
+          },
+          "establishingBoundaries": {
+            "1": "Start with small boundaries before tackling more challenging ones.",
+            "2": "Use clear, direct language without over-explaining your boundaries.",
+            "3": "Prepare responses for pushback or boundary violations in advance.",
+            "4": "Remember that healthy boundaries benefit both you and your relationships."
+          },
+          "workplaceRelationships": {
+            "1": "Focus on building professional trust through reliability and consistency.",
+            "2": "Look for appropriate opportunities to share common interests and experiences.",
+            "3": "Address minor conflicts early before they grow into larger issues.",
+            "4": "Maintain professional boundaries while still being authentic."
+          }
+        },
+        "environmentalStressors": {
+          "livingConditions": {
+            "1": "Identify the specific aspects of your living situation that cause the most stress.",
+            "2": "Create one peaceful space, even if small, that you can control and retreat to.",
+            "3": "Research your rights as a tenant if applicable to your situation.",
+            "4": "Develop a realistic plan with timeline for improving your living situation."
+          },
+          "noiseDisturbances": {
+            "1": "Use white noise machines or apps to mask unpredictable environmental sounds.",
+            "2": "Invest in noise-cancelling headphones for focused work or relaxation.",
+            "3": "Rearrange your schedule when possible to use quieter times for concentration.",
+            "4": "Create a soundproofing strategy for the most important areas of your space."
+          },
+          "clutterDisorganization": {
+            "1": "Start with 15-minute decluttering sessions focusing on one small area.",
+            "2": "Create simple organizational systems that are easy to maintain.",
+            "3": "Implement a 'one in, one out' rule for new possessions.",
+            "4": "Address the root causes of clutter accumulation in your life."
+          },
+          "lackOfNature": {
+            "1": "Incorporate indoor plants to bring natural elements into your space.",
+            "2": "Schedule regular time outdoors, even if just a brief walk in a local park.",
+            "3": "Use nature sounds, images, or videos when direct access isn't possible.",
+            "4": "Consider how to restructure your routine to include more natural settings."
+          },
+          "commutingStress": {
+            "1": "Use commuting time for enjoyable activities like audiobooks or podcasts.",
+            "2": "Explore alternate routes or timing to avoid the worst congestion.",
+            "3": "Practice mindfulness techniques specifically during your commute.",
+            "4": "Consider whether carpooling, public transport, or remote work options exist."
+          }
+        },
+        "notSure": {
+          "feelingLost": {
+            "1": "Reflect on your values and what gives your life meaning.",
+            "2": "Set small, achievable goals to create a sense of purpose and direction.",
+            "3": "Explore new hobbies or interests to discover passions.",
+            "4": "Consider talking to a life coach or counselor for guidance."
+          },
+          "lackOfMotivation": {
+            "1": "Break tasks into smaller, more manageable steps.",
+            "2": "Use the '5-minute rule': commit to starting a task for just 5 minutes.",
+            "3": "Create a reward system for completing tasks or reaching goals.",
+            "4": "Identify and address any underlying issues affecting your motivation."
+          },
+          "generalAnxiety": {
+            "1": "Practice deep breathing exercises when feeling anxious.",
+            "2": "Challenge anxious thoughts with evidence-based thinking.",
+            "3": "Limit caffeine and alcohol intake, which can exacerbate anxiety.",
+            "4": "Establish a regular exercise routine to reduce overall anxiety levels."
+          },
+          "unexplainedMoodSwings": {
+            "1": "Keep a mood journal to identify patterns and potential triggers.",
+            "2": "Ensure you're getting enough sleep and maintaining a consistent sleep schedule.",
+            "3": "Practice stress-reduction techniques like meditation or progressive muscle relaxation.",
+            "4": "Consider talking to a healthcare provider to rule out any underlying health issues."
+          },
+          "emotionalNumbness": {
+            "1": "Engage your senses intentionally through activities like cooking or nature walks.",
+            "2": "Express yourself creatively without judging the outcome.",
+            "3": "Gradually explore difficult emotions in a safe environment, perhaps with support.",
+            "4": "Consider whether your body is protecting you from overwhelming feelings that need professional support."
+          },
+          "unidentifiedStress": {
+            "1": "Conduct a 'life audit' to identify potential sources of stress across all areas.",
+            "2": "Track physical symptoms alongside daily activities to identify patterns.",
+            "3": "Practice regular stress reduction regardless of identified causes.",
+            "4": "Give yourself permission to take breaks and rest without specific justification."
+          }
+        },
+        "intensity": {
+          "veryMild": {
+            "1": "Take a moment to acknowledge your feelings before they intensify.",
+            "2": "Use this awareness as an opportunity to practice preventative self-care.",
+            "3": "Notice what's working well in your approach to this situation.",
+            "4": "Consider what support or resources might help if the intensity increases."
+          },
+          "mild": {
+            "1": "Take a moment to acknowledge your feelings and practice self-compassion.",
+            "2": "Use this as an opportunity to reflect on what's working well in your life.",
+            "3": "Consider journaling to explore your thoughts and feelings more deeply.",
+            "4": "Engage in an enjoyable activity to maintain your positive mood."
+          },
+          "moderate": {
+            "1": "Practice a quick mindfulness exercise to center yourself.",
+            "2": "Reach out to a friend or loved one for support and connection.",
+            "3": "Take a short walk or do some light stretching to boost your mood.",
+            "4": "Use positive affirmations to counteract negative thoughts."
+          },
+          "significant": {
+            "1": "Prioritize self-care activities that you know help regulate your emotions.",
+            "2": "Break down any challenging tasks into very small, manageable steps.",
+            "3": "Consider whether postponing non-essential commitments would be helpful.",
+            "4": "Reach out to your support network to share what you're experiencing."
+          },
+          "intense": {
+            "1": "Focus on grounding techniques like the 5-4-3-2-1 method to manage intense emotions.",
+            "2": "Consider reaching out to a mental health professional for support.",
+            "3": "Practice deep breathing exercises to help calm your nervous system.",
+            "4": "Give yourself permission to take a break and practice self-care."
+          }
+        },
+        "fallback": "Remember to take care of yourself and seek support when needed."
+      }
+    },
+    "mindCooling": {
+      "title": "Mynd Cooling",
+      "instructions": "1. Write down any thoughts racing through your mind.\n2. Take a deep breath as you let go of each thought.\n3. Focus on the present moment and the task at hand.",
+      "inputPlaceholder": "What's on your mind...",
+      "addThought": "Add Thought",
+      "letGo": "Let Go",
+      "backToHome": "Back",
+      "track1": "Track 1",
+      "track2": "Track 2",
+      "track3": "Track 3",
+      "play": "Play",
+      "pause": "Pause",
+      "loading": "Loading...",
+      "nowPlaying": "Playing",
+      "meditating": "Meditating",
+      "ready": "Ready to Start",
+      "useHaptics": "Vibration Feedback",
+      "showCompleted": "Show Completed Thoughts",
+      "thoughts": "Your Thoughts",
+      "totalSessions": "Total Sessions",
+      "totalDuration": "Total Time",
+      "categories": {
+        "urgent": "Urgent",
+        "important": "Important",
+        "random": "Random",
+        "worry": "Worry"
+      },
+      "stats": {
+        "sessionsToday": "Sessions Today",
+        "totalMinutes": "Total Minutes",
+        "averageSession": "Average Session"
+      },
+      "actions": {
+        "delete": "Delete",
+        "complete": "Complete",
+        "undo": "Undo"
+      },
+      "settings": {
+        "title": "Settings",
+        "volume": "Volume",
+        "notifications": "Reminders"
+      }
+    },
+    "mainOptions": {
+      "collaboration": "A collaboration with Dr. Nakashima",
+      "caption": "Clarity Through Chaos.",
+      "signUpEmail": "Sign up with Email",
+      "signInWithGoogle": "Sign in with Google",
+      "moreOptions": "More options",
+      "loginWithEmail": "Login with email",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "logoAlt": "MyndMap logo",
+      "optionsLogoAlt": "MyndMap main illustration"
+    }}

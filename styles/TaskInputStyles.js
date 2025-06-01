@@ -1,0 +1,313 @@
+import { StyleSheet, Dimensions, Platform } from 'react-native';
+const { height, width } = Dimensions.get('window');
+
+const modalStyles = StyleSheet.create({
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    justifyContent: 'flex-end',
+  },
+  modalContainer: {
+    backgroundColor: '#1E1E1E',
+    borderTopLeftRadius: 32,
+    borderTopRightRadius: 32,
+    minHeight: height * 0.5,
+    maxHeight: height * 0.9,
+    width: width,
+    borderTopWidth: 0.5,
+    borderColor: '#f7e8d3',
+    overflow: 'hidden',
+  },
+  breakInfoContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 8,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: 8,
+    backgroundColor: 'rgba(247,232,211,0.08)',
+  },
+  breakInfoText: {
+    color: '#F7E8D3',
+    fontSize: 12,
+    opacity: 0.8,
+    flex: 1,
+  },
+  scrollViewContent: {
+    flexGrow: 1,
+    paddingBottom: 0,
+  },
+  contentContainer: {
+    padding: 16,
+    backgroundColor: '#1E1E1E',
+    paddingTop: 25,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: '800',
+    color: '#f7e8d3',
+    marginBottom: 20,
+    textAlign: 'left',
+  },
+  input: {
+    backgroundColor: 'rgba(247,232,211,0.1)',
+    borderRadius: 14,
+    padding: 14,
+    color: '#f7e8d3',
+    fontSize: 15,
+    borderWidth: 0.5,
+    borderColor: '#f7e8d3',
+    marginBottom: 20,
+    height: 46,
+  },
+  sectionTitle: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: '#f7e8d3',
+    marginBottom: 10,
+    opacity: 0.8,
+  },
+  optionsContainer: {
+    marginBottom: 20,
+  },
+  optionsScroll: {
+    paddingBottom: 6,
+    paddingRight: 6,
+  },
+  optionButton: {
+    backgroundColor: 'rgba(247,232,211,0.1)',
+    borderRadius: 14,
+    padding: 12,
+    borderWidth: 0.5,
+    borderColor: '#f7e8d3',
+    marginRight: 10,
+    minWidth: 90,
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  optionButtonSelected: {
+    backgroundColor: 'rgba(255,99,71,0.2)',
+    borderColor: '#FF6347',
+  },
+  optionIcon: {
+    marginBottom: 6,
+  },
+  optionText: {
+    color: '#f7e8d3',
+    fontSize: 13,
+    fontWeight: '600',
+  },
+  optionNumber: {
+    color: '#f7e8d3',
+    fontSize: 20,
+    fontWeight: '800',
+    marginBottom: 3,
+  },
+  dateContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+  },
+  dateButton: {
+    flex: 1,
+    backgroundColor: 'rgba(247,232,211,0.1)',
+    borderRadius: 14,
+    padding: 12,
+    borderWidth: 0.5,
+    borderColor: '#f7e8d3',
+    minHeight: 46,
+    justifyContent: 'center',
+  },
+  dateText: {
+    color: '#f7e8d3',
+    fontSize: 14,
+    fontWeight: '500',
+  },
+  iconButton: {
+    backgroundColor: 'rgba(255,99,71,0.2)',
+    borderRadius: 14,
+    padding: 12,
+    borderWidth: 0.5,
+    borderColor: '#f7e8d3',
+    width: 46,
+    height: 46,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  iconButtonDisabled: {
+    opacity: 0.5,
+  },
+  actionButtons: {
+    flexDirection: 'row',
+    gap: 10,
+    paddingHorizontal: 16,
+    paddingBottom: Platform.OS === 'ios' ? 30 : 16,
+    paddingTop: 14,
+    backgroundColor: '#1E1E1E',
+    borderTopWidth: 0,
+  },
+  button: {
+    flex: 1,
+    borderRadius: 14,
+    padding: 12,
+    borderWidth: 0.5,
+    borderColor: '#f7e8d3',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: 46,
+  },
+  cancelButton: {
+    backgroundColor: 'rgba(247,232,211,0.1)',
+  },
+  submitButton: {
+    backgroundColor: '#FF6347',
+    borderColor: '#FF6347',
+  },
+  buttonText: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: '#f7e8d3',
+  },
+  submitButtonText: {
+    color: '#1a1a1a',
+  },
+  
+  // New breakdown styles
+  breakdownInputContainer: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: 10,
+    marginBottom: 12,
+  },
+  breakdownInput: {
+    flex: 1,
+    backgroundColor: 'rgba(247,232,211,0.1)',
+    borderRadius: 14,
+    padding: 14, // Updated from previous duplicate definition
+    color: '#f7e8d3',
+    fontSize: 15, // Updated from previous duplicate definition
+    borderWidth: 0.5,
+    borderColor: '#f7e8d3',
+    marginBottom: 20,
+    textAlignVertical: 'top',
+  },
+  breakdownList: {
+    maxHeight: 200,
+  },
+  breakdownItem: {
+    marginBottom: 8,
+  },
+  breakdownHeaderRow: { // Renamed from breakdownHeader which was duplicated
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: 'rgba(247,232,211,0.1)',
+    borderRadius: 12,
+    padding: 10,
+    borderWidth: 0.5,
+    borderColor: '#f7e8d3',
+  },
+  breakdownHeaderContainer: { // Renamed from breakdownHeader which was duplicated
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 12,
+  },
+  breakdownText: {
+    flex: 1,
+    color: '#f7e8d3',
+    fontSize: 13,
+    marginRight: 8,
+  },
+  breakdownActions: {
+    flexDirection: 'row',
+    gap: 6,
+  },
+  microButton: {
+    backgroundColor: 'rgba(255,99,71,0.2)',
+    borderRadius: 8,
+    padding: 6,
+    borderWidth: 0.5,
+    borderColor: '#f7e8d3',
+    width: 26,
+    height: 26,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  buttonDisabled: {
+    opacity: 0.5,
+  },
+  subtasksList: {
+    marginTop: 20,
+    marginBottom: 16,
+  },
+  subtasksHeader: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: '#f7e8d3',
+    marginBottom: 12,
+    opacity: 0.8,
+  },
+  subtaskItem: {
+    marginBottom: 12,
+    backgroundColor: 'rgba(247,232,211,0.1)',
+    borderRadius: 12,
+    overflow: 'hidden',
+  },
+  subtaskContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: 12,
+  },
+  subtaskItemText: {
+    flex: 1,
+    color: '#f7e8d3',
+    fontSize: 14,
+    marginRight: 12,
+  },
+  subtaskActions: {
+    flexDirection: 'row',
+    gap: 8,
+  },
+  subtaskActionButton: {
+    padding: 6,
+    borderRadius: 8,
+    backgroundColor: 'rgba(0,0,0,0.2)',
+  },
+  microtasksList: {
+    paddingLeft: 16,
+    paddingRight: 12,
+    paddingBottom: 12,
+    backgroundColor: 'rgba(0,0,0,0.1)',
+  },
+  microtaskItem: {
+    paddingVertical: 6,
+    paddingHorizontal: 8,
+    borderLeftWidth: 2,
+    borderLeftColor: 'rgba(247,232,211,0.2)',
+  },
+  microtaskText: {
+    color: '#f7e8d3',
+    fontSize: 13,
+    opacity: 0.8,
+  },
+  parentSubtaskInfo: {
+    backgroundColor: 'rgba(255,99,71,0.1)',
+    padding: 12,
+    borderRadius: 12,
+    marginBottom: 16,
+  },
+  parentSubtaskLabel: {
+    color: '#FF6347',
+    fontSize: 12,
+    fontWeight: '600',
+    marginBottom: 4,
+  },
+  parentSubtaskText: {
+    color: '#f7e8d3',
+    fontSize: 14,
+  },
+});
+
+export default modalStyles;
